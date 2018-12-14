@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
       <div class="row landing-arde">
         <div class="col-8 offset-2 text-center" >
           <div class="hero_img">
-            <img src="<?php echo site_url(); ?>/wp-content/themes/understrap/img/arde-logo.png" alt="">
+            <img src="<?php echo site_url(); ?>/wp-content/themes/arde2/img/arde-logo.png" alt="">
           </div>
         </div>
           
