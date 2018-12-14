@@ -30,6 +30,32 @@ if ( ! defined( 'ABSPATH' ) ) {
 			'after'  => '</div>',
 		) );
 		?>
+		<?php
+		$slug = sanitize_title($post->post_title);
+		$category = get_category_by_slug( $slug );
+
+		$query = new WP_Query( array( 'cat' => $category->cat_ID ) );
+
+		?>
+		
+
+
+		<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+                
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="<?php the_post_thumbnail_url(); ?>" height= alt="<?php the_title(); ?>">
+          <div class="card-body">
+            <p class="card-text text-center"><?php the_title(); ?></p>
+          </div>
+        </div>
+        
+       <?php endwhile; 
+         wp_reset_postdata();
+         else : ?>
+         <p>Aún sin contenido curado, puedes crear una entrada (post) y decirle que la categoría es <b><?php echo $category->name; ?></b></p>
+         <?php endif; ?>
+
+
 
 	</div><!-- .entry-content -->
 
