@@ -1,0 +1,30 @@
+$naranjo-arde: #f44d11;
+$gris-arde: #cecece;
+
+
+.bg-arde {
+    background-color: $naranjo-arde;
+}
+.bg-minisitio {
+    background-color: $gris-arde;
+}
+
+.landing-arde {
+    /* The image used */
+
+    /* Set a specific height */
+    min-height: 800px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/wp-content/themes/understrap/img/landing.png");
+}
+.hero_img {
+    margin-top: 7em;
+}
+.titulo {
+    text-decoration: underline;
+}
