@@ -43,7 +43,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<?php if (!( is_front_page() && is_home() )) : ?>
 					<a class="navbar-brand" href="<?php echo site_url(); ?>">
-					    <img src="<?php echo site_url(); ?>/img/arde-logo.png" height="30" alt="arde">
+					    <img src="<?php bloginfo('template_url'); ?>/img/arde-logo.png" height="30" alt="arde">
 					  </a>
 				<?php endif; ?>
 
