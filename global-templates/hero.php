@@ -21,3 +21,10 @@ if ( ! defined( 'ABSPATH' ) ) {
           
   </div>
 </div>
+<script type="text/javascript">
+    jQuery(function(){
+        // console.log('url("<?php bloginfo('template_url'); ?>/img/fondo-arde.png")');
+        jQuery('.landing-arde').css('background-image', 'url("<?php bloginfo('template_url'); ?>/img/fondo-arde.jpg")');
+
+    });
+</script>
