@@ -13,6 +13,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <div class="container-fluid bg-arde">
       <div class="row landing-arde">
+      <div class="landing-arde-overlay"></div>
+
         <div class="col-8 offset-2 text-center" >
           <div class="hero_img">
             <img src="<?php bloginfo('template_url'); ?>/img/arde-logo.png" alt="">

@@ -1,5 +1,4 @@
-$naranjo-arde: #f44d11;
-$gris-arde: #cecece;
+@import "theme/colors"; // Contact Form 7 - Bootstrap 4 support
 
 
 .bg-arde {
@@ -8,22 +7,28 @@ $gris-arde: #cecece;
 .bg-minisitio {
     background-color: $gris-arde;
 }
+@mixin tamano-landing { 
+    min-height: 500px;
 
+}
 .landing-arde {
-    /* The image used */
-
-    /* Set a specific height */
-    min-height: 800px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
+    // background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    @include tamano-landing;
 }
 .hero_img {
     margin-top: 7em;
 }
 .titulo {
     text-decoration: underline;
+}
+
+.landing-arde-overlay {
+    background-color: $naranjo-arde;
+    width: 100%;
+    opacity: 0.8;
+    position: absolute;
+    @include tamano-landing;
 }
