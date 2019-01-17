@@ -45,7 +45,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 </div><!-- #page we need this extra closing tag here -->
 
 <?php wp_footer(); ?>
-
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/retina.min.js"></script>
 </body>
 
 </html>
