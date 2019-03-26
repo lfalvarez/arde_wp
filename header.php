@@ -37,6 +37,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<nav class="navbar navbar-expand-md navbar-dark <?php if ( is_front_page() && is_home() ) : ?>bg-arde<?php else : ?>bg-minisitio<?php endif; ?>">
 
+
+
+
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container" >
 		<?php endif; ?>
@@ -46,6 +49,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 					    <img src="<?php bloginfo('template_url'); ?>/img/arde-logo.png" height="30" alt="arde">
 					  </a>
 				<?php endif; ?>
+
+				<ul class="navbar-nav mr-auto">
+		      <li class="nav-item">
+						<a class="nav-link" href="http://proyectoarde.org/data/dataset">Archivo</a>
+		      </li>
+					<?php $link_slug = 'colecciones'; include('global-templates/link-in-navbar.php'); ?>
+
+					<?php $link_slug = 'editorial'; include('global-templates/link-in-navbar.php'); ?>
+					<?php $link_slug = 'sobre-archivos'; include('global-templates/link-in-navbar.php'); ?>
+					<?php $link_slug = 'sobre-nosotros'; include('global-templates/link-in-navbar.php'); ?>
+				</ul>
 
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
 					<span class="navbar-toggler-icon"></span>

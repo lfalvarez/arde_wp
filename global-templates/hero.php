@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <img src="<?php bloginfo('template_url'); ?>/img/arde-logo.png" alt="">
           </div>
         </div>
-          
+
   </div>
 </div>
 <script type="text/javascript">

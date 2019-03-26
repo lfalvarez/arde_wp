@@ -47,7 +47,7 @@ function crear_categoria_para_editorial($post_id) {
 }
 add_action( 'publish_page', 'crear_categoria_para_editorial', 11);
 
-function crear_categoria_para_sobre_editorial($post_id) {
+function crear_categoria_para_sobre_archivos($post_id) {
     $template = get_post_meta($post_id, '_wp_page_template', true);
     $is_editorial = $template == 'page-templates/sobre-archivos.php';
     if (!$is_editorial){
@@ -67,5 +67,5 @@ function crear_categoria_para_sobre_editorial($post_id) {
     wp_insert_category($nueva_categoria);
 
 }
-add_action( 'publish_page', 'crear_categoria_para_sobre_editorial', 11);
+add_action( 'publish_page', 'crear_categoria_para_sobre_archivos', 11);
 ?>
