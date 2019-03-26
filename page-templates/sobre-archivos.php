@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Editorial
+ * Template Name: Sobre Archivos
  *
  * Template para mostrar la Editorial.
  *
@@ -17,13 +17,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="container">
   <div class='row '>
       <div class="col-12">
-          <div class="text-center text-uppercase titulo">Editorial</div>
+          <div class="text-center text-uppercase titulo">Sobre Archivos</div>
       </div>
   </div>
       <div class="row lista colecciones">
         <div class="col-2">
+
             <?php
-            $query = new WP_Query( array( 'category_name' => 'editorial' ) );
+            $query = new WP_Query( array( 'category_name' => 'sobre-archivos' ) );
             ?>
              <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 

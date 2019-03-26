@@ -46,4 +46,26 @@ function crear_categoria_para_editorial($post_id) {
 
 }
 add_action( 'publish_page', 'crear_categoria_para_editorial', 11);
+
+function crear_categoria_para_sobre_editorial($post_id) {
+    $template = get_post_meta($post_id, '_wp_page_template', true);
+    $is_editorial = $template == 'page-templates/sobre-archivos.php';
+    if (!$is_editorial){
+        return;
+    }
+
+    $title = 'Sobre archivos';
+    $slug = 'sobre-archivos';
+    $existe_categoria_para_sobre_editorial = get_category_by_slug($slug);
+    if($existe_categoria_para_sobre_editorial){
+        return;
+    }
+    $nueva_categoria = array('cat_name' => $title,
+                             'category_description' => $title,
+                             'category_nicename' => $slug,
+                             'category_parent' => '');
+    wp_insert_category($nueva_categoria);
+
+}
+add_action( 'publish_page', 'crear_categoria_para_sobre_editorial', 11);
 ?>
