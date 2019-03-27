@@ -12,7 +12,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <div class="row">
 	<div class="col">
-      <?php the_meta(); ?>
+		<?php $social_network = 'facebook'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
+		<br />
+		<?php $social_network = 'instagram'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
     </div>
     <div class="col-8">
       <?php the_content(); ?>

@@ -17,7 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="container">
   <div class='row '>
       <div class="col-12">
-          <div class="text-center text-uppercase titulo">Sobre Nosotros</div>
+          <h1 class="text-center text-uppercase titulo">Sobre Nosotros</h1>
       </div>
   </div>
       <div class="row lista colecciones">

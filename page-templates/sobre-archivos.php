@@ -17,9 +17,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="container">
   <div class='row '>
       <div class="col-12">
-          <div class="text-center text-uppercase titulo">Sobre Archivos</div>
+          <h1 class="text-center text-uppercase titulo">Sobre Archivos</h1>
       </div>
   </div>
+  <div class="row lista colecciones">
+    <div class="col-2">
+
+
+      <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+      the_content();
+      endwhile;endif;?>
+
+    </div>
+
+</div>
       <div class="row lista colecciones">
         <div class="col-2">
 

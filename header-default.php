@@ -38,10 +38,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
 		<nav class="navbar navbar-expand-md navbar-dark <?php if ( is_front_page() && is_home() ) : ?>bg-arde<?php else : ?>bg-minisitio<?php endif; ?>"
-
-			<?php if (has_post_thumbnail($post)): ?>
-				style="background-image: url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');"
-			<?php endif; ?>
 			>
 
 
