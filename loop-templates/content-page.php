@@ -10,19 +10,25 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
+<div class="row">
+	<div class="col">
+      <?php the_meta(); ?>
+    </div>
+    <div class="col-8">
+      <?php the_content(); ?>
+    </div>
+
+</div>
+
+
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<header class="entry-header">
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-	</header><!-- .entry-header -->
-
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
 	<div class="entry-content">
 
-		<?php the_content(); ?>
+
 
 		<?php
 		wp_link_pages( array(
@@ -51,8 +57,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
        <?php endwhile;
          wp_reset_postdata();
-         else : ?>
-         <p>Aún sin contenido curado, puedes crear una entrada (post) y decirle que la categoría es <b><?php echo $category->name; ?></b></p>
+         ?>
          <?php endif; ?>
 
 
