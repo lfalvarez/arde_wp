@@ -16,23 +16,35 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
-<div class="wrapper" id="wrapper-footer">
+<div class="wrapper footer-arde" id="wrapper-footer">
 
 	<div class="<?php echo esc_attr( $container ); ?>">
 
 		<div class="row">
 
-			<div class="col-md-12">
+			<div class="col-12 d-flex justify-content-center">
+				<a class="navbar-brand" href="<?php echo site_url(); ?>">
+						<img class='logo-minisitio' src="<?php bloginfo('template_url'); ?>/img/arde-logo-sin-frase.png" alt="arde">
+					</a>
 
-				<footer class="site-footer" id="colophon">
+			</div><!--col end -->
 
-					<div class="site-info">
+		</div><!-- row end -->
+		<div class="row">
 
+			<div class="col-10">
 
-					</div><!-- .site-info -->
+				<!-- suscríbete-->
+			</div><!--col end -->
+			<div class="col-2">
 
-				</footer><!-- #colophon -->
+				<?php $link_slug = 'colecciones'; include('global-templates/link-to-page.php'); ?>
 
+	      <?php $link_slug = 'editorial'; include('global-templates/link-to-page.php'); ?>
+	      <?php $link_slug = 'sobre-archivos'; include('global-templates/link-to-page.php'); ?>
+	      <?php $link_slug = 'sobre-nosotros'; include('global-templates/link-to-page.php'); ?>
+				<a class="nav-link" href="https://www.facebook.com/archivoarde/"><i class="fab fa-facebook-f"></i>  /archivoarde</a>
+				<a class="nav-link" href="#"><i class="fab fa-instagram"></i> /elinstagran</a>
 			</div><!--col end -->
 
 		</div><!-- row end -->
