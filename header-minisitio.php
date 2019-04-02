@@ -22,6 +22,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-title" content="<?php bloginfo( 'name' ); ?> - <?php bloginfo( 'description' ); ?>">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php wp_head(); ?>
 </head>
@@ -32,7 +33,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div
 	<?php if (has_post_thumbnail($post)): ?>
 		class="landing-image bg-minisitio-con-imagen"
-		style="background-image: url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');
+		style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');
 					 background-repeat: no-repeat;
 					 background-size: cover;"
 	<?php else: ?>
@@ -59,15 +60,21 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<?php if (!( is_front_page() && is_home() )) : ?>
 					<a class="navbar-brand" href="<?php echo site_url(); ?>">
-					    <img src="<?php bloginfo('template_url'); ?>/img/arde-logo.png" height="30" alt="arde">
+					    <img class='logo-minisitio' src="<?php bloginfo('template_url'); ?>/img/arde-logo-sin-frase.png" alt="arde">
 					  </a>
 				<?php endif; ?>
 
 				<?php include('global-templates/navbar_links.php') ?>
-
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+				<div class="order-3">
+		        <ul class="navbar-nav ml-auto">
+		            <li class="nav-item">
+		                <a class="nav-link" href="https://www.facebook.com/archivoarde/"><i class="fab fa-facebook-f"></i></a>
+		            </li>
+		            <li class="nav-item">
+		                <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+		            </li>
+		        </ul>
+		    </div>
 
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(

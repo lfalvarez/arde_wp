@@ -29,3 +29,6 @@
     position: absolute;
     @include tamano-landing;
 }
+body {
+  font-family: $typeface;
+}

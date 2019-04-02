@@ -1,7 +1,22 @@
 .minisitio-title{
-  margin-top: 4%;
+  margin-top: 10%;
   color: white;
 }
 .bg-minisitio-con-imagen{
   min-height: 500px;
+}
+.logo-minisitio {
+  max-height: 35px;
+}
+.documentos-minisitio {
+  margin-top: 60px;
+}
+.document-image {
+  min-height: 190px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-color: $naranjo-arde;
+  .card{
+  }
 }
