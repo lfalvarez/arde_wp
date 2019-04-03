@@ -8,6 +8,13 @@
     min-height: 500px;
 
 }
+
+a {
+  color: $gris-arde;
+  &:hover {
+    color: $gris-oscuro-arde;
+  }
+}
 .landing-arde {
     // background-attachment: fixed;
     background-position: center;

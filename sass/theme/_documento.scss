@@ -1,0 +1,36 @@
+.bg-documento {
+  max-height: 50px;
+  background-color: $gris-oscuro-arde;
+  img {
+    max-height: 45px;
+  }
+}
+.documento {
+  color: $gris-oscuro-arde;
+}
+.description-doc {
+  margin-top: 2.5em;
+  .title {
+      font-weight: bold;
+  }
+
+}
+.doc-image {
+
+}
+
+.image-jumbotron {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.meta-div {
+  .meta-titulo {
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+}
+.compartir-text {
+  text-orientation: upright;
+  writing-mode: sideways-lr;
+  color: $gris-arde;
+}

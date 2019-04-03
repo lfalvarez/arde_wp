@@ -58,7 +58,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
           <div class="card col-4 border-0">
 
-            <div class="card-body">
+            <a class="card-body" href="<?= get_permalink(); ?>">
               <div class="document-image" style='background-image:url("<?php if(has_post_thumbnail()){
                 the_post_thumbnail_url();
               }
@@ -67,7 +67,7 @@ if ( ! defined( 'ABSPATH' ) ) {
               }
               ?>")'></div>
               <p class="card-text text-center"><?php the_title(); ?></p>
-            </div>
+            </a>
           </div>
 
         <?php endwhile;

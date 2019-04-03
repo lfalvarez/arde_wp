@@ -9,40 +9,68 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 ?>
+	<div class="row">
+		<div class='col'>
+			<h1><?= get_the_title() ;?></h1>
+		</div>
+		<div class="w-100"></div>
+		<div class='col'>
+			<nav aria-label="breadcrumb">
+			  <ol class="breadcrumb">
+			    <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+					<?php $category_detail=get_the_category($post->ID);//$post->ID
+					$cd = $category_detail[0];
+					$args = array(
+							'post_type' => 'page',//it is a Page right?
+							'post_status' => 'publish',
+							'title' => $cd->cat_name,
+							'meta_query' => array(
+									array(
+											'key' => '_wp_page_template',
+											'value' => 'page-templates/minisitiopage.php', // template name as stored in the dB
+									)
+							)
+					);
+					$query = new WP_Query($args);
+					$category_permalink = get_permalink($query->posts[0]->ID);
+					?>
+			    <li class="breadcrumb-item"><a href="<?= $category_permalink; ?>"><?= $cd->cat_name; ?></a></li>
+			    <li class="breadcrumb-item active" aria-current="page"><?= get_the_title() ;?></li>
+			  </ol>
+			</nav>
+		</div>
 
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+	</div>
 
-	<header class="entry-header">
+<?php if (has_post_thumbnail()): ?>
+<div class="jumbotron jumbotron-fluid image-jumbotron">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+			  <?php echo get_the_post_thumbnail( $post->ID, 'large', array( 'class' => 'img-fluid rounded mx-auto d-block' )); ?>
+			</div>
+		</div>
+	</div>
+</div>
+<?php endif; ?>
 
-		<?php the_title( '<h1 class="entry-title">asdasd', '</h1>' ); ?>
 
-		<div class="entry-meta">
-
-			<?php understrap_posted_on(); ?>
-
-		</div><!-- .entry-meta -->
-
-	</header><!-- .entry-header -->
-
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
-
-	<div class="entry-content">
-
+<div class="row description-doc">
+	<div class='col-1'>
+		<!-- Facebook -->
+<a href="https://www.facebook.com/sharer/sharer.php?u=SHAREMESSAGE" title="Share on Facebook" target="_blank" class="btn btn-facebook"><i class="fab fa-facebook-f"></i></a>
+<!-- Google+ -->
+<a href="https://plus.google.com/share?url=SHAREMESSAGE" title="Share on Google+" target="_blank" class="btn btn-googleplus"><i class="fab fa-google-plus-g"></i></a>
+<p class="compartir-text">Compartir:</p>
+	</div>
+	<div class='col-2'>
+		<?php $title = 'Autor'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
+		<?php $title = 'Tipo de documento'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
+		<?php $title = 'Fecha'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
+	</div>
+	<div class='col-9'>
+		<p class="title">Descripción:</p>
 		<?php the_content(); ?>
+	</div>
 
-		<?php
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
-			'after'  => '</div>',
-		) );
-		?>
-
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-
-		<?php understrap_entry_footer(); ?>
-
-	</footer><!-- .entry-footer -->
-
-</article><!-- #post-## -->
+</div>
