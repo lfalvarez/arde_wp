@@ -24,6 +24,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<style type="text/css" media="screen, print">
+		@font-face {
+			font-family: "GT America Mono";
+			src: url("<?php echo bloginfo('template_url'); ?>/fonts/GTAmericaMono-Regular.woff") format("woff");
+		}
+  </style>
 	<?php wp_head(); ?>
 </head>
 

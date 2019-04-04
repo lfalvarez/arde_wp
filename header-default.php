@@ -23,6 +23,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<meta name="apple-mobile-web-app-title" content="<?php bloginfo( 'name' ); ?> - <?php bloginfo( 'description' ); ?>">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<style type="text/css" media="screen, print">
+		@font-face {
+			font-family: "GT America Mono";
+			src: url("<?php echo bloginfo('template_url'); ?>/fonts/GTAmericaMono-Regular.woff") format("woff");
+		}
+  </style>
 	<?php wp_head(); ?>
 </head>
 
