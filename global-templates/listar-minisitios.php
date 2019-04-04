@@ -12,12 +12,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 <div class="container">
-        <div class='row '>
+        <div class='row titulo-colecciones-home'>
             <div class="col-12">
                 <div class="text-center text-uppercase titulo">Colecciones</div>
             </div>
         </div>
-      <div class="row lista colecciones">
+      <div class="row lista-colecciones">
 
             <?php
                 $args = array(
