@@ -1,5 +1,15 @@
 .bg-arde {
-    background-color: $naranjo-arde;
+}
+#wrapper-navbar {
+  background-color: $naranjo-arde;
+
+  opacity: 0.8;
+  a {
+    color: $blanco;
+    &:hover {
+      color: $blanco_transparente;
+    }
+  }
 }
 .bg-minisitio {
     background-color: $gris-arde;
