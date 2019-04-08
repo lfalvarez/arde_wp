@@ -1,9 +1,14 @@
+@mixin home-transparency {
+  opacity: 0.8;
+  background-color: $naranjo-arde;
+}
+.hero-container {
+  background-size: cover;
+}
 .bg-arde {
 }
-#wrapper-navbar {
-  background-color: $naranjo-arde;
-
-  opacity: 0.8;
+.navbar-only-in-home {
+  @include home-transparency
   a {
     color: $blanco;
     &:hover {
@@ -37,12 +42,12 @@ a {
 }
 .titulo {
     text-decoration: underline;
+    margin: 30px;
 }
 
 .landing-arde-overlay {
-    background-color: $naranjo-arde;
+    @include home-transparency
     width: 100%;
-    opacity: 0.8;
     position: absolute;
     @include tamano-landing;
 }
