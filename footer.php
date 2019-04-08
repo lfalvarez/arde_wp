@@ -32,19 +32,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div><!-- row end -->
 		<div class="row">
 
-			<div class="col-10">
+			<div class="col-9">
 
 				<!-- suscríbete-->
 			</div><!--col end -->
-			<div class="col-2">
+			<div class="col-3">
 
-				<?php $link_slug = 'colecciones'; include('global-templates/link-to-page.php'); ?>
+				<a class="nav-link" href="<?php echo site_url(); ?>">Inicio</a>
 
 	      <?php $link_slug = 'editorial'; include('global-templates/link-to-page.php'); ?>
-	      <?php $link_slug = 'sobre-archivos'; include('global-templates/link-to-page.php'); ?>
 	      <?php $link_slug = 'sobre-nosotros'; include('global-templates/link-to-page.php'); ?>
 				<a class="nav-link" href="https://www.facebook.com/archivoarde/"><i class="fab fa-facebook-f"></i>  /archivoarde</a>
-				<a class="nav-link" href="#"><i class="fab fa-instagram"></i> /elinstagran</a>
+				<a class="nav-link" href="https://www.instagram.com/proyectoarde/"><i class="fab fa-instagram"></i> /proyectoarde</a>
 			</div><!--col end -->
 
 		</div><!-- row end -->

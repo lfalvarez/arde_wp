@@ -9,11 +9,12 @@
 }
 .navbar-only-in-home {
   @include home-transparency
-  a {
-    color: $blanco;
-    &:hover {
-      color: $blanco_transparente;
-    }
+
+}
+.nav-link {
+  color: $blanco !important;
+  &:hover {
+    color: $blanco_transparente !important;
   }
 }
 .bg-minisitio {

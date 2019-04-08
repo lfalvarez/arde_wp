@@ -13,6 +13,6 @@ $query = new WP_Query($args);
 if ( $query->have_posts() ):
 ?>
 <li class="nav-item">
-  <a class="nav-link" href="<?php echo get_post_permalink($query->posts[0]->ID); ?>"><?php echo $query->posts[0]->post_title;?></a>
+  <a class="nav-link navbar-arde" href="<?php echo get_post_permalink($query->posts[0]->ID); ?>"><?php echo $query->posts[0]->post_title;?></a>
 </li>
 <?php endif; ?>
