@@ -11,7 +11,7 @@
 	<style type="text/css" media="screen, print">
 		@font-face {
 			font-family: "GT America Mono";
-			src: url("<?php echo bloginfo('template_url'); ?>/fonts/GTAmericaMono-Regular.woff") format("woff");
+			src: url("<?php echo bloginfo('template_url'); ?>/fonts/GT-America-Mono-Regular.otf") format("opentype");
 		}
   </style>
 	<?php wp_head(); ?>
