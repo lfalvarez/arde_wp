@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <div class="row">
-	<div class="col">
+	<div class="col-3">
 		<?php $social_network = 'web'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
 		<br />
     <?php $social_network = 'facebook'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     <?php $social_network = 'instagram'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
 		<br />
     </div>
-    <div class="col-8">
+    <div class="col-9">
       <?php the_content(); ?>
     </div>
 
