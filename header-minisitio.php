@@ -62,7 +62,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		                <a class="nav-link" href="https://www.instagram.com/proyectoarde/" target="_blank"><i class="fab fa-instagram"></i></a>
 		            </li>
 		        </ul>
-		    </div>
+		    	</div>
 
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(

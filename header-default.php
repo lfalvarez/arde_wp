@@ -44,8 +44,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 				<?php include('global-templates/navbar_links.php') ?>
-
-
+				<div class="order-3">
+		        <ul class="navbar-nav ml-auto">
+		            <li class="nav-item">
+		                <a class="nav-link" href="https://www.facebook.com/archivoarde/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+		            </li>
+		            <li class="nav-item">
+		                <a class="nav-link" href="https://www.instagram.com/proyectoarde/" target="_blank"><i class="fab fa-instagram"></i></a>
+		            </li>
+		        </ul>
+		    	</div>
 
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
