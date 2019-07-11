@@ -56,10 +56,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="order-3">
 		        <ul class="navbar-nav ml-auto">
 		            <li class="nav-item">
-		                <a class="nav-link" href="https://www.facebook.com/archivoarde/"><i class="fab fa-facebook-f"></i></a>
+		                <a class="nav-link" href="https://www.facebook.com/archivoarde/" target="_blank"><i class="fab fa-facebook-square"></i></a>
 		            </li>
 		            <li class="nav-item">
-		                <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+		                <a class="nav-link" href="https://www.instagram.com/proyectoarde/" target="_blank"><i class="fab fa-instagram"></i></a>
 		            </li>
 		        </ul>
 		    </div>
