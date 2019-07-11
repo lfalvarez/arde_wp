@@ -9,7 +9,9 @@
 }
 .navbar-only-in-home {
   @include home-transparency
-
+}
+.navbar {
+  padding: 1rem;
 }
 .nav-link {
   color: $blanco !important;
