@@ -15,9 +15,13 @@
         <a class="nav-link navbar-arde" href="#">Sobre archivo</a>
       </li>
       <?php $link_slug = 'sobre-nosotros'; include('link-in-navbar.php'); ?>
+      <li class="nav-item">
+        <a class="nav-link navbar-arde" href="#"><i class="fas fa-search"></i></a>
+      </li>
     </ul>
 
 </div>
+
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-navbar">
     <span class="navbar-toggler-icon"></span>
 </button>
