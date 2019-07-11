@@ -45,9 +45,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<?php include('global-templates/navbar_links.php') ?>
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+
 
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
