@@ -25,8 +25,9 @@
 			src: url("<?php echo bloginfo('template_url'); ?>/fonts/GT-America-Mono-Regular.otf") format("opentype");
 		}
   	</style>
+  	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/magnific-popup.css" />
 
-    <!-- Estilos -->
+    <!-- Favicon -->
 
 	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://beta.proyectoarde.org/wp-content/themes/arde_wp/apple-touch-icon-57x57.png" />
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://beta.proyectoarde.org/wp-content/themes/arde_wp/apple-touch-icon-114x114.png" />
