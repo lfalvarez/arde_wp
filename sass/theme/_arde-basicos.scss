@@ -54,6 +54,8 @@ a {
 .titulo {
     text-decoration: underline;
     margin: 30px;
+    text-underline-position: under;
+    text-underline-offset: 10px;
 }
 
 .landing-arde-overlay {
@@ -70,7 +72,8 @@ body {
 }
 .titulo-colecciones-home {
   margin: 40px 0;
-  font-size: 2em;
+  font-size: 1.625em;
+  letter-spacing: 0.05em;
 }
 .lista-colecciones {
   margin: 40px 0;
