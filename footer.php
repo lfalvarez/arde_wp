@@ -48,7 +48,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		</div><!-- row end -->
 
-		<div class="row">
+		<div class="row my-3">
 
 			<div class="col-md-9">
 				<!-- Info Sitio-->
