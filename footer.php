@@ -57,6 +57,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<div class="col-md-3">
 				<!-- RRSS-->
+		        <ul class="ml-auto">
+		            <li class="nav-item">
+		                <a class="nav-link" href="https://www.facebook.com/archivoarde/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+		            </li>
+		            <li class="nav-item">
+		                <a class="nav-link" href="https://www.instagram.com/proyectoarde/" target="_blank"><i class="fab fa-instagram"></i></a>
+		            </li>
+		        </ul>
 
 			</div><!--col end -->
 
