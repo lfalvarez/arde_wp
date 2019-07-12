@@ -42,7 +42,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<?php endif; ?>
 
 				<a class="navbar-brand" href="<?php echo site_url(); ?>">
-				    <img class='logo-minisitio' src="<?php bloginfo('template_url'); ?>/img/arde-logo-sin-frase.png" alt="arde">
+				    <img class='logo-minisitio' src="<?php bloginfo('template_url'); ?>/img/logo-arde-blanco.png" alt="arde">
 				</a>
 
 
