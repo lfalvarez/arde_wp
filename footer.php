@@ -39,7 +39,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 
 			</div><!--col end -->
-			<div class="col-md-3 text-center text-md-left">
+			<div class="col-md-3 text-center text-md-left small">
 
 				<a class="nav-link" href="<?php echo site_url(); ?>">Inicio</a>
 				<a class="nav-link" href="http://proyectoarde.org/data/dataset" target="_blank">Archivo</a>
