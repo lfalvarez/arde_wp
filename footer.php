@@ -52,7 +52,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<div class="col-md-9">
 				<!-- Info Sitio-->
-				<div class="text-light"><img src="<?php bloginfo('template_url'); ?>/img/icono-footer-arde.png"/>©<?php the_date('Y'); ?>_proyecto_arde</div>
+				<div class="text-light"><img class="mr-2-md" src="<?php bloginfo('template_url'); ?>/img/icono-footer-arde.png"/>©<?php the_date('Y'); ?>_proyecto_arde</div>
 			</div><!--col end -->
 
 			<div class="col-md-3">
