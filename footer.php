@@ -34,6 +34,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<div class="col-md-9">
 				<!-- Suscríbete-->
+				<div>
+					<p class="text-uppercase">mantente informado inscribiéndote a nuestra lista de mails</p>
 
 			</div><!--col end -->
 			<div class="col-md-3 text-center text-md-left">
