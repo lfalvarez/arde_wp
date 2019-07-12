@@ -37,4 +37,15 @@
 
 .breadcrumb {
   background-color:white;
+  border: 1px solid #808080;
+  border-radius: 20px;
+  padding: 7px 15px;
+  color: #808080;
+}
+
+.breadcrumb .active {
+  background-color:white;
+  border: none;
+  border-radius: none;
+  padding:none;
 }
