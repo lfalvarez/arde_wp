@@ -68,7 +68,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php $title = 'Fecha'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
 	</div>
 	<div class='col-md-8'>
-		<p class="title">Descripción</p>
+		<p class="title mb-0">Descripción</p>
 		<?php the_content(); ?>
 	</div>
 
