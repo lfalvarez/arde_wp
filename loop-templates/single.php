@@ -55,7 +55,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <?php endif; ?>
 
 
-<div class="row description-doc">
+<div class="row description-doc gt-america">
 	<div class='col-md-1'>
 		<!-- Facebook -->
 		<a href="https://www.facebook.com/sharer/sharer.php?u=SHAREMESSAGE" title="Share on Facebook" target="_blank" class="btn btn-facebook"><i class="fab fa-facebook-f"></i></a>
@@ -68,7 +68,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php $title = 'Fecha'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
 	</div>
 	<div class='col-md-8'>
-		<p class="title">Descripción:</p>
+		<p class="title">Descripción</p>
 		<?php the_content(); ?>
 	</div>
 
