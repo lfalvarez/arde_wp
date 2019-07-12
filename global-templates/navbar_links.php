@@ -1,4 +1,4 @@
-<div class="mx-auto order-0 gt-america">
+<div class="mx-auto order-0 gt-america lowercase">
 
     <ul class="navbar-nav mr-auto collapse navbar-collapse"  id='menu-navbar'>
       <li class="nav-item">
