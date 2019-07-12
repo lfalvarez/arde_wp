@@ -52,9 +52,9 @@ if ( ! defined( 'ABSPATH' ) ) {
       <div class ="row documentos-minisitio">
 		      <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
-          <div class="card col-4 border-0">
+          <div class="card col-md-4 border-0">
 
-            <a class="card-body" href="<?= get_permalink(); ?>">
+            <a class="card-body" href="<? get_permalink(); ?>">
               <div class="document-image" style='background-image:url("<?php if(has_post_thumbnail()){
                 the_post_thumbnail_url();
               }
