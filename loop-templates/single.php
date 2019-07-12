@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 	<div class="row">
 		<div class='col'>
-			<h1><?= get_the_title() ;?></h1>
+			<h1 class="fs-24"><?= get_the_title() ;?></h1>
 		</div>
 		<div class="w-100"></div>
 		<div class='col'>
