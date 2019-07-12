@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <div class="text-center text-uppercase titulo">Colecciones</div>
             </div>
         </div>
-      <div class="row lista-colecciones">
+      <div class="row lista-colecciones gt-america">
 
             <?php
                 $args = array(
