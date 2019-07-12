@@ -32,14 +32,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div><!-- row end -->
 		<div class="row my-3 py-3">
 
-			<div class="col-md-9">
+			<div class="col-md-10">
 				<!-- Suscríbete-->
 				<div>
 					<p class="text-uppercase text-light small">mantente informado inscribiéndote<br>a nuestra lista de mails</p>
 				</div>
 
 			</div><!--col end -->
-			<div class="col-md-3 text-center text-md-left small">
+			<div class="col-md-2 text-center text-md-left small">
 
 				<a class="nav-link" href="<?php echo site_url(); ?>">Inicio</a>
 				<a class="nav-link" href="http://proyectoarde.org/data/dataset" target="_blank">Archivo</a>
@@ -53,12 +53,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="row my-3">
 
-			<div class="col-md-9 text-light small">
+			<div class="col-md-10 text-light small">
 				<!-- Info Sitio-->
 				<div><img class="mr-2" src="<?php bloginfo('template_url'); ?>/img/icono-footer-arde.png"/>©<?php the_date('Y'); ?>_proyecto_arde</div>
 			</div><!--col end -->
 
-			<div class="col-md-3">
+			<div class="col-md-2">
 				<!-- RRSS-->
 		        <ul class="navbar-nav ml-auto d-block">
 		            <li class="nav-item d-md-inline d-block">
