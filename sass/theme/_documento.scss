@@ -35,7 +35,7 @@
   color: $gris-arde;
 }
 
-.breadcrumb {
+.breadcrumb-item {
   background-color:white;
   border: 1px solid #808080;
   border-radius: 20px;
@@ -43,7 +43,7 @@
   color: #808080;
 }
 
-.breadcrumb .active {
+.breadcrumb-item .active {
   background-color:white;
   border: none;
   border-radius: none;
