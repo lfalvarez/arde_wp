@@ -20,16 +20,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="site" id="page">
 
 	<!-- ******************* The Navbar Area ******************* -->
-	<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite"
-
-	>
+	<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
 		<nav class="navbar navbar-expand-md navbar-dark bg-documento">
-
-
-
 
 			<div class="container">
 
@@ -42,7 +37,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class="order-3">
 		        <ul class="navbar-nav ml-auto">
 		            <li class="nav-item">
-		                <a class="nav-link" href="https://www.facebook.com/archivoarde/"><i class="fab fa-facebook-f"></i></a>
+		                <a class="nav-link" href="https://www.facebook.com/archivoarde/"><i class="fab fa-facebook-square"></i></a>
 		            </li>
 		            <li class="nav-item">
 		                <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
