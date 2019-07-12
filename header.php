@@ -13,7 +13,7 @@ elseif ($is_editorial){
 	get_header('pagina-informacion');
 }
 elseif ($is_home){
-	get_header('default');
+	get_header('minisitio');
 }
 elseif ($is_sobre_archivos){
 	get_header('pagina-informacion');
