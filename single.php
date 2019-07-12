@@ -18,15 +18,12 @@ $container   = get_theme_mod( 'understrap_container_type' );
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
 
-
-
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<?php get_template_part( 'loop-templates/content', 'single' ); ?>
 
 
 				<?php endwhile; // end of the loop. ?>
-
 
 
 </div><!-- Container end -->

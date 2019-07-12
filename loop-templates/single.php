@@ -56,19 +56,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 <div class="row description-doc">
-	<div class='col-1'>
+	<div class='col-md-1'>
 		<!-- Facebook -->
-<a href="https://www.facebook.com/sharer/sharer.php?u=SHAREMESSAGE" title="Share on Facebook" target="_blank" class="btn btn-facebook"><i class="fab fa-facebook-f"></i></a>
-<!-- Google+ -->
-<a href="https://plus.google.com/share?url=SHAREMESSAGE" title="Share on Google+" target="_blank" class="btn btn-googleplus"><i class="fab fa-google-plus-g"></i></a>
-<p class="compartir-text">Compartir:</p>
+		<a href="https://www.facebook.com/sharer/sharer.php?u=SHAREMESSAGE" title="Share on Facebook" target="_blank" class="btn btn-facebook"><i class="fab fa-facebook-f"></i></a>
+		<!-- Google+ -->
+		<a href="https://plus.google.com/share?url=SHAREMESSAGE" title="Share on Google+" target="_blank" class="btn btn-googleplus"><i class="fab fa-google-plus-g"></i></a>
 	</div>
-	<div class='col-2'>
+	<div class='col-md-3'>
 		<?php $title = 'Autor'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
 		<?php $title = 'Tipo de documento'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
 		<?php $title = 'Fecha'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
 	</div>
-	<div class='col-9'>
+	<div class='col-md-8'>
 		<p class="title">Descripción:</p>
 		<?php the_content(); ?>
 	</div>
