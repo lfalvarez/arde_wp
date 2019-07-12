@@ -54,7 +54,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
           <div class="card col-md-4 border-0">
 
-            <a class="card-body" href="<? get_permalink(); ?>">
+            <a href="<? get_permalink(); ?>">
               <div class="document-image" style='background-image:url("<?php if(has_post_thumbnail()){
                 the_post_thumbnail_url();
               }
