@@ -16,7 +16,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
-<div class="wrapper footer-arde" id="wrapper-footer">
+<div class="wrapper footer-arde" id="wrapper-footer text-center text-md-left">
 
 	<div class="<?php echo esc_attr( $container ); ?>">
 
@@ -39,7 +39,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 
 			</div><!--col end -->
-			<div class="col-md-2 text-center text-md-left small">
+			<div class="col-md-2 small">
 
 				<a class="nav-link" href="<?php echo site_url(); ?>">Inicio</a>
 				<a class="nav-link" href="http://proyectoarde.org/data/dataset" target="_blank">Archivo</a>
