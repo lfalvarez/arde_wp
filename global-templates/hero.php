@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <img src="<?php bloginfo('template_url'); ?>/img/arde-logo.png" alt="">
             <div class="text text-landing">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
             <div class="text text-landing ir-archivo-alpha">
-              <a href="http://proyectoarde.org/data/dataset" target="_blank">- Ir al archivo Alpha > </a></div>
+              <a href="http://proyectoarde.org/data/dataset" target="_blank">- Ir a archivo Alpha > </a></div>
           </div>
         </div>
 
