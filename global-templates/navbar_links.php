@@ -1,8 +1,5 @@
+<div class="mx-auto order-0 gt-america">
 
-
-
-
-<div class="mx-auto order-0 " >
     <ul class="navbar-nav mr-auto collapse navbar-collapse"  id='menu-navbar'>
       <li class="nav-item">
         <a class="nav-link navbar-arde" href="http://proyectoarde.org/data/dataset" target="_blank">Archivo</a>
