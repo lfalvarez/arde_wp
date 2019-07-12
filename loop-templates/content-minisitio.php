@@ -10,14 +10,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-<div class="row gt-america small">
-	<div class="col-4">
+<div class="row gt-america">
+	<div class="col-3 small">
 		<?php $social_network = 'web'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
     <?php $social_network = 'facebook'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
 		<?php $social_network = 'twitter'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
     <?php $social_network = 'instagram'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
     </div>
-    <div class="col-8">
+    <div class="col-9">
       <?php the_content(); ?>
     </div>
 
