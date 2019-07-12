@@ -41,6 +41,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="container">
 		<?php endif; ?>
 
+				<a class="navbar-brand" href="<?php echo site_url(); ?>">
+				    <img class='logo-minisitio' src="<?php bloginfo('template_url'); ?>/img/arde-logo-sin-frase.png" alt="arde">
+				</a>
 
 
 				<?php include('global-templates/navbar_links.php') ?>
