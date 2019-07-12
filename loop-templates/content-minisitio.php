@@ -11,17 +11,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <div class="row">
-	<div class="col-3">
+	<div class="col-4">
 		<?php $social_network = 'web'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
-		<br />
     <?php $social_network = 'facebook'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
-		<br />
 		<?php $social_network = 'twitter'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
-    <br />
     <?php $social_network = 'instagram'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
-		<br />
     </div>
-    <div class="col-9">
+    <div class="col-8 gt-america small">
       <?php the_content(); ?>
     </div>
 
