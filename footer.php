@@ -16,7 +16,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
-<div class="wrapper footer-arde" id="wrapper-footer text-center text-md-left">
+<div class="wrapper footer-arde" id="wrapper-footer">
 
 	<div class="<?php echo esc_attr( $container ); ?>">
 
@@ -32,14 +32,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div><!-- row end -->
 		<div class="row my-3 py-3">
 
-			<div class="col-md-10">
+			<div class="col-md-10 text-center text-md-left">
 				<!-- Suscríbete-->
 				<div>
 					<p class="text-uppercase text-light small">mantente informado inscribiéndote<br>a nuestra lista de mails</p>
 				</div>
 
 			</div><!--col end -->
-			<div class="col-md-2 small">
+			<div class="col-md-2 text-center text-md-left small">
 
 				<a class="nav-link" href="<?php echo site_url(); ?>">Inicio</a>
 				<a class="nav-link" href="http://proyectoarde.org/data/dataset" target="_blank">Archivo</a>
@@ -53,7 +53,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="row my-3">
 
-			<div class="col-md-10 text-light small">
+			<div class="col-md-10 text-light small text-center text-md-left">
 				<!-- Info Sitio-->
 				<div><img class="mr-2" src="<?php bloginfo('template_url'); ?>/img/icono-footer-arde.png"/>©<?php the_date('Y'); ?>_proyecto_arde</div>
 			</div><!--col end -->
