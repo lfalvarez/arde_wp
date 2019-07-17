@@ -17,14 +17,27 @@
     <title><?php bloginfo('name'); ?> <?php if ( is_single() ) { ?><?php } ?> <?php wp_title(); ?></title>
     <meta name="apple-mobile-web-app-title" content="<?php bloginfo( 'name' ); ?> - <?php bloginfo( 'description' ); ?>">
 
-    <!-- Estilos -->
+    <!-- Fuentes -->
 
 	<style type="text/css" media="screen, print">
 		@font-face {
 			font-family: "GT America Mono";
-			src: url("<?php echo bloginfo('template_url'); ?>/fonts/GT-America-Mono-Regular.otf") format("opentype");
+			src: url("<?php echo bloginfo('template_url'); ?>/fonts/GT-America-Mono-Regular.otf") format("opentype"),
+		         url("<?php echo bloginfo('template_url'); ?>/fonts/GT-America-Mono-Regular.woff2") format('woff2'),
+		         url("<?php echo bloginfo('template_url'); ?>/fonts/GT-America-Mono-Regular.woff") format('woff'),
+		         url("<?php echo bloginfo('template_url'); ?>/fonts/GT-America-Mono-Regular.ttf") format('truetype');
+		}
+		@font-face {
+			font-family: "GT America";
+			src: url("<?php echo bloginfo('template_url'); ?>/fonts/GT-America-Regular.otf") format("opentype"),
+		         url("<?php echo bloginfo('template_url'); ?>/fonts/GTAmerica-Regular.woff2") format('woff2'),
+		         url("<?php echo bloginfo('template_url'); ?>/fonts/GTAmerica-Regular.woff") format('woff'),
+		         url("<?php echo bloginfo('template_url'); ?>/fonts/GTAmerica-Regular.ttf") format('truetype');
 		}
   	</style>
+
+    <!-- Estilos -->
+
   	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/magnific-popup.css" />
 
     <!-- Favicon -->

@@ -1,21 +1,3 @@
-@font-face {
-    font-family: 'GT America';
-    src: url('GTAmerica-Regular.woff2') format('woff2'),
-        url('GTAmerica-Regular.woff') format('woff'),
-        url('GTAmerica-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'GT America';
-    src: url('GTAmerica-Medium.woff2') format('woff2'),
-        url('GTAmerica-Medium.woff') format('woff'),
-        url('GTAmerica-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-
 @mixin home-transparency {
   opacity: 0.8;
   background-color: $naranjo-arde;
