@@ -54,6 +54,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 </div>
 <?php endif; ?>
 
+<section style="visibility: hidden;" class="single-item">
+
+    <?php the_content(); ?>
+
+</section>
 
 <div class="row description-doc gt-america">
 	<div class='col-md-1'>
@@ -71,5 +76,30 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<p class="title mb-0">Descripción</p>
 		<?php the_content(); ?>
 	</div>
-
 </div>
+
+<!-- SlickNav -->
+
+<script src="<?php bloginfo('template_url'); ?>/js/jquery.slicknav.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+
+var slideCount = null;
+
+$( document ).ready(function() {
+
+  $(".single-item").slick({
+    infinite: false,
+    fade: true,
+    adaptiveHeight: false,
+    accesibility: true,
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    adaptiveHeight: !0,
+    speed: 0,
+    swipe: !1,
+    cssEase: "linear"
+  });
+  $(".single-item")[0].slick.setPosition();
+});
+
+</script>

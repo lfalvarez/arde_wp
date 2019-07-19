@@ -39,6 +39,7 @@
     <!-- Estilos -->
 
   	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/magnific-popup.css" />
+  	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/slicknav.css" />
 
     <!-- Favicon -->
 
