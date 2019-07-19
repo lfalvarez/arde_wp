@@ -20,7 +20,6 @@
     <!-- Javascripts -->
 
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script src="<?php bloginfo('template_url'); ?>/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
     <!-- Fuentes -->
 
