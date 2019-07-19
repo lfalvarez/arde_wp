@@ -36,14 +36,12 @@
 }
 
 .breadcrumb-item {
-  background-color:white;
-  border: 0;
+  border: 1px solid #808080;
   border-radius: 20px;
   padding: 7px 15px;
   color: #808080;
 }
 
 .breadcrumb-item .active {
-  background-color:none;
-  border: none;
+  border: 0;
 }
