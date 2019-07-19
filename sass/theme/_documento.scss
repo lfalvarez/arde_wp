@@ -37,7 +37,7 @@
 
 .breadcrumb-item {
   background-color:white;
-  border: 1px solid #808080;
+  border: 0;
   border-radius: 20px;
   padding: 7px 15px;
   color: #808080;
@@ -45,7 +45,5 @@
 
 .breadcrumb-item .active {
   background-color:none;
-  border: 0;
-  border-radius: none;
-  padding:none;
+  border: none;
 }
