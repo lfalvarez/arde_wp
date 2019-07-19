@@ -80,10 +80,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <!-- Slick -->
 
-<script src="https://kenwheeler.github.io/slick/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 
-      $(".single-item").slick({
+function initSlider(){
+		$(".single-item").slick({
         infinite: false,
         fade: true,
         adaptiveHeight: false,
@@ -95,5 +96,11 @@ if ( ! defined( 'ABSPATH' ) ) {
         swipe: !1,
         cssEase: "linear"
       });
+	}
+
+$(document).ready(function() {
+	initSlider();
+});
+
 
 </script>
