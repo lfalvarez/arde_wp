@@ -42,9 +42,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	</div>
 
-<?php if (has_post_thumbnail()): ?>
-	
-<div class="jumbotron jumbotron-fluid image-jumbotron">
+<!-- <?php if (has_post_thumbnail()): ?>
+
+Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 	<div class="container">
 		<div class="row">
 			<div class="col">
@@ -53,7 +53,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</div>
 	</div>
 </div>
-<?php endif; ?>
+<?php endif; ?> -->
 
 <section style="visibility: hidden;" class="single-item">
 
@@ -75,7 +75,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</div>
 	<div class='col-md-8'>
 		<p class="title mb-0">Descripción</p>
-		<?php the_content(); ?>
+		<?php $title = 'Texto'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
 	</div>
 </div>
 
