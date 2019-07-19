@@ -65,13 +65,13 @@ a {
     @include tamano-landing;
 }
 body {
-  font: 16px/24px "GT America Mono", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  font: 16px/24px "GT America Mono", "Helvetica Neue", Helvetica, Arial, Verdana, Sans-serif;
 }
 .gt-america {
-  font-family: "GT America";
+  font-family: "GT America", "Helvetica Neue", Helvetica, Arial, Verdana, Sans-serif !important;
 }
 .gt-america-mono {
-  font-family: "GT America Mono";
+  font-family: "GT America Mono", "Helvetica Neue", Helvetica, Arial, Verdana, Sans-serif !important;
 }
 .social-link {
   color: $negro;

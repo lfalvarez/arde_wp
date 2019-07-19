@@ -35,7 +35,7 @@
   color: $gris-arde;
 }
 
-.breadcrumb-item {
+.breadcrumb-item a {
   border: 1px solid #808080;
   border-radius: 20px;
   padding: 7px 15px;
@@ -43,6 +43,6 @@
 
 }
 
-.breadcrumb-item .active {
+.breadcrumb-item a .active {
   border: 0 !important;
 }
