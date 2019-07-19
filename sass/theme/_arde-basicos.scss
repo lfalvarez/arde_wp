@@ -101,6 +101,7 @@ body {
 #mc_embed_signup input.email {
   border-radius: 0 !important;
   -webkit-border-radius: 0 !important;
+  border: 0;
   width: 250px !important;
   height: 50px !important;
   padding: 0 1.2em !important;
@@ -112,4 +113,5 @@ body {
   -webkit-border-radius: 0 !important;
   padding: 0 25px !important;
   font-weight: bold !important;
+  height: 50px;
 }
