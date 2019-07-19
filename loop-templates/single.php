@@ -83,6 +83,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 <script src="<?php bloginfo('template_url'); ?>/js/jquery.slicknav.min.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 
+var slideCount = null;
+
+$( document ).ready(function() {
+
   $(".single-item").slick({
     infinite: false,
     fade: true,
@@ -95,5 +99,27 @@ if ( ! defined( 'ABSPATH' ) ) {
     swipe: !1,
     cssEase: "linear"
   });
+  $(".single-item")[0].slick.setPosition();
+});
+
+$(".single-item").on('init', function(event, slick){
+  slideCount = slick.slideCount;
+  setSlideCount();
+  setCurrentSlideNumber(slick.currentSlide);
+});
+
+$(".single-item").on('beforeChange', function(event, slick, currentSlide, nextSlide){
+  setCurrentSlideNumber(nextSlide);
+});
+
+function setSlideCount() {
+  var $el = $('.slide-count-wrap').find('.total');
+  $el.text(slideCount);
+}
+
+function setCurrentSlideNumber(currentSlide) {
+  var $el = $('.slide-count-wrap').find('.current');
+  $el.text(currentSlide + 1);
+}
 
 </script>
