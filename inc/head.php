@@ -17,10 +17,6 @@
     <title><?php bloginfo('name'); ?> <?php if ( is_single() ) { ?><?php } ?> <?php wp_title(); ?></title>
     <meta name="apple-mobile-web-app-title" content="<?php bloginfo( 'name' ); ?> - <?php bloginfo( 'description' ); ?>">
 
-    <!-- Javascripts -->
-
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-
     <!-- Fuentes -->
 
 	<style type="text/css" media="screen, print">
