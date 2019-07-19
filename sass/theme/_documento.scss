@@ -25,7 +25,7 @@
 }
 .meta-div {
   .meta-titulo {
-    font-weight: 500 !important;
+    font-weight: 700 !important;
     margin-bottom: 2px;
   }
 }
@@ -44,7 +44,7 @@
   text-transform: capitalize;
 }
 
-.breadcrumb-item a .active {
+.breadcrumb-item .active {
   border: 0 !important;
   font-family: "GT America", "Helvetica Neue", Helvetica, Arial, Verdana, Sans-serif !important;
 }
