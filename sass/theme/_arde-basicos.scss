@@ -1,3 +1,11 @@
+@mixin gtamerica {
+  font-family: "GT America", "Helvetica Neue", Helvetica, Arial, Verdana, Sans-serif !important;
+}
+
+@mixin gtamerica-mono {
+  font-family: "GT America Mono", "Helvetica Neue", Helvetica, Arial, Verdana, Sans-serif !important;
+}
+
 @mixin home-transparency {
   opacity: 0.8;
   background-color: $naranjo-arde;
@@ -67,12 +75,7 @@ a {
 body {
   font: 16px/24px "GT America Mono", "Helvetica Neue", Helvetica, Arial, Verdana, Sans-serif;
 }
-.gt-america {
-  font-family: "GT America", "Helvetica Neue", Helvetica, Arial, Verdana, Sans-serif !important;
-}
-.gt-america-mono {
-  font-family: "GT America Mono", "Helvetica Neue", Helvetica, Arial, Verdana, Sans-serif !important;
-}
+
 .social-link {
   color: $negro;
 }
@@ -99,7 +102,7 @@ body {
 }
 
 #mc_embed_signup input.email {
-  font-family: $gtamerica;
+  font-family: @include gtamerica;
   border-radius: 0 !important;
   -webkit-border-radius: 0 !important;
   border: 0 !important;
@@ -111,7 +114,7 @@ body {
 
 #mc_embed_signup .button {
   font-size: 15px !important;
-  font-family: $gtamerica;
+  font-family: @include gtamerica;
   border-radius: 0 !important;
   -webkit-border-radius: 0 !important;
   padding: 0 35px !important;
