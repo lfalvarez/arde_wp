@@ -80,7 +80,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <!-- Slick -->
 
-<script src="<?php bloginfo('template_url'); ?>/js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://kenwheeler.github.io/slick/slick/slick.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 
       $(".single-item").slick({
