@@ -83,7 +83,6 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 <script src="<?php bloginfo('template_url'); ?>/js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 
-function initSlider(){
 		$(".single-item").slick({
         infinite: false,
         fade: true,
@@ -96,10 +95,5 @@ function initSlider(){
         swipe: !1,
         cssEase: "linear"
       });
-	}
-
-$(document).ready(function() {
-	initSlider();
-});
 
 </script>
