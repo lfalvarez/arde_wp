@@ -23,8 +23,6 @@ function crear_categoria_por_minisitio($post_id) {
 }
 add_action( 'publish_page', 'crear_categoria_por_minisitio', 10);
 
-
-
 function crear_categoria_para_editorial($post_id) {
     $template = get_post_meta($post_id, '_wp_page_template', true);
     $is_editorial = $template == 'page-templates/editorial.php';

@@ -83,8 +83,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 <script src="<?php bloginfo('template_url'); ?>/js/jquery.slicknav.min.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 
-var slideCount = null;
-
 $( document ).ready(function() {
 
   $(".single-item").slick({
