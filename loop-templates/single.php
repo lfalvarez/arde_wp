@@ -102,5 +102,4 @@ $(document).ready(function() {
 	initSlider();
 });
 
-
 </script>
