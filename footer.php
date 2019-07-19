@@ -33,7 +33,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="row my-3 py-3">
 
 			<div class="col-md-10 text-center text-md-left">
-				
+
 				<!-- Suscríbete-->
 				<div>
 					<p class="text-uppercase text-light small">mantente informado inscribiéndote<br>a nuestra lista de mails</p>
@@ -42,7 +42,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		        <!-- Begin MailChimp Signup Form -->
 		        <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
 		        <style type="text/css">
-		          #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+		          #mc_embed_signup{clear:left; width:100%;}
 		          /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
 		             We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 		        </style>
