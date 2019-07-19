@@ -83,6 +83,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 <script src="<?php bloginfo('template_url'); ?>/js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 
-$("single-item").slick();
+      $(".single-item").slick({
+        infinite: false,
+        fade: true,
+        adaptiveHeight: false,
+        accesibility: true,
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>',
+        adaptiveHeight: !0,
+        speed: 0,
+        swipe: !1,
+        cssEase: "linear"
+      });
 
 </script>
