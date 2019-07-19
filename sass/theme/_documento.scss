@@ -40,8 +40,9 @@
   border-radius: 20px;
   padding: 7px 15px;
   color: #808080;
+
 }
 
 .breadcrumb-item .active {
-  border: 0;
+  border: 0 !important;
 }
