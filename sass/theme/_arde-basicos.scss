@@ -121,3 +121,46 @@ body {
   font-weight: bold !important;
   height: 50px !important;
 }
+
+/* ===============
+    Slick Slider
+   =============== */
+
+    .single-item {
+      position:relative;
+    }
+
+    .slick-initialized { 
+      visibility: visible !important;
+    }
+
+    .slider {
+      width: 100%;
+      position:relative;
+    }
+
+
+    .slick-slide img {
+      width: 100%;
+      position:relative;
+      display:inline;
+      height:auto;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }

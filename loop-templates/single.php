@@ -80,12 +80,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <!-- SlickNav -->
 
-<script src="<?php bloginfo('template_url'); ?>/js/jquery.slicknav.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 
 var slideCount = null;
 
-$( document ).ready(function() {
+$(document).ready(function() {
 
   $(".single-item").slick({
     infinite: false,
