@@ -83,8 +83,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 <script src="<?php bloginfo('template_url'); ?>/js/jquery.slicknav.min.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 
-$( document ).ready(function() {
-
   $(".single-item").slick({
     infinite: false,
     fade: true,
@@ -97,7 +95,5 @@ $( document ).ready(function() {
     swipe: !1,
     cssEase: "linear"
   });
-  $(".single-item")[0].slick.setPosition();
-});
 
 </script>
