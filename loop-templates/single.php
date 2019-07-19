@@ -99,8 +99,8 @@ $( document ).ready(function() {
     swipe: !1,
     cssEase: "linear"
   });
-  $(".single-item")[0].slick.setPosition();
-});
+    $(".single-item")[0].slick.setPosition();
+  });
 
 $(".single-item").on('init', function(event, slick){
   slideCount = slick.slideCount;
