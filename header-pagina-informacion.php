@@ -26,11 +26,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<nav class="navbar navbar-expand-md navbar-dark bg-documento"
-			>
-
-
-
+		<nav class="navbar navbar-expand-md navbar-dark bg-documento">
 
 			<div class="container">
 
@@ -40,7 +36,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<?php include('global-templates/navbar_links.php') ?>
 
-        <div class="order-3">
+            <div class="order-3">
 		        <ul class="navbar-nav ml-auto">
 		            <li class="nav-item">
 		                <a class="nav-link" href="https://www.facebook.com/archivoarde/"><i class="fab fa-facebook-f"></i></a>

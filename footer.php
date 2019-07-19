@@ -24,8 +24,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<div class="col-12 d-flex justify-content-center">
 				<a class="navbar-brand" href="<?php echo site_url(); ?>">
-						<img class='logo-minisitio' src="<?php bloginfo('template_url'); ?>/img/arde-logo-sin-frase.png" alt="arde">
-					</a>
+					<img class='logo-minisitio' src="<?php bloginfo('template_url'); ?>/img/arde-logo-sin-frase.png" alt="arde">
+				</a>
 
 			</div><!--col end -->
 
@@ -33,10 +33,29 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="row my-3 py-3">
 
 			<div class="col-md-10 text-center text-md-left">
+				
 				<!-- Suscríbete-->
 				<div>
 					<p class="text-uppercase text-light small">mantente informado inscribiéndote<br>a nuestra lista de mails</p>
 				</div>
+		
+		        <!-- Begin MailChimp Signup Form -->
+		        <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+		        <style type="text/css">
+		          #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+		          /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+		             We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+		        </style>
+		        <div style="text-align: left;" id="mc_embed_signup">
+		        <form action="https://estudioruiz.us18.list-manage.com/subscribe/post?u=3ed0024a25f32863e0dacbf27&amp;id=b6d928c419" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+		            <div id="mc_embed_signup_scroll">
+		            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Tu e-mail acá" required>
+		            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+		            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3ed0024a25f32863e0dacbf27_b6d928c419" tabindex="-1" value=""></div>
+		            <div class="clear"><input type="submit" value="Suscribir" name="Suscribirse" id="mc-embedded-subscribe" class="button"></div>
+		            </div>
+		        </form>
+		        </div>
 
 			</div><!--col end -->
 			<div class="col-md-2 gt-america text-center text-md-left small">
@@ -68,7 +87,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 		                <a class="nav-link d-md-inline d-block text-center text-md-left" href="https://www.instagram.com/proyectoarde/" target="_blank"><i class="fab fa-instagram"></i></a>
 		            </li>
 		        </ul>
-
 			</div><!--col end -->
 
 		</div>
