@@ -92,3 +92,24 @@ body {
 .fs-24 {
   font-size: 1.5em;
 }
+
+#mc_embed_signup form {
+  text-align: left;
+  padding: 0;
+}
+
+#mc_embed_signup input.email {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  width: 250px;
+  height: 50px;
+  padding: 0 1.2em;
+  font-weight: bold;
+}
+
+#mc_embed_signup .button {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  padding: 0 25px;
+  font-weight: bold;
+}

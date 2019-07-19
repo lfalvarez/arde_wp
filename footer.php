@@ -52,7 +52,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Tu e-mail acá" required>
 		            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 		            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3ed0024a25f32863e0dacbf27_b6d928c419" tabindex="-1" value=""></div>
-		            <div class="clear"><input type="submit" value="Suscribir" name="Suscribirse" id="mc-embedded-subscribe" class="button"></div>
+		            <div class="clear"><input type="submit" value="Suscribirse" name="Suscribirse" id="mc-embedded-subscribe" class="button"></div>
 		            </div>
 		        </form>
 		        </div>
