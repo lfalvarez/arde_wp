@@ -86,7 +86,7 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 		$(".single-item").slick({
         infinite: false,
         fade: true,
-        adaptiveHeight: false,
+        adaptiveHeight: true,
         accesibility: true,
         prevArrow: '<button type="button" class="slick-prev"></button>',
         nextArrow: '<button type="button" class="slick-next"></button>',
