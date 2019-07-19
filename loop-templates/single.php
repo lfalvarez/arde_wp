@@ -74,8 +74,7 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 		<?php $title = 'Fecha'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
 	</div>
 	<div class='col-md-8'>
-		<p class="title mb-0">Descripción</p>
-		<?php $title = 'Texto'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
+		<?php $title = 'Descripción'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
 	</div>
 </div>
 
