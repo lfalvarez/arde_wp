@@ -83,6 +83,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 <script src="<?php bloginfo('template_url'); ?>/js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 
-$('.single-item').slick();
+$(document).ready(function() { 
+  $('a').click( function(event) {
+    $(this).hide();
+    event.preventDefault();
+  });
+});
 
 </script>
