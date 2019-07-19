@@ -94,22 +94,22 @@ body {
 }
 
 #mc_embed_signup form {
-  text-align: left;
-  padding: 0;
+  text-align: left !important;
+  padding: 0 !important;
 }
 
 #mc_embed_signup input.email {
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  width: 250px;
-  height: 50px;
-  padding: 0 1.2em;
-  font-weight: bold;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  width: 250px !important;
+  height: 50px !important;
+  padding: 0 1.2em !important;
+  font-weight: bold !important;
 }
 
 #mc_embed_signup .button {
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  padding: 0 25px;
-  font-weight: bold;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  padding: 0 25px !important;
+  font-weight: bold !important;
 }
