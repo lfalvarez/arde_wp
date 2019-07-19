@@ -3,7 +3,7 @@
 }
 
 .gtamerica-mono {
-  font-family: "GT America Mono", "Helvetica Neue", Helvetica, Arial, Verdana, Sans-serif !important;
+  font-family: "GT America Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 @mixin home-transparency {
@@ -73,7 +73,7 @@ a {
     @include tamano-landing;
 }
 body {
-  font: 16px/24px "GT America Mono", "Helvetica Neue", Helvetica, Arial, Verdana, Sans-serif;
+  font: 16px/24px "GT America Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .social-link {
