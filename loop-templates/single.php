@@ -64,7 +64,7 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 <section>
 
     <!-- Custom field: Video -->
-    <?php $embed= get_post_meta($post->ID, "diseñador-asociado", true); //Llamo el CF de Video ?>
+    <?php $embed= get_post_meta($post->ID, "Video", true); //Llamo el CF de Video ?>
     <?php if($embed !== '') { // Si tiene "Video" mostrará algo ?>
         <div class="videoWrapper"><?php $key="Video"; echo get_post_meta($post->ID, $key, true); ?></div>
     <?php } else { // Si no tiene "Video" mostrará nada ?>
