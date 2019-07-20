@@ -34,7 +34,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<?php include('global-templates/navbar_links.php') ?>
 
-        <div class="order-3">
+        <div class="order-3 d-none d-md-block">
 		        <ul class="navbar-nav ml-auto">
 		            <li class="nav-item">
 		                <a class="nav-link" href="https://www.facebook.com/archivoarde/"><i class="fab fa-facebook-square"></i></a>
