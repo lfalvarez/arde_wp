@@ -88,7 +88,6 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
         fade: true,
         adaptiveHeight: true,
         accesibility: true,
-        arrows: true,
         dots: true,
         adaptiveHeight: !0,
         speed: 0,
