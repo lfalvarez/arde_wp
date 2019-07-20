@@ -63,10 +63,9 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 
 <section>
 
-    <?php $title = 'Video'; include(TEMPLATEPATH.'/global-templates/documento-embed.php'); ?>
-    <?php $title = 'Audio'; include(TEMPLATEPATH.'/global-templates/documento-embed.php'); ?>
-    <?php $title = 'Pdf'; include(TEMPLATEPATH.'/global-templates/documento-embed.php'); ?>
+	<?php echo get_post_meta( $post->ID, 'Video', true ) ? get_post_meta( $post->ID, 'Video', true ) : include(TEMPLATEPATH.'/global-templates/documento-embed.php'); ?>
 
+    
 </section>
 
 <div class="row description-doc gt-america">
