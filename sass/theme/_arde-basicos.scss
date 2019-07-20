@@ -50,7 +50,7 @@ a {
     @include tamano-landing;
 }
 .hero_img {
-    margin-top: 7em;
+    margin-top: 2.5em;
     .text {
       margin-top: 60px;
       color: $blanco;
@@ -148,10 +148,6 @@ body {
 }
 §
 .navbar-toggler {
-    padding: .25rem .75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    background-color: transparent;
-    border: 2px solid white;
-    border-radius: 0;
+    border: 2px solid white !important;
+    border-radius: 0!important;
 }
