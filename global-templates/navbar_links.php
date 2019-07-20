@@ -1,5 +1,4 @@
-<div class="menu-mobile">
-<div class="mx-auto order-0 gt-america text-lowercase">
+<div class="menu-mobile mx-auto order-0 gt-america text-lowercase">
 
     <ul class="navbar-nav mr-auto collapse navbar-collapse"  id='menu-navbar'>
       <li class="nav-item">
@@ -23,4 +22,3 @@
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-navbar">
     <span class="navbar-toggler-icon"></span>
 </button>
-</div>
