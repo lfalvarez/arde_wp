@@ -110,6 +110,9 @@ body {
   height: 50px !important;
   padding: 0 1.2em !important;
   font-weight: bold !important;
+      @media all and (max-width: 480px) {
+            width: 100%;
+      }
 }
 
 #mc_embed_signup .button {
