@@ -12,7 +12,7 @@
         <a class="nav-link navbar-arde" href="#">Sobre archivo</a>
       </li>
       <?php $link_slug = 'sobre-nosotros'; include('link-in-navbar.php'); ?>
-      <li class="nav-item">
+      <li class="nav-item d-block d-md-none">
         <a class="nav-link navbar-arde" href="#"><i class="fas fa-search"></i></a>
       </li>
     </ul>
