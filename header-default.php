@@ -22,6 +22,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="hero-container">
 	<?php endif; ?>
 	<!-- ******************* The Navbar Area ******************* -->
+	<div class="landing-arde-overlay"></div>
 	<div id="wrapper-navbar" class="<?php if (( is_front_page() && is_home() )){
 		echo 'navbar-only-in-home';
 	}
@@ -34,9 +35,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<nav class="navbar navbar-expand-md navbar-dark <?php if ( is_front_page() && is_home() ) : ?>bg-arde<?php else : ?>bg-minisitio<?php endif; ?>"
 			>
 
-
-
-
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container">
 		<?php endif; ?>
@@ -44,7 +42,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<a class="navbar-brand" href="<?php echo site_url(); ?>">
 				    <img class='logo-minisitio' src="<?php bloginfo('template_url'); ?>/img/logo-arde-blanco.png" alt="arde">
 				</a>
-
 
 				<?php include('global-templates/navbar_links.php') ?>
 				<div class="d-none d-md-block">

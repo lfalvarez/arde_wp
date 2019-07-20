@@ -87,4 +87,5 @@
     <meta name="twitter:image" content="<?php bloginfo('template_url'); ?>/img/XXX-fb-redes-sociales.png">
 
 	<?php wp_head(); ?>
+	
 </head>
