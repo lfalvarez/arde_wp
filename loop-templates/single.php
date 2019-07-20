@@ -88,7 +88,13 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
         fade: true,
         adaptiveHeight: true,
         accesibility: true,
-
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev">></button>',
+        nextArrow: '<button type="button" class="slick-next"><</button>',
+        adaptiveHeight: !0,
+        speed: 0,
+        swipe: !1,
+        cssEase: "linear"
       });
 
 </script>
