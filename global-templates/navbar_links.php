@@ -1,6 +1,6 @@
-<div class="menu-mobile mx-auto order-0 gt-america text-lowercase">
+<div class="mx-auto order-0 gt-america text-lowercase">
 
-    <ul class="navbar-nav mr-auto collapse navbar-collapse"  id='menu-navbar'>
+    <ul class="menu-mobile navbar-nav mr-auto collapse navbar-collapse"  id='menu-navbar'>
       <li class="nav-item">
         <a class="nav-link navbar-arde" href="http://proyectoarde.org/data/dataset" target="_blank">Archivo</a>
       </li>
