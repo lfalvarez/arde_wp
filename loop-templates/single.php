@@ -63,7 +63,7 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 
 <section>
 
-	<?php echo get_post_meta( $post->ID, 'Video', true ) ? get_post_meta( $post->ID, 'Video', true ) : '<div class="videoWrapper">content</div>'; ?>
+	<div class="videoWrapper"><?php echo get_post_meta( $post->ID, 'Video', true ) ? get_post_meta( $post->ID, 'Video', true ); ?></div>
 
 </section>
 
