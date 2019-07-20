@@ -69,6 +69,8 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
         <div class="videoWrapper"><?php $key="Video"; echo get_post_meta($post->ID, $key, true); ?></div>
     <?php } else { // Si no tiene "Video" mostrará nada ?>
 
+    <?php } // Se cierra el condicional ?>
+
 </section>
 
 <div class="row description-doc gt-america">
