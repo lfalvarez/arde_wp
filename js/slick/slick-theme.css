@@ -81,11 +81,11 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    content: 'slick';
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+    content: 'slick';
 }
 
 .slick-next
@@ -99,11 +99,11 @@
 }
 .slick-next:before
 {
-    content: '>';
+    content: 'slick';
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '<';
+    content: 'slick';
 }
 
 /* Dots */
