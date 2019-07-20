@@ -126,3 +126,9 @@ body {
   font-weight: bold !important;
   height: 50px !important;
 }
+
+#mc_embed_signup {
+      @media all and (max-width: 480px) {
+            padding-bottom: 40px !important;
+      }
+}
