@@ -58,9 +58,6 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 <section style="visibility: hidden;" class="single-item">
 
     <?php the_content(); ?>
-    <?php $title = 'Video'; include(TEMPLATEPATH.'/global-templates/documento-embed.php'); ?>
-    <?php $title = 'Audio'; include(TEMPLATEPATH.'/global-templates/documento-embed.php'); ?>
-    <?php $title = 'Pdf'; include(TEMPLATEPATH.'/global-templates/documento-embed.php'); ?>
 
 </section>
 
