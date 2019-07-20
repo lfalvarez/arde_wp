@@ -134,14 +134,15 @@ body {
 }
 
 .show {
-    position: absolute;
-    height: 100vh;
-    top: 0;
-    width: 100vw;
-    left: 0;
-    background-color: #463e3ede;
-    z-index: 999;
-    font-size: 2em;
-    line-height: 13vh;
-    
+    @media all and (max-width: 768px) {
+            position: absolute;
+            height: 100vh;
+            top: 0;
+            width: 100vw;
+            left: 0;
+            background-color: #463e3ede;
+            z-index: 999;
+            font-size: 2em;
+            line-height: 13vh;
+    }    
 }
