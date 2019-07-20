@@ -1,3 +1,10 @@
+.bg-documento {
+  max-height: 50px;
+  background-color: $gris-oscuro-arde;
+  img {
+    max-height: 45px;
+  }
+}
 .documento {
   color: $gris-oscuro-arde;
 }
