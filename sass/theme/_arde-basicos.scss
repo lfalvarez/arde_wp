@@ -11,7 +11,10 @@
   background-color: $naranjo-arde;
 }
 .hero-container {
+  height: 100vh;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .bg-arde {
@@ -31,7 +34,7 @@
     background-color: $gris-arde;
 }
 @mixin tamano-landing {
-    min-height: 500px;
+    min-height: 100vh;
 }
 a {
   color: $gris-oscuro-arde;

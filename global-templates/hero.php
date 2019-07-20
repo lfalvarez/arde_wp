@@ -27,6 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <?php if (( is_front_page() && is_home() )) : ?>
    </div>
 <?php endif; ?>
+
 <script type="text/javascript">
     jQuery(function(){
         //console.log('url("<?php bloginfo('template_url'); ?>/img/fondo-arde.png")');
