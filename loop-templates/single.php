@@ -58,16 +58,9 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 <section style="visibility: hidden;" class="single-item">
 
     <?php the_content(); ?>
-
-</section>
-
-<section>
-
-    <!-- Custom field: Video -->
-    <?php $embed= get_post_meta($post->ID, "Video", true); //Llamo el CF de Video ?>
-    <?php if($embed !== '') { // Si tiene "Video" mostrará algo ?>
-        <div class="videoWrapper"><?php $key="Video"; echo get_post_meta($post->ID, $key, true); ?></div>
-    <?php } else { // Si no tiene "Video" mostrará nada ?>
+    <?php $title = 'Video'; include(TEMPLATEPATH.'/global-templates/documento-embed.php'); ?>
+    <?php $title = 'Audio'; include(TEMPLATEPATH.'/global-templates/documento-embed.php'); ?>
+    <?php $title = 'Pdf'; include(TEMPLATEPATH.'/global-templates/documento-embed.php'); ?>
 
 </section>
 
