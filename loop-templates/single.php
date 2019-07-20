@@ -63,9 +63,10 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 
 <section>
 
-	<?php echo get_post_meta( $post->ID, 'Video', true ) ? get_post_meta( $post->ID, 'Video', true ) : include(TEMPLATEPATH.'/global-templates/documento-embed.php'); ?>
+	<?php echo get_post_meta( $post->ID, 'Video', true ) ? get_post_meta( $post->ID, 'Video', true ) : '<div class="videoWrapper">content</div>'; ?>
 
-    
+
+
 </section>
 
 <div class="row description-doc gt-america">
