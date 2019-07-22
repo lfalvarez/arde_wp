@@ -82,7 +82,7 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
              echo 'do_shortcode("';
              echo '[pdfjs-viewer url=';
              echo $key;
-             echo =;
+             echo "=";
              echo '"PDF"';
              echo '';
              echo get_post_meta($post->ID, $key, true);
