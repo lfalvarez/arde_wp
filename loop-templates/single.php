@@ -71,37 +71,6 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 
     <?php } // Se cierra el condicional ?>
 
-    <!-- Custom field: PDF -->
-    <?php $embed= get_post_meta($post->ID, "PDF", true); //Llamo el CF de PDF ?>
-    <?php if($embed !== '') { // Si tiene "PDF" mostrará algo ?>
-        <div class="wrapper-PDF">
-   
-
-<?php 
-
-             echo 'do_shortcode("';
-             echo '[pdfjs-viewer url=';
-             echo $key="PDF";
-             echo '';
-             echo get_post_meta($post->ID, $key, true);
-             echo '")';
-
-             ?>
-
-             </div>
-
-    <?php } else { // Si no tiene "PDF" mostrará nada ?>
-
-    <?php } // Se cierra el condicional ?>
-
-
-
-
-
-
-
-
-
 </section>
 
 <div class="row description-doc gt-america">
