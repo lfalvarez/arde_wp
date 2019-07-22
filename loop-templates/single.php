@@ -74,7 +74,7 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
     <!-- Custom field: PDF -->
     <?php $embed= get_post_meta($post->ID, "PDF", true); //Llamo el CF de PDF ?>
     <?php if($embed !== '') { // Si tiene "PDF" mostrará algo ?>
-        <div class="wrapper-PDF"><?php echo do_shortcode("<?php  echo ; ?> viewer_width=auto viewer_height=450px download=true]"); ?></div>
+        <div class="wrapper-PDF">
    
 
 <?php 
@@ -84,8 +84,11 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
              echo $key=;
              echo 'PDF';
              echo get_post_meta($post->ID, $key, true);
+             echo );
 
              ?>
+
+             </div>
 
     <?php } else { // Si no tiene "PDF" mostrará nada ?>
 
