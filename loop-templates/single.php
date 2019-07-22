@@ -91,6 +91,7 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 </div>
 
 <!-- Slick -->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
@@ -108,3 +109,7 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
       });
 
 </script>
+
+<!-- PDF Viewer -->
+
+<script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.1.266/build/pdf.min.js"></script>
