@@ -50,7 +50,10 @@ a {
     @include tamano-landing;
 }
 .hero_img {
-    margin-top: 2.5em;
+    margin-top: 3.5em;
+      @media all and (max-width: 480px) {
+            margin-top: 2.5em;
+      }
     .text {
       margin-top: 60px;
       color: $blanco;
