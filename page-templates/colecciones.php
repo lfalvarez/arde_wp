@@ -19,7 +19,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
   $featured_img_url = get_the_post_thumbnail_url($post->ID, 'large'); 
 
-  echo 'style="background-image: url('.$featured_img_url.'); background-repeat: no-repeat; background-size: cover; background-position: center; margin: 0 auto; "'; 
+  echo 'style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('.$featured_img_url.'); background-repeat: no-repeat; background-size: cover; background-position: center; margin: 0 auto; "'; 
 
   ?>>
 
