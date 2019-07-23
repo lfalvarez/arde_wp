@@ -4,9 +4,7 @@
       <li class="nav-item">
         <a class="nav-link navbar-arde" href="http://proyectoarde.org/data/dataset" target="_blank">Archivo</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link navbar-arde" href="#">Colecciones</a>
-      </li>
+      <?php $link_slug = 'colecciones'; include('link-in-navbar.php'); ?>
       <?php $link_slug = 'editorial'; include('link-in-navbar.php'); ?>
       <li class="nav-item">
         <a class="nav-link navbar-arde" href="#">Sobre archivo</a>
