@@ -15,9 +15,6 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-
-
-
 <div class="container">
   <div class='row '>
       <div class="col-12">
