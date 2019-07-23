@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <div class="container">
       <div class="row lista colecciones">
-        <div class="col-2">
+        <div class="col-12">
 
             <?php
                 $args = array(
