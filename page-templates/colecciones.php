@@ -15,11 +15,11 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<div class="row encabezado-imagen p-0" <?php 
+<div class="row encabezado-imagen" <?php 
 
   $featured_img_url = get_the_post_thumbnail_url($post->ID, 'large'); 
 
-  echo 'style="background-image: url('.$featured_img_url.'); background-repeat: no-repeat; background-size: cover; background-position: center;"'; 
+  echo 'style="background-image: url('.$featured_img_url.'); background-repeat: no-repeat; background-size: cover; background-position: center; margin: 0 auto; "'; 
 
   ?>>
 
