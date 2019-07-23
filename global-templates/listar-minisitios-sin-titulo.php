@@ -11,8 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <div class="container">
-      <div class="row lista colecciones">
-        <div class="col-12">
+      <div class="row lista colecciones gt-america">
 
             <?php
                 $args = array(
@@ -29,12 +28,18 @@ if ( ! defined( 'ABSPATH' ) ) {
             ?>
              <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
-                <div class="card" style="width: 18rem;">
+                <div class="card col-md-4 border-0">
                   <a href="<?php echo get_permalink(); ?>">
-                      <img class="card-img-top" src="<?php the_post_thumbnail_url(); ?>" height= alt="<?php the_title(); ?>">
+                    <div class="document-image" style='background-image:url("<?php if(has_post_thumbnail()){
+                      the_post_thumbnail_url();
+                    }
+                    else {
+                      echo bloginfo('template_url').'/img/arde-logo.png';
+                    }
+                    ?>")'></div>
                   </a>
                   <div class="card-body">
-                    <a href="<?php echo get_permalink(); ?>"><p class="card-text text-center"><?php the_title(); ?></p></a>
+                    <a href="<?php echo get_permalink(); ?>"><p class="card-text text-center minisitio-card-title"><?php the_title(); ?></p></a>
                   </div>
                 </div>
 
@@ -43,8 +48,6 @@ if ( ! defined( 'ABSPATH' ) ) {
                  else : ?>
                  <p>Aún sin minisitios, puedes crear una página y decirle que el template es MiniSitio</p>
                  <?php endif; ?>
-
-        </div>
 
   </div>
 </div>
