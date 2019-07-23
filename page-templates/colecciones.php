@@ -17,7 +17,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="row encabezado-imagen">
   <?php 
+
+  $featured_img_url = get_the_post_thumbnail_url('large'); 
+
   echo '<div style="background-image:url('.$featured_img_url.')"></div>'; 
+
   ?>
   <div class="col-12">
       <h1 class="text-center text-uppercase titulo">Colecciones</h1>
