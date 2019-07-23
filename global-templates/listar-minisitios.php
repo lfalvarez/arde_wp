@@ -34,7 +34,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             ?>
              <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
-                <div class="card col-md-4 border-0">
+                <div class="card col-md-6 border-0 p-0">
                   <a href="<?php echo get_permalink(); ?>">
                     <div class="document-image" style='background-image:url("<?php if(has_post_thumbnail()){
                       the_post_thumbnail_url();
@@ -54,8 +54,5 @@ if ( ! defined( 'ABSPATH' ) ) {
                  else : ?>
                  <p>Aún sin minisitios, puedes crear una página y decirle que el template es MiniSitio</p>
                  <?php endif; ?>
-
-
-
-  </div>
+      </div>
 </div>

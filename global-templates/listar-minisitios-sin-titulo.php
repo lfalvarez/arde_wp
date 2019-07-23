@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
                 <div class="card col-md-4 border-0">
                   <a href="<?php echo get_permalink(); ?>">
-                    <div class="document-image" style='background-image:url("<?php if(has_post_thumbnail()){
+                    <div class="document-image-colecciones" style='background-image:url("<?php if(has_post_thumbnail()){
                       the_post_thumbnail_url();
                     }
                     else {
