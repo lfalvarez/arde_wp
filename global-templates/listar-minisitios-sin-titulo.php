@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
                 <div class="card col-md-6 border-0 p-0">
                   <a href="<?php echo get_permalink(); ?>">
-<p class="card-text text-center minisitio-card-title"><?php the_title(); ?></p>
+                    <p class="card-text text-center minisitio-card-title"><?php the_title(); ?></p>
                     <div class="document-image-colecciones" style='background-image:url("<?php if(has_post_thumbnail()){
                       the_post_thumbnail_url();
                     }

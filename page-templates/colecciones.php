@@ -15,7 +15,7 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<div class="row encabezado-imagen" <?php 
+<div class="row encabezado-imagen p-0" <?php 
 
   $featured_img_url = get_the_post_thumbnail_url($post->ID, 'large'); 
 
