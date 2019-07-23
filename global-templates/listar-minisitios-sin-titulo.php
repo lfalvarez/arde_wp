@@ -32,7 +32,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                   <a href="<?php echo get_permalink(); ?>">
                     <p class="texto-listado-colecciones text-center text-uppercase minisitio-card-title"><?php the_title(); ?></p>
                     <p class="boton-listado-colecciones text-center">- Ver</p>
-                    <div class="document-image-colecciones" style='background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("<?php if(has_post_thumbnail()){
+                    <div class="document-image-colecciones" style='background-image:url("<?php if(has_post_thumbnail()){
                       the_post_thumbnail_url();
                     }
                     else {
