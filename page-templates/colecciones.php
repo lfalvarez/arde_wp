@@ -18,7 +18,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="row encabezado-imagen">
   <?php 
 
-  $featured_img_url = get_the_post_thumbnail_url('large'); 
+  $featured_img_url = get_the_post_thumbnail_url($post->ID, 'large'); 
 
   echo '<div style="background-image:url('.$featured_img_url.')"></div>'; 
 
