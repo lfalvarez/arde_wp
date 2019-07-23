@@ -14,8 +14,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
+
 <div class="container">
-        <div class='row '>
+        <div class="row encabezado-imagen">
             <div class="col-12">
                 <h1 class="text-center text-uppercase titulo">Colecciones</h1>
             </div>
@@ -27,16 +28,10 @@ $container = get_theme_mod( 'understrap_container_type' );
           	<?php get_template_part( 'loop-templates/content', 'blank' ); ?>
 
           <?php endwhile; // end of the loop. ?>
-
         </div>
-
-  </div>
+      </div>
 </div>
 
-
-
-
 <?php get_template_part( 'global-templates/listar-minisitios-sin-titulo' ); ?>
-
 
 <?php get_footer(); ?>
