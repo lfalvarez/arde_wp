@@ -15,12 +15,10 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<div class="container">
-    <div class="row encabezado-imagen">
-      <div class="col-12">
-          <h1 class="text-center text-uppercase titulo">Colecciones</h1>
-      </div>
-    </div>
+<div class="row encabezado-imagen">
+  <div class="col-12">
+      <h1 class="text-center text-uppercase titulo">Colecciones</h1>
+  </div>
 </div>
 
 <div class="container">
