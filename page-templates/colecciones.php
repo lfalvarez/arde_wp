@@ -16,7 +16,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <div class="row encabezado-imagen">
-  <?php echo get_the_post_thumbnail( $post_id, 'large', array( 'class' => '' ) ); ?>
+  <?php echo '<a href="'.$featured_img_url.'" rel="lightbox">'; 
+    the_post_thumbnail('thumbnail');
+echo '</a>'; ?>
   <div class="col-12">
       <h1 class="text-center text-uppercase titulo">Colecciones</h1>
   </div>
