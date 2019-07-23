@@ -22,9 +22,11 @@ $container = get_theme_mod( 'understrap_container_type' );
   echo 'style="background-image: url('.$featured_img_url.');"'; 
 
   ?>>
+
   <div class="col-12">
       <h1 class="text-center text-uppercase titulo-encabezado-imagen">Colecciones</h1>
   </div>
+  
 </div>
 
 <div class="container">
