@@ -94,7 +94,7 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 	    <!-- Custom field: Contacto Autor -->
 	    <?php $embed= get_post_meta($post->ID, "contacto", true); //Llamo el CF de Contacto Autor ?>
 	    <?php if($embed !== '') { // Si tiene "Contacto Autor" mostrará algo ?>
-	        <a class="font-weight-bold small" href="<?php $key="contacto"; echo get_post_meta($post->ID, $key, true); ?>" target="_blank">Contactar a autores de los documentos ></a>
+	        <a class="font-weight-bold small" target="_blank" href="mailto:<?php $key="contacto"; echo get_post_meta($post->ID, $key, true); ?>" target="_blank">Contactar a autores de los documentos ></a>
 	    <?php } else { // Si no tiene "Contacto Autor" mostrará nada ?>
 
 	    <?php } // Se cierra el condicional ?>
