@@ -54,14 +54,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                  wp_reset_postdata();
                   ?>
                  <?php endif; ?>
-
-
-
-
-
         </div>
-
-  </div>
+      </div>
 </div>
 
 <?php get_footer(); ?>

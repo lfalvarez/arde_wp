@@ -47,7 +47,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                  wp_reset_postdata();
                  else : ?>
                  <p>Aún sin minisitios, puedes crear una página y decirle que el template es MiniSitio</p>
-                 <?php endif; ?>
+            <?php endif; ?>
 
-  </div>
+      </div>
 </div>
