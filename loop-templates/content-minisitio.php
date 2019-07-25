@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <div class="row gt-america">
 	<div class="col-3 small">
-		<?php $social_network = 'web'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
+		<?php $social_network = 'link'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
     <?php $social_network = 'facebook'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
 		<?php $social_network = 'twitter'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
     <?php $social_network = 'instagram'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
