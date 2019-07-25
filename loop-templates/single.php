@@ -92,7 +92,7 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 	    <!-- Custom field: Archivo Alpha -->
 	    <?php $embed= get_post_meta($post->ID, "url-archivo", true); //Llamo el CF de Archivo Alpha ?>
 	    <?php if($embed !== '') { // Si tiene "Archivo Alpha" mostrará algo ?>
-	        <a href="<?php $key="url-archivo"; echo get_post_meta($post->ID, $key, true); ?>" target="_blank">Ver documento en archivo Alpha ></a>
+	        <a class="font-weight-bold" href="<?php $key="url-archivo"; echo get_post_meta($post->ID, $key, true); ?>" target="_blank">Ver documento en archivo Alpha ></a>
 	    <?php } else { // Si no tiene "Archivo Alpha" mostrará nada ?>
 
 	    <?php } // Se cierra el condicional ?>
