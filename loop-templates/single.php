@@ -91,14 +91,6 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 	<div class='col-md-8'>
 		<?php $title = 'Descripción'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
 
-	    <!-- Custom field: Contacto Autor -->
-	    <?php $embed= get_post_meta($post->ID, "Contacto", true); //Llamo el CF de Contacto Autor ?>
-	    <?php if($embed !== '') { // Si tiene "Contacto Autor" mostrará algo ?>
-	        <a class="small" target="_blank" href="mailto:<?php $key="Contacto"; echo get_post_meta($post->ID, $key, true); ?>" target="_blank">Contactar a autores de los documentos ></a>
-	    <?php } else { // Si no tiene "Contacto Autor" mostrará nada ?>
-
-	    <?php } // Se cierra el condicional ?>
-
 	    <!-- Custom field: Archivo Alpha -->
 	    <?php $embed= get_post_meta($post->ID, "url-archivo", true); //Llamo el CF de Archivo Alpha ?>
 	    <?php if($embed !== '') { // Si tiene "Archivo Alpha" mostrará algo ?>
