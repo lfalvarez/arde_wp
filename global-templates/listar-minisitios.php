@@ -10,7 +10,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-
 <div class="container">
         <div class='row titulo-colecciones-home'>
             <div class="col-12">
@@ -54,8 +53,6 @@ if ( ! defined( 'ABSPATH' ) ) {
                  else : ?>
                  <p>Aún sin minisitios, puedes crear una página y decirle que el template es MiniSitio</p>
                  <?php endif; ?>
-
-
-
+                 
   </div>
 </div>
