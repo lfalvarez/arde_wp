@@ -84,9 +84,25 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 		<?php $title = 'Autor'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
 		<?php $title = 'Tipo de documento'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
 		<?php $title = 'Fecha'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
-		<?php $title = 'Lugar'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
+	    
+	    <!-- Custom field: Lugar -->
+	    <?php $embed= get_post_meta($post->ID, "Lugar", true); //Llamo el CF de Lugar ?>
+	    <?php if($embed !== '') { // Si tiene "Lugar" mostrará algo ?>
+	        <?php $key="Lugar"; echo get_post_meta($post->ID, $key, true); ?>" target="_blank">
+	    <?php } else { // Si no tiene "Lugar" mostrará nada ?>
+
+	    <?php } // Se cierra el condicional ?>
+
 		<?php $title = 'Derechos'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
-		<?php $title = 'Descarga'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
+	    
+	    <!-- Custom field: Descarga -->
+	    <?php $embed= get_post_meta($post->ID, "Descarga", true); //Llamo el Descarga ?>
+	    <?php if($embed !== '') { // Si tiene "Descarga" mostrará algo ?>
+	        <?php $key="Descarga"; echo get_post_meta($post->ID, $key, true); ?>" target="_blank">
+	    <?php } else { // Si no tiene "Descarga" mostrará nada ?>
+
+	    <?php } // Se cierra el condicional ?>
+
 	</div>
 	<div class='col-md-8'>
 		<?php $title = 'Descripción'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
@@ -113,7 +129,7 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
         fade: true,
         adaptiveHeight: true,
         accesibility: true,
-        dots: true,
+        dots: false,
         adaptiveHeight: !0,
         speed: 0,
         swipe: !1,
