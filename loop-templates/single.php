@@ -145,7 +145,7 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 $(document).ready(function(){
   $('.single-item').slickLightbox({
 
-
+  });
 	var sLightbox = $(this);
 	  sLightbox.slickLightbox({
 	    src: 'src',
