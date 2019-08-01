@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<div class='col d-none d-md-block'>
 			<nav aria-label="breadcrumb">
 			  <ol class="breadcrumb">
-			    <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+			    <li class="breadcrumb-item"><a href="<?php echo home_url(); ?>">Inicio</a></li>
 					<?php $category_detail=get_the_category($post->ID);//$post->ID
 					$cd = $category_detail[0];
 					$args = array(
