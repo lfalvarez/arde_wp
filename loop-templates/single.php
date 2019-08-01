@@ -148,12 +148,8 @@ $(document).ready(function(){
     caption: 'caption',
     useHistoryApi: 'true',
     lazy: true,
-    src: true
+    src: 'src',
+    itemSelector: 'figure img'
   });
-	var sLightbox = $(this);
-	  sLightbox.slickLightbox({
-	    src: 'src',
-	    itemSelector: 'figure img'
-	  });
 });
 </script>
