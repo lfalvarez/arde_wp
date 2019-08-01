@@ -143,7 +143,7 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
-  $('.slick-slide').slickLightbox({
+  $('.single-item').slickLightbox({
     itemSelector: 'figure img'
   });
 });
