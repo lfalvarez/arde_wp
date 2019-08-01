@@ -146,9 +146,9 @@ $(document).ready(function(){
   $('.single-item').slickLightbox({
     src: 'src',
     itemSelector: 'figure img',
-    caption: 'caption',
     useHistoryApi: 'true',
     lazy: true,
   });
+  caption: 'caption'
 });
 </script>
