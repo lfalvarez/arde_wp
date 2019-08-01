@@ -38,9 +38,9 @@
 
     <!-- Estilos -->
 
-  	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/magnific-popup.css" />
   	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/js/slick/slick.css" />
   	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/js/slick/slick-theme.css" />
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.css" />
 
     <!-- Favicon -->
 
