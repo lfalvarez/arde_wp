@@ -67,3 +67,40 @@ function crear_categoria_para_sobre_archivos($post_id) {
 }
 add_action( 'publish_page', 'crear_categoria_para_sobre_archivos', 11);
 ?>
+<?php function revconcept_get_images($post_id) {
+    global $post;
+ 
+     $thumbnail_ID = get_post_thumbnail_id();
+ 
+     $images = get_children( array('post_parent' => $post_id, 'post_status' => 'inherit', 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => 'ASC', 'orderby' => 'menu_order ID') );
+ 
+     if ($images) :
+ 
+         foreach ($images as $attachment_id => $image) :
+ 
+         if ( $image->ID != $thumbnail_ID ) :
+ 
+             $img_alt = get_post_meta($attachment_id, '_wp_attachment_image_alt', true); //alt
+             if ($img_alt == '') : $img_alt = $image->post_title; endif;
+ 
+             $big_array = image_downsize( $image->ID, 'large' );
+             $img_url = $big_array[0];
+             
+             echo '<ul class="popup-gallery">';
+             echo '<li>';
+             echo '<a href="';
+             echo $img_url;
+             echo '">';
+             echo '<div class="overlay"></div>';
+             echo '<img src="';
+             echo $img_url;
+             echo '" alt="';
+             echo $img_alt;
+             echo '" title="';
+             echo $img_title;
+             echo '" />';
+             echo '</a>';
+             echo '</li>';
+             echo '</ul>';
+ 
+ endif; endforeach; endif; } ?>
