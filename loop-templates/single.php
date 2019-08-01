@@ -148,11 +148,8 @@ $(document).ready(function(){
     itemSelector: 'figure img',
     useHistoryApi: 'true',
     lazy: true,
-  });
-});
-$(document).ready(function(){
-   $('.single-item').slickLightbox({
     caption: 'caption',
 	captionPosition: 'dynamic'
+  });
 });
 </script>
