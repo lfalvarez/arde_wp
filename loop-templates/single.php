@@ -9,6 +9,40 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 ?>
+
+<!-- Slick -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+
+		$(".single-item").slick({
+        infinite: true,
+        fade: true,
+        adaptiveHeight: true,
+        accesibility: true,
+        dots: false,
+        adaptiveHeight: !0,
+        speed: 0,
+        swipe: !1,
+        cssEase: "linear"
+      });
+
+</script>
+
+<!-- Slick Lightbox-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.single-item').slickLightbox({
+    itemSelector: 'figure img',
+    caption: 'caption',
+    useHistoryApi: 'true'
+  });
+});
+</script>
+
 	<div class="row">
 		<div class='col'>
 			<h1 class="fs-24 text-uppercase mb-3"><?= get_the_title() ;?></h1>
@@ -117,36 +151,3 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 
 	</div>
 </div>
-
-<!-- Slick -->
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
-<script type="text/javascript">
-
-		$(".single-item").slick({
-        infinite: true,
-        fade: true,
-        adaptiveHeight: true,
-        accesibility: true,
-        dots: false,
-        adaptiveHeight: !0,
-        speed: 0,
-        swipe: !1,
-        cssEase: "linear"
-      });
-
-</script>
-
-<!-- Slick Lightbox-->
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-  $('.single-item').slickLightbox({
-    itemSelector: 'figure img',
-    caption: 'caption',
-    useHistoryApi: 'true'
-  });
-});
-</script>
