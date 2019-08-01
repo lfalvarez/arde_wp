@@ -148,7 +148,8 @@ $(document).ready(function(){
     itemSelector: 'figure img',
     useHistoryApi: 'true',
     lazy: true,
-    caption: 'caption'
+    caption: 'caption',
+    captionPosition: 'dynamic'
   });
 });
 </script>
