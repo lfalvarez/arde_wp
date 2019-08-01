@@ -149,6 +149,5 @@ $(document).ready(function(){
     useHistoryApi: 'true',
     lazy: true,
   });
-  caption: 'caption'
 });
 </script>
