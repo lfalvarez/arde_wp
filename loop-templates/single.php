@@ -146,7 +146,14 @@ $(document).ready(function(){
   $('.single-item').slickLightbox({
     itemSelector: 'figure > img',
     caption: 'caption',
-    useHistoryApi: 'true'
+    useHistoryApi: 'true',
+    lazy: true,
+    src: true
   });
+	var sLightbox = $(this);
+	  sLightbox.slickLightbox({
+	    src: 'src',
+	    itemSelector: 'figure > img'
+	  });
 });
 </script>
