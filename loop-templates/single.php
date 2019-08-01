@@ -144,7 +144,9 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 <script type="text/javascript">
 $(document).ready(function(){
   $('.single-item').slickLightbox({
-    itemSelector: 'figure img'
+    itemSelector: 'figure img',
+    caption: 'caption',
+    useHistoryApi: 'true'
   });
 });
 </script>
