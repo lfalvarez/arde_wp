@@ -16,20 +16,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
   <div
-
-      <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
-      
-      
-
-if (has_post_thumbnail($post));
+  <?php if (has_post_thumbnail($post)): ?>
     class="landing-image bg-minisitio-con-imagen"
     style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');
            background-repeat: no-repeat;
            background-size: cover;"
-  else;
+  <?php else: ?>
     class="landing-image bg-minisitio"
 
- endif; ?>
+  <?php endif; ?>
+  >
 
   <header class="entry-header">
 
@@ -40,17 +36,10 @@ if (has_post_thumbnail($post));
     </div><!-- .entry-meta -->
 
   </header><!-- .entry-header -->
-
 </div>
 
 <div class="container">
-  <div class='row '>
-      <div class="col-12">
-          <h1 class="text-center text-uppercase titulo"><?php if ( have_posts() ) : while ( have_posts() ) : the_post();
-          the_title();
-          endwhile;endif;?></h1>
-      </div>
-  </div>
+
   <div class="row lista colecciones">
     <div class="col-10 offset-1">
 
