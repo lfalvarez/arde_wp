@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<header class="entry-header">
 
-		<div class ="row">
+		<div class ="row documentos-minisitio">
 
 		  <div class="card col-md-4 border-0">
 
