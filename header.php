@@ -22,7 +22,7 @@ elseif ($is_sobre_archivos){
 elseif ($is_sobre_nosotros){
 	get_header('pagina-informacion');
 }
-elseif ($_singleeditorial){
+elseif ($is_singleeditorial){
 	get_header('editorialarchivistica');
 }
 else {
