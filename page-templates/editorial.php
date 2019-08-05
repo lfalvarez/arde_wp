@@ -15,6 +15,11 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
+  <header class="entry-header">
+
+  </header><!-- .entry-header -->
+</div>
+
 <div class="container">
 
   <div class="row lista colecciones">

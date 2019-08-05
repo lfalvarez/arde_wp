@@ -18,17 +18,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <body <?php body_class(); ?>>
 
 <div class="site" id="page">
-	<div
-	<?php if (has_post_thumbnail($post)): ?>
-		class="landing-image bg-minisitio-con-imagen"
-		style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');
-					 background-repeat: no-repeat;
-					 background-size: cover;"
-	<?php else: ?>
-		class="landing-image bg-minisitio"
 
-	<?php endif; ?>
-	>
 	<!-- ******************* The Navbar Area ******************* -->
 	<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
 
@@ -79,13 +69,3 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	</div><!-- #wrapper-navbar end -->
 
-	<header class="entry-header">
-
-		<div class="entry-meta">
-
-			<?php understrap_posted_on(); ?>
-
-		</div><!-- .entry-meta -->
-
-	</header><!-- .entry-header -->
-</div>
