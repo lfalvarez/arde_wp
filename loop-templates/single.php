@@ -148,7 +148,7 @@ $(document).ready(function(){
     itemSelector: 'figure img',
     useHistoryApi: 'true',
     lazy: true,
-    imageMaxHeight: 1,
+    imageMaxHeight: 0.9,
     lazy: true,
     caption: 'caption'
   });
