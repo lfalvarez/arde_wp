@@ -149,7 +149,8 @@ $(document).ready(function(){
     useHistoryApi: 'true',
     lazy: true,
     imageMaxHeight: 1,
-    lazy: true
+    lazy: true,
+    caption: 'caption'
   });
 });
 </script>
