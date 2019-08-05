@@ -37,8 +37,8 @@ $container = get_theme_mod( 'understrap_container_type' );
       <div class="row lista colecciones">
         <div class="col-2">
             <?php
-            $query = new WP_Query( array( 'category_name' => 'editorial' ) );
-            ?>
+            /* $query = new WP_Query( array( 'category_name' => 'editorial' ) ); */
+            ?> 
              <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
                 <div class="card" style="width: 18rem;">

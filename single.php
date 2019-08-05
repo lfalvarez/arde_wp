@@ -22,7 +22,6 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 					<?php get_template_part( 'loop-templates/content', 'single' ); ?>
 
-
 				<?php endwhile; // end of the loop. ?>
 
 
