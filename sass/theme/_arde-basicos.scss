@@ -174,3 +174,8 @@ body {
 .slick-lightbox-slick-item-inner img {
   height: 100% !important;
 }
+
+.slick-lightbox-slick-item-inner .slick-next:before, 
+.slick-lightbox-slick-item-inner .slick-prev:before {
+  color: white;
+}
