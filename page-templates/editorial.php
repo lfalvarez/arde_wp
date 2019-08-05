@@ -15,6 +15,34 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
+  <div
+
+      <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+      
+      
+
+if (has_post_thumbnail($post));
+    class="landing-image bg-minisitio-con-imagen"
+    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');
+           background-repeat: no-repeat;
+           background-size: cover;"
+  else;
+    class="landing-image bg-minisitio"
+
+ endif; ?>
+
+  <header class="entry-header">
+
+    <div class="entry-meta">
+
+      <?php understrap_posted_on(); ?>
+
+    </div><!-- .entry-meta -->
+
+  </header><!-- .entry-header -->
+
+</div>
+
 <div class="container">
 
   <div class="row lista colecciones">
