@@ -3,7 +3,6 @@
 $template = get_post_meta($post->ID, '_wp_page_template', true);
 $is_minisitio = $template == 'page-templates/minisitiopage.php';
 $is_editorial = $template == 'page-templates/editorial.php';
-$is_singleeditorial = $template == 'loop-templates/editorial.php';
 $is_sobre_archivos = $template == 'page-templates/sobre-archivos.php';
 $is_sobre_nosotros = $template == 'page-templates/sobre-nosotros.php';
 $is_home = is_front_page() && is_home();
@@ -21,9 +20,6 @@ elseif ($is_sobre_archivos){
 }
 elseif ($is_sobre_nosotros){
 	get_header('pagina-informacion');
-}
-elseif ($is_singleeditorial){
-	get_template_part('editorialarchivistica');
 }
 else {
 	get_header('documento');
