@@ -146,7 +146,6 @@ $(document).ready(function(){
   $('.single-item').slickLightbox({
     src: 'src',
     itemSelector: 'figure img',
-    useHistoryApi: true,
     lazy: true,
     imageMaxHeight: 0.9,
     lazy: true,
