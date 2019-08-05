@@ -32,11 +32,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 </div>
 
-
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-
-
-
 
 	<div class="entry-content">
 

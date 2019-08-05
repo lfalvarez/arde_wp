@@ -8,40 +8,12 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
+
+get_header();
+$container   = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-
-	<header class="entry-header">
-
-		<div class ="row documentos-minisitio">
-
-		  <div class="card col-md-4 border-0">
-
-		    <a href="<?= get_permalink(); ?>">
-		      <div class="document-image" style='background-image:url("<?php if(has_post_thumbnail()){
-		        the_post_thumbnail_url();
-		      }
-		      else {
-		        echo bloginfo('template_url').'/img/arde-logo.png';
-		      }
-		      ?>")'></div>
-		      <p class="card-text text-center"><?php the_title(); ?></p>
-		    </a>
-
-		  </div>
-
-		</div>
-
-		<div class="entry-meta">
-
-			<?php understrap_posted_on(); ?>
-
-		</div><!-- .entry-meta -->
-
-	</header><!-- .entry-header -->
-
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
 	<div class="entry-content">
 
