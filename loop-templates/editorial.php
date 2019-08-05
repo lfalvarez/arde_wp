@@ -8,9 +8,6 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
-
-get_header();
-$container   = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
