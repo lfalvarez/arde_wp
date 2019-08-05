@@ -150,7 +150,6 @@ $(document).ready(function(){
     lazy: true,
     imageMaxHeight: 0.9,
     lazy: true,
-    caption: 'caption'
   });
 });
 </script>
