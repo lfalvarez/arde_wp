@@ -40,8 +40,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<div class="entry-content">
 
-
-
 		<?php
 		wp_link_pages( array(
 			'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
@@ -55,7 +53,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 		$query = new WP_Query( array( 'cat' => $category->cat_ID ) );
 
 		?>
-
 
     <?php  if ( $query->have_posts() ): ?>
       <div class ="row documentos-minisitio">
@@ -73,6 +70,7 @@ if ( ! defined( 'ABSPATH' ) ) {
               ?>")'></div>
               <p class="card-text text-center"><?php the_title(); ?></p>
             </a>
+
           </div>
 
         <?php endwhile;

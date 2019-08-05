@@ -14,7 +14,24 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<header class="entry-header">
 
-		<?php the_title( '<h1 class="entry-title">editorial :', '</h1>' ); ?>
+		<div class ="row">
+
+		  <div class="card col-md-4 border-0">
+
+		    <a href="<?= get_permalink(); ?>">
+		      <div class="document-image" style='background-image:url("<?php if(has_post_thumbnail()){
+		        the_post_thumbnail_url();
+		      }
+		      else {
+		        echo bloginfo('template_url').'/img/arde-logo.png';
+		      }
+		      ?>")'></div>
+		      <p class="card-text text-center"><?php the_title(); ?></p>
+		    </a>
+
+		  </div>
+
+		</div>
 
 		<div class="entry-meta">
 
