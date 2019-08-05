@@ -55,7 +55,7 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 </div>
 <?php endif; ?> -->
 
-<section style="visibility: hidden;" class="single-item btn-link">
+<section style="visibility: hidden;" class="single-item btn">
 
     <?php the_content(); ?>
 
