@@ -161,8 +161,12 @@ body {
             background-color: #463e3ede;
     }    
 }
-§
+
 .navbar-toggler {
     border: 2px solid white !important;
     border-radius: 0!important;
+}
+
+.single-item img {
+  cursor: pointer;
 }
