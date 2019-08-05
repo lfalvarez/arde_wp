@@ -148,6 +148,7 @@ $(document).ready(function(){
     itemSelector: 'figure img',
     useHistoryApi: 'true',
     lazy: true,
+    imageMaxHeight: 1
   });
 });
 </script>
