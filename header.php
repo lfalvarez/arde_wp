@@ -23,7 +23,7 @@ elseif ($is_sobre_nosotros){
 	get_header('pagina-informacion');
 }
 elseif ($is_singleeditorial){
-	get_header('editorialarchivistica');
+	get_template_part('editorialarchivistica');
 }
 else {
 	get_header('documento');
