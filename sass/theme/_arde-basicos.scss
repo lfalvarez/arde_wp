@@ -170,3 +170,7 @@ body {
 .single-item img {
   cursor: pointer;
 }
+
+.slick-lightbox-slick-item-inner img {
+  height: 100% !important;
+}
