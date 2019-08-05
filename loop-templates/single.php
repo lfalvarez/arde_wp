@@ -146,10 +146,11 @@ $(document).ready(function(){
   $('.single-item').slickLightbox({
     src: 'src',
     itemSelector: 'figure img',
-    useHistoryApi: 'true',
+    useHistoryApi: true,
     lazy: true,
     imageMaxHeight: 0.9,
     lazy: true,
+    background: rgba(0,0,0,.95)
   });
 });
 </script>
