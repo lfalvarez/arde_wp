@@ -88,7 +88,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
         <?php while (have_posts()) : the_post(); ?>
 
-            <div class="card col-3">
+            <div class="col-3">
 
             <div
 
