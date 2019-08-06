@@ -74,20 +74,19 @@ $container = get_theme_mod( 'understrap_container_type' );
     <?php 
 
     $args = array (
-      'cat' => 5,
-      'showposts' => 1
+      'cat' => 5
     );
 
     query_posts($args) ?>
 
         <?php while (have_posts()) : the_post(); ?>
 
-            <article>
+            <article class="row">
 
             <div
 
             <?php if (has_post_thumbnail($post)): ?>
-                class=""
+                class="col-2"
                 style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');
                        background-repeat: no-repeat;
                        background-size: cover;"
