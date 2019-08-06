@@ -20,10 +20,6 @@ $container = get_theme_mod( 'understrap_container_type' );
     <?php query_posts("cat=5") ?>
 
         <?php while (have_posts()) : the_post(); ?>
-
-    
-
-    
                     
             <div
 
@@ -32,11 +28,11 @@ $container = get_theme_mod( 'understrap_container_type' );
                 style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');
                        background-repeat: no-repeat;
                        background-size: cover;"
-            >
 
             <?php else : ?>
 
                  class="landing-image-editorial"
+            >
 
             </div>
 
