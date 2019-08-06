@@ -69,6 +69,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
   </div>
 
+    <article class="row">
+
   <?php if (have_posts()) : ?>
     
     <?php 
@@ -79,8 +81,6 @@ $container = get_theme_mod( 'understrap_container_type' );
     );
 
     query_posts($args) ?>
-
-    <article class="row">
 
         <?php while (have_posts()) : the_post(); ?>
 
@@ -109,9 +109,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <?php endwhile; ?>
 
-    </article>
-
     <?php endif; ?>
+
+    </article>
 
 </div>
 
