@@ -62,11 +62,13 @@ a {
     margin-top: 6em;
       @media all and (max-width: 480px) {
             margin-top: 2.5em;
-            width: 100%;
       }
     .text {
       margin: 60px auto 0 auto;
       width: 550px;
+      @media all and (max-width: 480px) {
+            width:100%;
+      }
       color: $blanco;
       &.text-landing{
         a {
