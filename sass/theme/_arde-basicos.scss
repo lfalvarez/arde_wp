@@ -67,7 +67,7 @@ a {
       margin: 60px auto 0 auto;
       width: 550px;
       @media all and (max-width: 480px) {
-            width:100%;
+        width:100%;
       }
       color: $blanco;
       &.text-landing{
@@ -163,7 +163,7 @@ body {
             top: 0;
             width: 100vw;
             left: 0;
-            z-index: 999;
+            z-index: 9999;
             font-size: 2em;
             line-height: 13vh;
             background-color: #463e3ede;
