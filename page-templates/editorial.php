@@ -49,7 +49,7 @@ $query = new WP_Query( array( 'category_name' => 'editorial' ) );
   <div class="row titulo-colecciones-home">
 
     <div class="col-12">
-        <h2 class="text-center text-uppercase titulo">Artículos Recientes</h2>
+        <div class="text-center text-uppercase titulo">Artículos Recientes</div>
     </div>
 
   </div>
