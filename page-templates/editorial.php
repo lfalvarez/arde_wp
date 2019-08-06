@@ -32,9 +32,7 @@ $query = new WP_Query( array( 'category_name' => 'editorial' ) );
   <?php endif; ?>
   >
 
-  <?php endwhile;
-               wp_reset_postdata();
-             ?>
+
 
  </div>
 
@@ -61,6 +59,8 @@ $query = new WP_Query( array( 'category_name' => 'editorial' ) );
   <div class="row">
 
       <div class="col-2">
+
+        <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
               <div class="card" style="width: 18rem;">
                 <a href="<?php echo get_permalink(); ?>">
