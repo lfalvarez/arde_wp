@@ -21,9 +21,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
         <?php while (have_posts()) : the_post(); ?>
 
-    <div class="container">
+    
 
-    <div class="col-12">
+    
                     
             <div
 
@@ -44,9 +44,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <?php endwhile; ?>
 
-    </div>
 
-    </div>
 
     <?php endif; ?>
 
