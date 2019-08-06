@@ -52,6 +52,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <?php endwhile; ?> 
 
+  <div class="row titulo-colecciones-home">
+
+    <div class="col-12">
+        <div class="text-center text-uppercase titulo">Artículos Recientes</div>
+    </div>
+
+  </div>
+
             <?php while (have_posts()) : the_post(); ?>
 
             <div
