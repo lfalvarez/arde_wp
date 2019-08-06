@@ -95,13 +95,13 @@ $container = get_theme_mod( 'understrap_container_type' );
                        background-size: cover;"
             >
 
-            </div>
-
             <a href="<?php echo get_permalink(); ?>">
 
             <?php the_title( '<div class="text-left">', '</div>' ); ?> <!-- titulo -->
 
             </a>
+
+            </div>
 
             <?php endif; ?>
 
