@@ -17,12 +17,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 
   <header class="entry-header">
 
-  </header><!-- .entry-header -->
-</div>
-
-<div class="container">
-
-  <div class="row">
     <div class="col-12">
 
         <?php
@@ -30,7 +24,8 @@ $container = get_theme_mod( 'understrap_container_type' );
         ?> 
          <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
-            <div class="card">
+            <div class="container">
+              
               <a href="<?php echo get_permalink(); ?>">
                   <img class="card-img-top" src="<?php the_post_thumbnail_url(); ?>" height= alt="<?php the_title(); ?>">
               </a>
@@ -40,7 +35,12 @@ $container = get_theme_mod( 'understrap_container_type' );
             </div>
 
     </div>
-  </div>
+
+  </header><!-- .entry-header -->
+
+</div>
+
+<div class="container">
 
   <div class="row">
     <div class="col-2">
