@@ -34,7 +34,7 @@ $query = new WP_Query( array( 'category_name' => 'editorial' ) );
 
  </div>
 
-<a href="<?php echo get_permalink(); ?>"><header class="entry-header container">
+<a href="<?php echo get_permalink(); ?>"><header class="entry-header post-destacado container">
 
     <?php the_title( '<h1 class="text-left">', '</h1>' ); ?>
 
