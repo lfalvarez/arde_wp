@@ -17,52 +17,49 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="posteo">
 
-
-<?php
-
-$args = array(
-  'cat' => 5,
-  'showposts' => 1
-);
-
-$query = new WP_query ( $args );
-if ( $query->have_posts() ) {
- 
-}
-
-?>
-
-<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+<?php if (have_posts()) : ?>
     
-<article>
+    <?php 
 
-<div <?php if ( has_post_thumbnail($post) );?>
+    $args = array (
+      'cat' => 5,
+      'showposts' => 1
+    );
+
+    query_posts($args) ?>
+
+        <?php while (have_posts()) : the_post(); ?>
+
+            <article>
+
+            <div
+
+            <?php if (has_post_thumbnail($post)): ?>
                 class="landing-image-editorial"
                 style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');
                        background-repeat: no-repeat;
-                       background-size: cover;">
+                       background-size: cover;"
+            >
 
+            </div>
 
-<a href="<?php echo get_permalink(); ?>">
+            <a href="<?php echo get_permalink(); ?>">
 
-<header>
+            <header>
 
-    <?php the_title( '<h1 class="text-left">', '</h1>' ); ?>
+                <?php the_title( '<h1 class="text-left">', '</h1>' ); ?>
 
-</header> <!-- .entry-header -->
+            </header> <!-- .entry-header -->
 
-</a>
+            </a>
 
-</div>
+            </article>
 
-</article>
+            <?php endif; ?>
 
-<?php
+            <?php endwhile; ?>
 
-endwhile; // end first loop
-rewind_posts();
-
-?>
+<?php endif; ?>
 
 <div class="row titulo-colecciones-home">
 
@@ -70,32 +67,56 @@ rewind_posts();
         <div class="text-center text-uppercase titulo">Artículos Recientes</div>
     </div>
 
+  </div>
+
+  <?php if (have_posts()) : ?>
+    
+    <?php 
+
+    $args = array (
+      'cat' => 5,
+      'showposts' => 1
+    );
+
+    query_posts($args) ?>
+
+        <?php while (have_posts()) : the_post(); ?>
+
+            <article>
+
+            <div
+
+            <?php if (has_post_thumbnail($post)): ?>
+                class=""
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');
+                       background-repeat: no-repeat;
+                       background-size: cover;"
+            >
+
+            </div>
+
+            <a href="<?php echo get_permalink(); ?>">
+
+            <header>
+
+                <?php the_title( '<h1 class="text-left">', '</h1>' ); ?>
+
+            </header> <!-- .entry-header -->
+
+            </a>
+
+            </article>
+
+            <?php endif; ?>
+
+            <?php endwhile; ?>
+
+
+    <?php endif; ?>
+
 </div>
 
-<?php
-
-while ( $query->have_posts() ) : $query->the_post(); // start second loop for wordpress posts
-
-if ( get_post_type( $post->ID ) == 'post' && $count == 1 ) { ?>
-
-<article>
-  
-<a href="<?php echo get_permalink(); ?>">
-
-<header>
-
-    <?php the_title( '<h1 class="text-left">', '</h1>' ); ?>
-
-</header> <!-- .entry-header -->
-
-</a>
-
-</article>
-
-<?php } ?> 
-
-<?php endwhile; // end second loop for wordpress ?>
-
-<?php rewind_posts(); ?>
+</div>
+</div>
 
 <?php get_footer(); ?>
