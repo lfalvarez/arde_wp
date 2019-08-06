@@ -21,7 +21,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
         <?php while (have_posts()) : the_post(); ?>
 
-    <div class="proyectos col2 span_1_of_4">
+    <div class="col-12">
                     
             <div <?php if (has_post_thumbnail($post)): ?>
                       class="landing-image-editorial bg-minisitio-con-imagen"
@@ -29,14 +29,16 @@ $container = get_theme_mod( 'understrap_container_type' );
                              background-repeat: no-repeat;
                              background-size: cover;"
             >
-    
-    </div>
 
     <?php endwhile; ?>
             
     <?php else : ?>
 
     <?php endif; ?>
+
+    
+    </div>
+
 
 
 
