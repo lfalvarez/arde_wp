@@ -15,28 +15,30 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-        <?php
-        $query = new WP_Query( array( 'category_name' => 'editorial' ) );
-        ?> 
-         <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+<?php
+$query = new WP_Query( array( 'category_name' => 'editorial' ) );
+?> 
+ <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
  <div
   <?php if (has_post_thumbnail($post)): ?>
-    class="landing-image bg-minisitio-con-imagen"
+    class="landing-image-editorial bg-minisitio-con-imagen"
     style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');
            background-repeat: no-repeat;
            background-size: cover;"
   <?php else: ?>
-    class="landing-image bg-minisitio"
+    class="landing-image-editorial bg-minisitio"
 
   <?php endif; ?>
-  ></div>
+  >
 
   <header class="entry-header">
 
     <?php the_title( '<h1 class="minisitio-title text-center">', '</h1>' ); ?>
 
   </header><!-- .entry-header -->
+
+  </div>
 
 <div class="container">
 

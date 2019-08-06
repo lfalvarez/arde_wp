@@ -1,3 +1,8 @@
+#wrapper-navbar {
+  z-index:1;
+  position: relative;
+}
+
 .p-0 {
   padding:0;
 }
@@ -178,4 +183,14 @@ body {
 .slick-lightbox-slick .slick-next:before, 
 .slick-lightbox-slick .slick-prev:before {
   color: white !important;
+}
+
+
+/* ===================
+    Editorial
+   =================== */
+
+.landing-image-editorial {
+  position: relative;
+  top:-125px;
 }
