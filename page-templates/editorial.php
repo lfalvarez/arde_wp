@@ -92,4 +92,6 @@ if ( get_post_type( $post->ID ) == 'post' && $count == 1 ) { ?>
 
 <?php endwhile; // end second loop for wordpress ?>
 
+<?php rewind_posts(); ?>
+
 <?php get_footer(); ?>
