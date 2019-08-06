@@ -18,15 +18,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="posteo">
 
 <?php if (have_posts()) : ?>
-    
-    <?php 
-
-    $args = array (
-      'cat' => 5,
-      'showposts' => 1
-    );
-
-    query_posts($args) ?>
 
         <?php while (have_posts()) : the_post(); ?>
 
@@ -34,7 +25,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <div
 
-            <?php if (has_post_thumbnail($post)): ?>
+            <?php if (in_category( 'Editorial' ) && has_post_thumbnail($post)): ?>
                 class="landing-image-editorial"
                 style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');
                        background-repeat: no-repeat;
