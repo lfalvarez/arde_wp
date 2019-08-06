@@ -99,11 +99,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <a href="<?php echo get_permalink(); ?>">
 
-            <header>
+            <div>
 
-                <?php the_title( '<h1 class="text-left">', '</h1>' ); ?>
+                <?php the_title( '<div class="text-left">', '</div>' ); ?>
 
-            </header> <!-- .entry-header -->
+            </div> <!-- titulo -->
 
             </a>
 
