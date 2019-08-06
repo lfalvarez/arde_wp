@@ -45,6 +45,10 @@ $container = get_theme_mod( 'understrap_container_type' );
   <div class="row">
     <div class="col-2">
 
+           <?php endwhile;
+             wp_reset_postdata();
+           ?>
+
             <div class="card" style="width: 18rem;">
               <a href="<?php echo get_permalink(); ?>">
                   <img class="card-img-top" src="<?php the_post_thumbnail_url(); ?>" height= alt="<?php the_title(); ?>">
@@ -55,10 +59,6 @@ $container = get_theme_mod( 'understrap_container_type' );
             </div>
 
             <?php endif; ?>
-           <?php endwhile;
-             wp_reset_postdata();
-           ?>
-           
 
     </div>
   </div>
