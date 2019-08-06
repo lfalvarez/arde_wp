@@ -77,6 +77,8 @@ rewind_posts();
 while ( $query->have_posts() ) : $query->the_post(); // start second loop for wordpress posts
 
 if ( get_post_type( $post->ID ) == 'post' && $count == 1 ) { ?>
+
+<article>
   
 <a href="<?php echo get_permalink(); ?>">
 
@@ -87,6 +89,8 @@ if ( get_post_type( $post->ID ) == 'post' && $count == 1 ) { ?>
 </header> <!-- .entry-header -->
 
 </a>
+
+</article>
 
 <?php } ?> 
 
