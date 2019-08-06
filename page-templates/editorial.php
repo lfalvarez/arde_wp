@@ -42,14 +42,6 @@ if ( $query->have_posts() ) {
                        background-repeat: no-repeat;
                        background-size: cover;">
 
-</article>
-
-<?php
-
-endwhile; // end first loop
-rewind_posts();
-
-?>
 
 <a href="<?php echo get_permalink(); ?>">
 
@@ -62,6 +54,15 @@ rewind_posts();
 </a>
 
 </div>
+
+<?php
+
+endwhile; // end first loop
+rewind_posts();
+
+?>
+
+</article>
 
 <div class="row titulo-colecciones-home">
 
