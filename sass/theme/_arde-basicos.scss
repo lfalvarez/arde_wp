@@ -205,19 +205,12 @@ body {
   display:block;
 }
 
-.entry-header {
-  z-index: 1;
-}
-
-.post-destacado {
+.posteo:first-child .entry-header {
   position: absolute;
   top: 0;
   width: 87%;
   background-color: white;
   margin: 125px 6.5% 55px 6.5%;
   height: 380px;
-}
-
-.post-destacado h1 {
-  padding:20px;
+  z-index: 1;
 }
