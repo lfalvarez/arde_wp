@@ -23,8 +23,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 
         <?php while (have_posts()) : the_post(); ?>
 
-            
-                    
             <div
 
             <?php if (has_post_thumbnail($post)): ?>
@@ -40,8 +38,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             </div>
 
-            <?php endif; ?>
-
             <a href="<?php echo get_permalink(); ?>">
 
             <header class="entry-header post-destacado">
@@ -51,6 +47,8 @@ $container = get_theme_mod( 'understrap_container_type' );
             </header> <!-- .entry-header -->
 
             </a>
+
+            <?php endif; ?>
 
             <?php endwhile; ?>            
 
