@@ -34,7 +34,7 @@ $query = new WP_Query( array( 'category_name' => 'editorial' ) );
 
   <header class="entry-header">
 
-    <?php the_title( '<h1 class="minisitio-title text-center">', '</h1>' ); ?>
+    <?php the_title( '<h1 class="text-center">', '</h1>' ); ?>
 
   </header><!-- .entry-header -->
 
