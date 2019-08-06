@@ -46,29 +46,36 @@ $query = new WP_Query( array( 'category_name' => 'editorial' ) );
 
 <div class="container">
 
-  <div class="row">
+  <div class="row titulo-colecciones-home">
 
     <div class="col-12">
         <h2 class="text-center text-uppercase titulo">Artículos Recientes</h2>
     </div>
 
-    <div class="col-2">
+  </div>
 
-           <?php endwhile;
-             wp_reset_postdata();
-           ?>
-            <div class="card" style="width: 18rem;">
-              <a href="<?php echo get_permalink(); ?>">
-                  <img class="card-img-top" src="<?php the_post_thumbnail_url(); ?>" height= alt="<?php the_title(); ?>">
-              </a>
-              <div class="card-body">
-                <a href="<?php echo get_permalink(); ?>"><p class="card-text text-center"><?php the_title(); ?></p></a>
+  <div class="row">
+
+      <div class="col-2">
+
+             <?php endwhile;
+               wp_reset_postdata();
+             ?>
+              <div class="card" style="width: 18rem;">
+                <a href="<?php echo get_permalink(); ?>">
+                    <img class="card-img-top" src="<?php the_post_thumbnail_url(); ?>" height= alt="<?php the_title(); ?>">
+                </a>
+                <div class="card-body">
+                  <a href="<?php echo get_permalink(); ?>"><p class="card-text text-center"><?php the_title(); ?></p></a>
+                </div>
               </div>
-            </div>
 
-            <?php endif; ?>
+              <?php endif; ?>
 
-    </div>
+      </div>
+
+  </div>
+
   </div>
 
 </div>
