@@ -204,7 +204,8 @@ body {
   position:inherit;
   display:block;
 }
-.posteo > a:first-child {
+
+.posteo:first-child a {
   position: absolute;
   top: 0;
   width: 87%;
