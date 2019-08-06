@@ -30,15 +30,13 @@ $container = get_theme_mod( 'understrap_container_type' );
     class="landing-image bg-minisitio"
 
   <?php endif; ?>
-  >
+  ></div>
 
   <header class="entry-header">
 
     <?php the_title( '<h1 class="minisitio-title text-center">', '</h1>' ); ?>
 
   </header><!-- .entry-header -->
-  
-</div>
 
 <div class="container">
 
