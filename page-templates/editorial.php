@@ -40,6 +40,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <?php endif; ?>
 
+            </div>
+
     </div>
 
 <?php get_footer(); ?>
