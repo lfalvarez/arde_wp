@@ -103,6 +103,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <?php echo bloginfo('template_url').'/img/arde-logo.png'; ?>
 
+            <?php endif; ?>
+
             </div>
 
             <a href="<?php echo get_permalink(); ?>">
