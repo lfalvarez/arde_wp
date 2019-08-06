@@ -88,6 +88,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
         <?php while (have_posts()) : the_post(); ?>
 
+            <div class="card col-3">
+
             <div
 
             <?php if (has_post_thumbnail($post)): ?>
@@ -96,6 +98,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                        background-repeat: no-repeat;
                        background-size: cover;"
             >
+
+            </div>
 
             <a href="<?php echo get_permalink(); ?>">
 
