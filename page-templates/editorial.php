@@ -21,6 +21,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
         <?php while (have_posts()) : the_post(); ?>
 
+    <div class="container">
+
     <div class="col-12">
                     
             <div
@@ -33,15 +35,19 @@ $container = get_theme_mod( 'understrap_container_type' );
             >
 
             <?php else : ?>
-            
+
+                 class="landing-image-editorial"
+
+            </div>
+
             <?php endif; ?>
 
             <?php endwhile; ?>
 
-            <?php endif; ?>
-
-            </div>
+    </div>
 
     </div>
+
+    <?php endif; ?>
 
 <?php get_footer(); ?>
