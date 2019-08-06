@@ -20,6 +20,12 @@ $query = new WP_Query( array( 'category_name' => 'editorial' ) );
 ?> 
  <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
+  <header class="entry-header">
+
+    <?php the_title( '<h1 class="text-center">', '</h1>' ); ?>
+
+  </header><!-- .entry-header -->
+
  <div
   <?php if (has_post_thumbnail($post)): ?>
     class="landing-image-editorial bg-minisitio-con-imagen"
@@ -31,12 +37,6 @@ $query = new WP_Query( array( 'category_name' => 'editorial' ) );
 
   <?php endif; ?>
   >
-
-  <header class="entry-header">
-
-    <?php the_title( '<h1 class="text-center">', '</h1>' ); ?>
-
-  </header><!-- .entry-header -->
 
   </div>
 
