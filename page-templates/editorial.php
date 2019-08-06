@@ -29,12 +29,12 @@ $query = new WP_Query( array( 'category_name' => 'editorial' ) );
   <?php else: ?>
     class="landing-image-editorial bg-minisitio"
 
+  <?php endwhile;
+   wp_reset_postdata();
+  ?>
+
   <?php endif; ?>
   >
-
-   <?php endwhile;
-     wp_reset_postdata();
-   ?>
 
  </div>
 
