@@ -117,9 +117,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <?php endif; ?>
 
-            <?php endwhile; ?>
-
-    <?php endif; ?>
+                           <?php endwhile;
+                 wp_reset_postdata();
+                 else : ?>
+                 <p>Aún sin minisitios, puedes crear una página y decirle que el template es MiniSitio</p>
+                 <?php endif; ?>
 
     </article>
 
