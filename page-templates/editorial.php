@@ -23,6 +23,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
         <?php while (have_posts()) : the_post(); ?>
 
+            <article>
+
             <div
 
             <?php if (has_post_thumbnail($post)): ?>
@@ -43,6 +45,8 @@ $container = get_theme_mod( 'understrap_container_type' );
             </header> <!-- .entry-header -->
 
             </a>
+
+            </article>
 
             <?php endif; ?>
 
