@@ -40,10 +40,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <?php endwhile; ?>
 
-
-
     <?php endif; ?>
 
+</div>
 </div>
 
 <?php get_footer(); ?>
