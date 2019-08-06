@@ -190,22 +190,3 @@ body {
   top: -125px;
 }
 
-.posteo a:first-child {
-  position: relative;
-  top:0 !important;
-}
-
-.posteo:second-child {
-  position:inherit;
-  display:block;
-}
-
-.posteo > a:first-child {
-  position: absolute !important;
-  top: 0 !important;
-  width: 87% !important;
-  background-color: white !important;
-  margin: 125px 6.5% 55px 6.5% !important;
-  height: 380px !important;
-  z-index: 1 !important;
-}
