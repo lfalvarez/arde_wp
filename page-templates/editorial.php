@@ -90,6 +90,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <div class="card col-md-4 border-0">
 
+            <a href="<?php echo get_permalink(); ?>">
+
             <div
 
             <?php if (has_post_thumbnail($post)): ?>
@@ -100,6 +102,8 @@ $container = get_theme_mod( 'understrap_container_type' );
             >
 
             </div>
+
+            </a>
 
             <a href="<?php echo get_permalink(); ?>">
 
