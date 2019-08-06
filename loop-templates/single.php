@@ -124,17 +124,17 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 <script src="<?php bloginfo('template_url'); ?>/js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 
-	  $(".single-item").slick({
-        infinite: true,
-        fade: true,
-        adaptiveHeight: true,
-        accesibility: true,
-        dots: false,
-        adaptiveHeight: !0,
-        speed: 0,
-        swipe: !1,
-        cssEase: "linear"
-      });
+	$(".single-item").slick({
+	    infinite: true,
+	    fade: true,
+	    adaptiveHeight: true,
+	    accesibility: true,
+	    dots: false,
+	    adaptiveHeight: !0,
+	    speed: 0,
+	    swipe: !1,
+	    cssEase: "linear"
+	});
 
 </script>
 
@@ -142,14 +142,16 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.js"></script>
 <script type="text/javascript">
-$(document).ready(function(){
-  $('.single-item').slickLightbox({
-    src: 'src',
-    itemSelector: 'figure img',
-    lazy: true,
-    imageMaxHeight: 0.9,
-    lazy: true,
-    background: 'rgba(255,255,255,.95)'
-  });
-});
+
+	$(document).ready(function(){
+	  $('.single-item').slickLightbox({
+	    src: 'src',
+	    itemSelector: 'figure img',
+	    lazy: true,
+	    imageMaxHeight: 0.9,
+	    lazy: true,
+	    background: 'rgba(255,255,255,.95)'
+	  });
+	});
+
 </script>
