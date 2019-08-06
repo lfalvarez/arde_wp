@@ -63,15 +63,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 </div>
 
+<div class="container">
+
 <div class="row titulo-colecciones-home">
 
     <div class="col-12">
         <div class="text-center text-uppercase titulo">Artículos Recientes</div>
     </div>
 
-  </div>
-
-  <div class="container">
+</div>
 
     <article class="row">
 
