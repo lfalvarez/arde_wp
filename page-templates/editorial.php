@@ -17,6 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="posteo">
 
+
 <?php
 
 $args = array(
@@ -39,7 +40,6 @@ if ( $query->have_posts() ) {
                 style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');
                        background-repeat: no-repeat;
                        background-size: cover;">
-</div>
 
 </article>
 
@@ -49,6 +49,16 @@ endwhile; // end first loop
 rewind_posts();
 
 ?>
+
+<a href="<?php echo get_permalink(); ?>">
+
+<header>
+
+    <?php the_title( '<h1 class="text-left">', '</h1>' ); ?>
+
+</header> <!-- .entry-header -->
+
+</a>
 
 </div>
 
