@@ -115,7 +115,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             </div>
 
-            <?php endif; ?>
+            
 
                            <?php endwhile;
                  wp_reset_postdata();
