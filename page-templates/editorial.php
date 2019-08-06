@@ -61,6 +61,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php endif; ?>
 
+</div>
+
 <div class="row titulo-colecciones-home">
 
     <div class="col-12">
@@ -110,8 +112,6 @@ $container = get_theme_mod( 'understrap_container_type' );
     <?php endif; ?>
 
     </article>
-
-</div>
 
 </div>
 
