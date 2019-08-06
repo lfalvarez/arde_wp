@@ -17,40 +17,39 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="posteo">
 
-<?php if (have_posts()) : ?>
 
-        <?php while (have_posts()) : the_post(); ?>
+<?php
 
-            <article>
+$args = array(
+  'post_type' => array ('post')
+);
 
-            <div
+$query = new WP_query ( $args );
+if ( $query->have_posts() ) {
+ 
+}
 
-            <?php if (in_category( 'Editorial' ) && has_post_thumbnail($post)): ?>
+?>
+
+<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+    
+<article>
+
+<div <?php if ( has_post_thumbnail($post) && $count == 0 );?>
                 class="landing-image-editorial"
                 style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');
                        background-repeat: no-repeat;
-                       background-size: cover;"
-            >
+                       background-size: cover;">
 
-            </div>
+</article>
 
-            <a href="<?php echo get_permalink(); ?>">
+<?php
 
-            <header>
+endwhile; // end first loop
+rewind_posts();
 
-                <?php the_title( '<h1 class="text-left">', '</h1>' ); ?>
+?>
 
-            </header> <!-- .entry-header -->
-
-            </a>
-
-            </article>
-
-            <?php endif; ?>
-
-            <?php endwhile; ?>
-
-            <?php rewind_posts(); ?>
 
 <div class="row titulo-colecciones-home">
 
@@ -60,12 +59,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 
   </div>
 
+  <?php if (have_posts()) : ?>
     
     <?php 
 
     $args = array (
-      'cat' => 5,
-      'showposts' => 2
+      'cat' => 5
     );
 
     query_posts($args) ?>
@@ -101,7 +100,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <?php endwhile; ?>
 
-<?php endif; ?>  
+
+    <?php endif; ?>
 
 </div>
 
