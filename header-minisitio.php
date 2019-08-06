@@ -85,11 +85,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	</div><!-- #wrapper-navbar end -->
 
-
-
 	<header class="entry-header">
 
 		<?php the_title( '<h1 class="minisitio-title text-center">', '</h1>' ); ?>
 
 	</header><!-- .entry-header -->
+	
 </div>
