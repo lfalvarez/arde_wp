@@ -30,6 +30,15 @@ $container = get_theme_mod( 'understrap_container_type' );
         ?> 
          <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
+            <div class="card" style="width: 18rem;">
+              <a href="<?php echo get_permalink(); ?>">
+                  <img class="card-img-top" src="<?php the_post_thumbnail_url(); ?>" height= alt="<?php the_title(); ?>">
+              </a>
+              <div class="card-body">
+                <a href="<?php echo get_permalink(); ?>"><p class="card-text text-center"><?php the_title(); ?></p></a>
+              </div>
+            </div>
+
     </div>
   </div>
 
