@@ -88,7 +88,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
         <?php while (have_posts()) : the_post(); ?>
 
-            <div class="col-3">
+                <div class="card col-md-4 border-0">
+                  <a href="<?php echo get_permalink(); ?>">
 
             <div
 
@@ -98,15 +99,12 @@ $container = get_theme_mod( 'understrap_container_type' );
                        background-size: cover;"
             >
 
-            </div>
+                  </a>
+                  <div class="card-body">
+                    <a href="<?php echo get_permalink(); ?>"><p class="card-text text-center minisitio-card-title"><?php the_title(); ?></p></a>
+                  </div>
+                </div>
 
-            <a href="<?php echo get_permalink(); ?>">
-
-            <?php the_title( '<div class="text-left">', '</div>' ); ?> <!-- titulo -->
-
-            </a>
-
-            </div>
 
             <?php endif; ?>
 
