@@ -36,11 +36,10 @@ $container = get_theme_mod( 'understrap_container_type' );
             
             <?php endif; ?>
 
+            <?php endwhile; ?>
+
+            <?php endif; ?>
+
     </div>
-
-
-    <?php endwhile; ?>
-
-    <?php endif; ?>
 
 <?php get_footer(); ?>
