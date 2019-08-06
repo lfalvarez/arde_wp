@@ -205,7 +205,7 @@ body {
   display:block;
 }
 
-.posteo:first-child .entry-header {
+.posteo:first-child > .entry-header {
   position: absolute;
   top: 0;
   width: 87%;
