@@ -64,6 +64,14 @@ rewind_posts();
 
 ?>
 
+<div class="row titulo-colecciones-home">
+
+    <div class="col-12">
+        <div class="text-center text-uppercase titulo">Artículos Recientes</div>
+    </div>
+
+</div>
+
 <?php
 
 while ( $query->have_posts() ) : $query->the_post(); // start second loop for wordpress posts
@@ -83,13 +91,5 @@ if ( get_post_type( $post->ID ) == 'post' && $count == 1 ) { ?>
 <?php } ?> 
 
 <?php endwhile; // end second loop for wordpress ?>
-
-<div class="row titulo-colecciones-home">
-
-    <div class="col-12">
-        <div class="text-center text-uppercase titulo">Artículos Recientes</div>
-    </div>
-
-</div>
 
 <?php get_footer(); ?>
