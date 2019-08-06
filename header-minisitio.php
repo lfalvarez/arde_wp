@@ -10,7 +10,7 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
-include(TEMPLATEPATH.'/inc/head.php');
+
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
