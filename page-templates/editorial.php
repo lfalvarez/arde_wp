@@ -22,7 +22,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 $args = array(
   'post_type' => array ('post'),
-  'cat' => 5
+  'cat' => 5,
+  'showposts' => 1
 );
 
 $query = new WP_query ( $args );
