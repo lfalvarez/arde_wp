@@ -69,7 +69,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
   </div>
 
-  <?php else (have_posts()) : ?>
+  <?php if (have_posts()) : ?>
     
     <?php 
 
