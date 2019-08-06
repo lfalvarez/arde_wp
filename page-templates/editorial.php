@@ -36,9 +36,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             </div>
 
+            <a href="<?php echo get_permalink(); ?>">
+
+            <header class="entry-header post-destacado">
+
+                <?php the_title( '<h1 class="text-left">', '</h1>' ); ?>
+
+            </header> <!-- .entry-header -->
+
+            </a>
+
             <?php endif; ?>
 
-            <?php endwhile; ?>
+            <?php endwhile; ?>            
 
     <?php endif; ?>
 
