@@ -56,8 +56,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <?php endif; ?>
 
-            <?php endwhile; ?> 
-
   <div class="row titulo-colecciones-home">
 
     <div class="col-12">
@@ -66,22 +64,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 
   </div>
 
-            <?php while (have_posts()) : the_post(); ?>
-
-            <div
-
-            <?php if (has_post_thumbnail($post)): ?>
-                class="12321313"
-                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');
-                       background-repeat: no-repeat;
-                       background-size: cover;"
-            >
-
-            </div>
-
-            <?php endif; ?>
-
             <?php endwhile; ?> 
+
+
+
+
 
     <?php endif; ?>
 
