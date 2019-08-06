@@ -99,9 +99,6 @@ $container = get_theme_mod( 'understrap_container_type' );
                        background-size: cover;"
             >
 
-
-
-
             </div>
 
             <a href="<?php echo get_permalink(); ?>">
@@ -112,6 +109,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             </div>
 
+            <?php endif; ?>
+
+            <?php endwhile; ?>
 
     <?php endif; ?>
 
