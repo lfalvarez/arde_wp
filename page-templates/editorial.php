@@ -31,12 +31,13 @@ $container = get_theme_mod( 'understrap_container_type' );
                        background-repeat: no-repeat;
                        background-size: cover;"
             >
-            
-         <?php else : ?>
 
-         <?php endif; ?>
+            <?php else : ?>
+            
+            <?php endif; ?>
 
     </div>
+
 
     <?php endwhile; ?>
 
