@@ -11,6 +11,9 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly.
 }
 
+get_header();
+$container = get_theme_mod( 'understrap_container_type' );
+?>
 
         <?php
         $query = new WP_Query( array( 'category_name' => 'editorial' ) );
