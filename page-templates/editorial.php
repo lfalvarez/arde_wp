@@ -56,18 +56,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <?php endif; ?>
 
-  <div class="row titulo-colecciones-home">
+            <?php endwhile; ?> 
+
+
+<div class="row titulo-colecciones-home">
 
     <div class="col-12">
         <div class="text-center text-uppercase titulo">Artículos Recientes</div>
     </div>
 
   </div>
-
-            <?php endwhile; ?> 
-
-
-
 
 
     <?php endif; ?>
