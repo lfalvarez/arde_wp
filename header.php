@@ -10,7 +10,7 @@ if ($is_minisitio){
 		get_header('minisitio');
 }
 elseif ($is_editorial){
-	get_header('editorialarchivistica');
+	get_header('pagina-informacion');
 }
 elseif ($is_home){
 	get_header('default');
