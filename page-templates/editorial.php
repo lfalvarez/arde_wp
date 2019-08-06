@@ -15,13 +15,15 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
+<div class="posteo">
+
 <?php if (have_posts()) : ?>
     
     <?php query_posts("cat=5") ?>
 
         <?php while (have_posts()) : the_post(); ?>
 
-            <div class="posteo">
+            
                     
             <div
 
@@ -36,8 +38,6 @@ $container = get_theme_mod( 'understrap_container_type' );
                  class="landing-image-editorial"
             >
 
-            </div>
-            
             </div>
 
             <?php endif; ?>
@@ -55,6 +55,8 @@ $container = get_theme_mod( 'understrap_container_type' );
             <?php endwhile; ?>            
 
     <?php endif; ?>
+
+</div>
 
 </div>
 </div>

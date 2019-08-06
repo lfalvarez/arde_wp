@@ -195,6 +195,11 @@ body {
   top:-125px !important;
 }
 
+.posteo:second-child {
+  position:inherit;
+  display:block;
+}
+
 .entry-header {
   z-index: 1;
 }
