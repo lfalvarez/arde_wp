@@ -23,7 +23,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
     $args = array (
       'cat' => 5,
-      'showposts' => 2
+      'showposts' => 1
     );
 
     query_posts($args) ?>
@@ -59,7 +59,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <?php endwhile; ?>
 
-<?php endif; ?>
+            <?php rewind_posts(); ?>
 
 <div class="row titulo-colecciones-home">
 
@@ -69,12 +69,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 
   </div>
 
-  <?php if (have_posts()) : ?>
     
     <?php 
 
     $args = array (
-      'cat' => 5
+      'cat' => 5,
+      'showposts' => 2
     );
 
     query_posts($args) ?>
@@ -110,8 +110,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <?php endwhile; ?>
 
-
-    <?php endif; ?>
+<?php endif; ?>  
 
 </div>
 
