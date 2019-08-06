@@ -99,6 +99,10 @@ $container = get_theme_mod( 'understrap_container_type' );
                        background-size: cover;"
             >
 
+            <?php else: ?>
+
+            <?php echo bloginfo('template_url').'/img/arde-logo.png'; ?>
+
             </div>
 
             <a href="<?php echo get_permalink(); ?>">
