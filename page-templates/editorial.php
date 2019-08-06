@@ -55,6 +55,8 @@ if ( $query->have_posts() ) {
 
 </div>
 
+</article>
+
 <?php
 
 endwhile; // end first loop
@@ -62,7 +64,25 @@ rewind_posts();
 
 ?>
 
-</article>
+<?php
+
+while ( $query->have_posts() ) : $query->the_post(); // start second loop for wordpress posts
+
+if ( get_post_type( $post->ID ) == 'post' && $count == 1 ) { ?>
+  
+<a href="<?php echo get_permalink(); ?>">
+
+<header>
+
+    <?php the_title( '<h1 class="text-left">', '</h1>' ); ?>
+
+</header> <!-- .entry-header -->
+
+</a>
+
+<?php } ?> 
+
+<?php endwhile; // end second loop for wordpress ?>
 
 <div class="row titulo-colecciones-home">
 
