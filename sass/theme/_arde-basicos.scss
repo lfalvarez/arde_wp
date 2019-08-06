@@ -197,12 +197,7 @@ body {
   min-height: 560px;
 }
 
-.posteo:second-child {
-  position:inherit;
-  display:block;
-}
-
-.posteo article a {
+.posteo a {
   position: absolute !important;
   top: 0 !important;
   width: 87% !important;
