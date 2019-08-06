@@ -194,6 +194,10 @@ body {
   min-height: 560px;
 }
 
+.posteo a:first-child {
+  position: relative;
+}
+
 .posteo:second-child {
   position:inherit;
   display:block;
