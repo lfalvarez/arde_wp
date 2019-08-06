@@ -22,7 +22,7 @@ elseif ($is_sobre_nosotros){
 	get_header('pagina-informacion');
 }
 else {
-	get_header('pagina-informacion');
+	get_header('documento');
 }
 wp_head();
  ?>
