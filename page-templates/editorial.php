@@ -103,7 +103,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <?php echo bloginfo('template_url').'/img/arde-logo.png'; ?>
 
-            <?php endif; ?>
+
 
             </div>
 
@@ -115,7 +115,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             </div>
 
-            <?php endif; ?>
+            
 
             <?php endwhile; ?>
 
