@@ -23,21 +23,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="container">
 
   <div class="row">
-    <div class="col-10 offset-1">
+    <div class="col-12">
 
-      <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
-      
-      endwhile;endif;?>
+        <?php
+        $query = new WP_Query( array( 'category_name' => 'editorial' ) );
+        ?> 
+         <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
     </div>
   </div>
 
   <div class="row">
     <div class="col-2">
-        <?php
-        $query = new WP_Query( array( 'category_name' => 'editorial' ) );
-        ?> 
-         <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
             <div class="card" style="width: 18rem;">
               <a href="<?php echo get_permalink(); ?>">
