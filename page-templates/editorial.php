@@ -36,7 +36,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <a href="<?php echo get_permalink(); ?>">
 
-            <header class="entry-header">
+            <header>
 
                 <?php the_title( '<h1 class="text-left">', '</h1>' ); ?>
 
