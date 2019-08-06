@@ -28,7 +28,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div
 
             <?php if (has_post_thumbnail($post)): ?>
-                class="landing-image-editorial"
+                class="landing-image-editorial bg-minisitio-con-imagen"
                 style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');
                        background-repeat: no-repeat;
                        background-size: cover;"
