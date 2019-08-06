@@ -200,7 +200,7 @@ body {
   display:block;
 }
 
-a.posteo:first-child {
+.posteo > a:first-child {
   position: absolute !important;
   top: 0 !important;
   width: 87% !important;
