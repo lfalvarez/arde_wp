@@ -24,11 +24,20 @@ $container = get_theme_mod( 'understrap_container_type' );
         ?> 
          <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
+  <div
+  <?php if (has_post_thumbnail($post)): ?>
+    class="landing-image bg-minisitio-con-imagen"
+    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');
+           background-repeat: no-repeat;
+           background-size: cover;"
+  <?php else: ?>
+    class="landing-image bg-minisitio"
+
+  <?php endif; ?>
+  >
+
             <div class="container">
               
-              <a href="<?php echo get_permalink(); ?>">
-                  <img class="card-img-top" src="<?php the_post_thumbnail_url(); ?>" height= alt="<?php the_title(); ?>">
-              </a>
               <div class="card-body">
                 <a href="<?php echo get_permalink(); ?>"><p class="card-text text-center"><?php the_title(); ?></p></a>
               </div>
