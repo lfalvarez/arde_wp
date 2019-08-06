@@ -59,7 +59,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <?php endwhile; ?>
 
-
+<?php endif; ?>
 
 <div class="row titulo-colecciones-home">
 
@@ -68,6 +68,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     </div>
 
   </div>
+
   <?php if (have_posts()) : ?>
     
     <?php 
