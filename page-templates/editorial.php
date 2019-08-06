@@ -74,8 +74,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     <?php 
 
     $args = array (
-      'cat' => 5,
-      'offset' => 1
+      'cat' => 5
     );
 
     query_posts($args) ?>
