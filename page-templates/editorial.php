@@ -25,10 +25,9 @@ $container = get_theme_mod( 'understrap_container_type' );
   <div class="row">
     <div class="col-12">
 
-        <?php
-        $query = new WP_Query( array( 'category_name' => 'editorial' ) );
-        ?> 
-         <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+        <?php $query = new WP_Query( array( 'category_name' => 'editorial' ) ); ?> 
+
+        <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
             <div class="card">
               <a href="<?php echo get_permalink(); ?>">
@@ -38,10 +37,6 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <a href="<?php echo get_permalink(); ?>"><p class="card-text text-center"><?php the_title(); ?></p></a>
               </div>
             </div>
-           <?php endwhile;
-             wp_reset_postdata();
-              ?>
-           
 
     </div>
   </div>
@@ -58,7 +53,8 @@ $container = get_theme_mod( 'understrap_container_type' );
               </div>
             </div>
 
-            <?php endif; ?>
+        <?php endif; ?>
+        <?php endwhile; wp_reset_postdata(); ?>
 
     </div>
   </div>
