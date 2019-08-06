@@ -103,7 +103,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <a href="<?php echo get_permalink(); ?>">
 
-            <?php the_title( '<div class="card-body">', '</div>' ); ?> <!-- titulo -->
+            <?php the_title( '<div class="card-body text-center">', '</div>' ); ?> <!-- titulo -->
 
             </a>
 
