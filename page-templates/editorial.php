@@ -41,7 +41,7 @@ $container = get_theme_mod( 'understrap_container_type' );
            <?php endwhile;
              wp_reset_postdata();
               ?>
-           <?php endif; ?>
+           
 
     </div>
   </div>
@@ -57,6 +57,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <a href="<?php echo get_permalink(); ?>"><p class="card-text text-center"><?php the_title(); ?></p></a>
               </div>
             </div>
+
+            <?php endif; ?>
 
     </div>
   </div>
