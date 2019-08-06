@@ -15,39 +15,79 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<?php
-$queryObject = new  Wp_Query( array(
-    'showposts' => 5,
-    'post_type' => array('post'),
-    'category_name' => Editorial,
-    'orderby' => 1,
-    ));
+<div class="posteo">
 
-// The Loop
-if ( $queryObject->have_posts() ) :
-    $i = 0;
-    while ( $queryObject->have_posts() ) :
-        $queryObject->the_post();
-        if ( $i == 0 ) : ?>
+<?php if (have_posts()) : ?>
+    
+    <?php 
 
-            <div class="first-post">
-            <a href="<?php the_permalink(); ?>" title="<?php printf(__( 'Read %s', 'wpbx' ), wp_specialchars(get_the_title(), 1)) ?>">
-                <?php the_post_thumbnail('sidethumbs'); ?>
+    $args = array (
+      'cat' => 5
+    );
+
+    query_posts($args) ?>
+
+        <?php while (have_posts()) : the_post(); ?>
+
+            <article>
+
+            <div
+
+            <?php if (has_post_thumbnail($post)): ?>
+                class="landing-image-editorial"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');
+                       background-repeat: no-repeat;
+                       background-size: cover;"
+            >
+
+            </div>
+
+            <a href="<?php echo get_permalink(); ?>">
+
+            <header>
+
+                <?php the_title( '<h1 class="text-left">', '</h1>' ); ?>
+
+            </header> <!-- .entry-header -->
+
             </a>
 
-        <?php endif;
-        if ( $i != 0 ) : ?>
+            </article>
 
-            <div class="secondary-post">
+            <?php endif; ?>
 
-        <?php endif; ?>
-        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-            <?php the_title(); ?>
+            <?php endwhile; ?> 
 
-        </a>
-        </div>
-        <?php $i++;
-    endwhile;
-endif; ?>
+  <div class="row titulo-colecciones-home">
+
+    <div class="col-12">
+        <div class="text-center text-uppercase titulo">Artículos Recientes</div>
+    </div>
+
+  </div>
+
+            <?php while (have_posts()) : the_post(); ?>
+
+            <div
+
+            <?php if (has_post_thumbnail($post)): ?>
+                class="12321313"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');
+                       background-repeat: no-repeat;
+                       background-size: cover;"
+            >
+
+            </div>
+
+            <?php endif; ?>
+
+            <?php endwhile; ?> 
+
+    <?php endif; ?>
+
+</div>
+
+</div>
+</div>
 
 <?php get_footer(); ?>
