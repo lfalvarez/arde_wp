@@ -42,6 +42,6 @@ if ( $queryObject->have_posts() ) :
         </div>
         <?php $i++;
     endwhile;
-endif;
+endif; ?>
 
 <?php get_footer(); ?>
