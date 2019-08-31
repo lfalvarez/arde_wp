@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
               Somos una comunidad digital que apoya el desarrollo de archivos de procesos creativos en un marco abierto, libre y de dominio público. 
             </div>
             <div class="text text-landing ir-archivo-alpha gt-america">
-              <a href="http://archivo.proyectoarde.org/" target="_blank">- Ir a archivo Alpha > </a>
+              <a href="http://archivo.proyectoarde.org/" target="_blank">- Ir a archivo completo > </a>
             </div>
           </div>
         </div>
