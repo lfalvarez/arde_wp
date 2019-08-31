@@ -19,7 +19,7 @@ elseif ($is_sobre_archivos){
 	get_header('pagina-informacion');
 }
 elseif ($is_sobre_nosotros){
-	get_header('pagina-informacion');
+	get_header('documento');
 }
 else {
 	get_header('documento');
