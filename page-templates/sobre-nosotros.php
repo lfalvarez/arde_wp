@@ -22,7 +22,6 @@ $container = get_theme_mod( 'understrap_container_type' );
   echo 'style="background-image: url('.$featured_img_url.'); background-repeat: no-repeat; background-size: cover; background-position: center; margin: 0 auto; "'; 
 
   ?>>
-
   <div class="col-12">
       <h1 class="text-center text-uppercase titulo-encabezado-imagenes text-light">Equipo</h1>
   </div>
