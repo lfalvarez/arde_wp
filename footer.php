@@ -61,7 +61,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col-md-2 gt-america text-center text-md-left small">
 
 				<a class="nav-link" href="<?php echo site_url(); ?>">Inicio</a>
-				<a class="nav-link" href="http://proyectoarde.org/data/dataset" target="_blank">Archivo</a>
+				<a class="nav-link" href="http://archivo.proyectoarde.org" target="_blank">Archivo</a>
 				<a class="nav-link navbar-arde" href="#">Colecciones</a>
 	      		<?php $link_slug = 'editorial'; include('global-templates/link-to-page.php'); ?>
 	      		<a class="nav-link navbar-arde" href="#">Sobre archivo</a>
