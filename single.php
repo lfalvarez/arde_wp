@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-if ( in_category('4') ) {
+if ( in_category(4) ) {
 get_header('minisitio'); // 
 
 } else {
