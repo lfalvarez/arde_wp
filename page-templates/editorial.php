@@ -53,9 +53,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             </header> <!-- .entry-header -->
 
-            </a>
-
             <?php the_date(); ?>
+
+            </a>
 
             </article>
 
