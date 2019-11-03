@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-get_header();
+get_header('header-minisitio');
 $container   = get_theme_mod( 'understrap_container_type' );
 ?>
 
