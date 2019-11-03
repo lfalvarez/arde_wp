@@ -47,6 +47,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <header>
 
+                <span class="linea"></span>
+
                 <?php the_title( '<h1 class="text-left">', '</h1>' ); ?>
 
             </header> <!-- .entry-header -->
