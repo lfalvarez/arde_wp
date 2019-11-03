@@ -55,6 +55,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             </a>
 
+            <?php the_date(); ?>
+
             </article>
 
             <?php endif; ?>
