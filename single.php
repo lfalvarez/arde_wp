@@ -8,8 +8,8 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
-
-if ( in_category(4) ) {
+$post = $wp_query->post;
+if ( in_category('editorial') ) {
 get_header('minisitio'); // 
 
 } else {
