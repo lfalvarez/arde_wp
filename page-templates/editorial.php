@@ -53,8 +53,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             </header> <!-- .entry-header -->
 
-            <?php the_date(); ?>
-
             </a>
 
             </article>
