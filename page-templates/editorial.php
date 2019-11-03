@@ -51,8 +51,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 
                 <?php the_title( '<h1 class="text-left">', '</h1>' ); ?>
 
-                <?php the_excerpt(); ?>
-
                 <?php the_date(); ?>
 
             </header> <!-- .entry-header -->
