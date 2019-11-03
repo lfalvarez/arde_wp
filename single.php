@@ -9,7 +9,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-get_header();
+if ( in_category('4') ) {
+get_header('minisitio'); // 
+
+} else {
+get_header(); // use default header.php
+}
 $container   = get_theme_mod( 'understrap_container_type' );
 ?>
 
