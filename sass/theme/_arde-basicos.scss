@@ -199,13 +199,18 @@ body {
   min-height: 560px;
 }
 
-.posteo a {
+.posteo a,
+.posteo a:active {
   position: absolute !important;
   top: 0 !important;
   width: 87% !important;
   background-color: white !important;
   margin: 125px 6.5% 55px 6.5% !important;
   height: 380px !important;
+}
+
+.posteo a:hover {
+  text-decoration: underline;
 }
 
 .posteo h1 {
