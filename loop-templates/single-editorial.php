@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<div class="entry-content">
+	<div class="entry-content gt-america">
 
 		<?php the_content(); ?>
 
