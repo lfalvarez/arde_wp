@@ -28,6 +28,7 @@
 
 .bg-arde {
 }
+
 .navbar-only-in-home {
 }
 .navbar {
@@ -204,7 +205,8 @@ body {
 }
 
 .posteo a,
-.posteo a:active {
+.posteo a:active,
+.posteo a:visited {
   position: absolute !important;
   top: 0 !important;
   width: 87% !important;
@@ -233,4 +235,15 @@ body {
 
 .wp-block-image {
   display:block !important;
+}
+
+.post-editorial a,
+.post-editorial a:active,
+.post-editorial a:visited {
+  color:#DF4F26;
+  text-decoration: underline;
+}
+
+.post-editorial a:hover {
+  text-decoration: none;
 }
