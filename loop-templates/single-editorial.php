@@ -16,9 +16,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 <div style="padding: 0 15%;" class="post-editorial row gt-america">
 	<div class='col-md-1'>
 		<!-- Facebook -->
-		<a href="https://www.facebook.com/sharer/sharer.php?u=SHAREMESSAGE" title="Share on Facebook" target="_blank" class="btn btn-facebook"><i class="fab fa-facebook-f"></i></a>
+		<a href="https://www.facebook.com/sharer/sharer.php?u=SHAREMESSAGE" title="Share on Facebook" target="_blank" class="btn btn-facebook documento"><i class="fab fa-facebook-f"></i></a>
 		<!-- Google+ -->
-		<a href="https://plus.google.com/share?url=SHAREMESSAGE" title="Share on Google+" target="_blank" class="btn btn-googleplus"><i class="fab fa-google-plus-g"></i></a>
+		<a href="https://plus.google.com/share?url=SHAREMESSAGE" title="Share on Google+" target="_blank" class="btn btn-googleplus documento"><i class="fab fa-google-plus-g"></i></a>
 	</div>
     <div class="col-md-11 entry-content">
 		<?php the_content(); ?>
