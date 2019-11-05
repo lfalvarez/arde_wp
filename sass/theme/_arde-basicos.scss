@@ -237,13 +237,13 @@ body {
   display:block !important;
 }
 
-.post-editorial a,
-.post-editorial a:active,
-.post-editorial a:visited {
+.post-editorial .entry-content a,
+.post-editorial .entry-content a:active,
+.post-editorial .entry-content a:visited {
   color:#DF4F26;
   text-decoration: underline;
 }
 
-.post-editorial a:hover {
+.post-editorial .entry-content a:hover {
   text-decoration: none;
 }
