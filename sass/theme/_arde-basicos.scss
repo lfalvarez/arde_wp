@@ -99,6 +99,7 @@ a {
     position: absolute;
     @include tamano-landing;
 }
+
 body {
   font: 18px/27px "GT America Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -121,6 +122,10 @@ body {
 
 .fs-24 {
   font-size: 1.5em;
+}
+
+.card {
+  padding-bottom: 50px;
 }
 
 #mc_embed_signup form {
