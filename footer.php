@@ -74,7 +74,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<div class="col-md-10 text-light small text-center text-md-left">
 				<!-- Info Sitio-->
-				<div><img class="mr-2" src="<?php bloginfo('template_url'); ?>/img/icono-footer-arde.png"/>©<?php echo date("Y"); ?>c_proyecto_arde</div>
+				<div><img class="mr-2" src="<?php bloginfo('template_url'); ?>/img/icono-footer-arde.png"/>©<?php echo date("Y"); ?>_proyecto_arde</div>
 			</div><!--col end -->
 
 			<div class="col-md-2">
