@@ -62,7 +62,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<a class="nav-link" href="<?php echo site_url(); ?>">Inicio</a>
 				<a class="nav-link" href="http://archivo.proyectoarde.org" target="_blank">Archivo</a>
-				<a class="nav-link navbar-arde" href="#">Colecciones</a>
+				<a class="nav-link navbar-arde" href="#">Galerías</a>
 	      		<?php $link_slug = 'editorial'; include('global-templates/link-to-page.php'); ?>
 	      		<a class="nav-link navbar-arde" href="#">Materiales</a>
 	      		<?php $link_slug = 'sobre-nosotros'; include('global-templates/link-to-page.php'); ?>
@@ -74,7 +74,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<div class="col-md-10 text-light small text-center text-md-left">
 				<!-- Info Sitio-->
-				<div><img class="mr-2" src="<?php bloginfo('template_url'); ?>/img/icono-footer-arde.png"/>©<?php echo date("Y"); ?>_proyecto_arde</div>
+				<div><img class="mr-2" src="<?php bloginfo('template_url'); ?>/img/icono-footer-arde.png"/>©<?php echo date("Y"); ?>c_proyecto_arde</div>
 			</div><!--col end -->
 
 			<div class="col-md-2">

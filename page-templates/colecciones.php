@@ -24,7 +24,7 @@ $container = get_theme_mod( 'understrap_container_type' );
   ?>>
 
   <div class="col-12">
-      <h1 class="text-center text-uppercase titulo-encabezado-imagenes text-light">Colecciones</h1>
+      <h1 class="text-center text-uppercase titulo-encabezado-imagenes text-light">Galerías</h1>
   </div>
 
 </div>

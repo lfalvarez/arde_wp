@@ -23,7 +23,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
   ?>>
   <div class="col-12">
-      <h1 class="text-center text-uppercase titulo-encabezado-imagenes text-light">Equipo</h1>
+      <h1 class="text-center text-uppercase titulo-encabezado-imagenes text-light">Quiénes Somos</h1>
   </div>
 
 </div>
