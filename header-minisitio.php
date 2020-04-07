@@ -47,17 +47,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<?php endif; ?>
 
 				<?php include('global-templates/navbar_links.php') ?>
-				<div class="d-none d-md-block">
-		        <ul class="navbar-nav ml-auto">
-		            <li class="nav-item">
-		                <a class="nav-link" href="https://www.facebook.com/archivoarde/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-		            </li>
-		            <li class="nav-item">
-		                <a class="nav-link" href="https://www.instagram.com/proyectoarde/" target="_blank"><i class="fab fa-instagram"></i></a>
-		            </li>
-		        </ul>
-		    	</div>
 
+				<!-- Menú RRSS -->
+                <nav class="d-none d-md-block">
+                <?php wp_nav_menu( array( 'theme_location' => 'my-custom-menu',
+                                          'sort_column'  => 'menu_order',
+                                          'depth'        => 1,
+                                          'items_wrap' => '<ul class="%2$s navbar-nav ml-auto"><li class="nav-item">%3$s</li></ul>'
+                 ) ); ?>
+                </nav>
+                
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
 					array(

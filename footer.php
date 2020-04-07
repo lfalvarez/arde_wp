@@ -78,15 +78,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div><!--col end -->
 
 			<div class="col-md-2">
-				<!-- RRSS-->
-		        <ul class="navbar-nav ml-auto d-block">
-		            <li class="nav-item d-md-inline d-block">
-		                <a class="nav-link d-md-inline d-block text-center text-md-left" href="https://www.facebook.com/archivoarde/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-		            </li>
-		            <li class="nav-item d-md-inline d-block">
-		                <a class="nav-link d-md-inline d-block text-center text-md-left" href="https://www.instagram.com/proyectoarde/" target="_blank"><i class="fab fa-instagram"></i></a>
-		            </li>
-		        </ul>
+				<!-- Menú RRSS -->
+                <nav class="d-none d-md-block">
+                <?php wp_nav_menu( array( 'theme_location' => 'my-custom-menu',
+                                          'sort_column'  => 'menu_order',
+                                          'depth'        => 1,
+                                          'items_wrap' => '<ul class="%2$s navbar-nav ml-auto"><li class="nav-item">%3$s</li></ul>'
+                 ) ); ?>
+                </nav>
 			</div><!--col end -->
 
 		</div>
