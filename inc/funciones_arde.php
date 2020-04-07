@@ -66,4 +66,10 @@ function crear_categoria_para_sobre_archivos($post_id) {
 
 }
 add_action( 'publish_page', 'crear_categoria_para_sobre_archivos', 11);
+
+function wpb_custom_new_menu() {
+  register_nav_menu('my-custom-menu',__( 'My Custom Menu' ));
+}
+add_action( 'init', 'wpb_custom_new_menu' );
+
 ?>
