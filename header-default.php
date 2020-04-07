@@ -55,6 +55,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 		        </ul>
 		    	</div>
 
+                <nav class="menu-desktop minus menu-pequeno">
+                <?php wp_nav_menu( array( 'theme_location' => 'header-menu',
+                                          'sort_column'  => 'menu_order',
+                                          'depth'        => 1
+                 ) ); ?>
+                </nav>
+
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
 					array(
