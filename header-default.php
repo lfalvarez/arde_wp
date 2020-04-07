@@ -55,11 +55,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 		        </ul>
 		    	</div>
 
-                <nav class="menu-desktop minus menu-pequeno">
+                <nav class="d-none d-md-block">
                 <?php wp_nav_menu( array( 'theme_location' => 'my-custom-menu',
                                           'sort_column'  => 'menu_order',
                                           'depth'        => 1,
-                                          'container' => ''
+                                          'items_wrap' => '<ul class="navbar-nav ml-auto"><li class="nav-item"><?php __( 'Menu:', 'textdomain' ); ?></li>%3$s</ul>',
                  ) ); ?>
                 </nav>
 
