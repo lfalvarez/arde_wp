@@ -7,7 +7,7 @@
       <?php $link_slug = 'colecciones'; include('link-in-navbar.php'); ?>
       <?php $link_slug = 'editorial'; include('link-in-navbar.php'); ?>
       <li class="nav-item">
-        <a class="nav-link navbar-arde" href="#">Sobre archivo</a>
+        <a class="nav-link navbar-arde" href="#">Materiales</a>
       </li>
       <?php $link_slug = 'sobre-nosotros'; include('link-in-navbar.php'); ?>
       <li class="nav-item d-md-block d-none">
