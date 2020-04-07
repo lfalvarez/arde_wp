@@ -59,7 +59,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <?php wp_nav_menu( array( 'theme_location' => 'my-custom-menu',
                                           'sort_column'  => 'menu_order',
                                           'depth'        => 1,
-                                          'items_wrap' => '<ul><li id="item-id"></li></ul>'
+                                          'items_wrap' => '<ul class="navbar-nav ml-auto"><li class="nav-item"></li></ul>'
                  ) ); ?>
                 </nav>
 
