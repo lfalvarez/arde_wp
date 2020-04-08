@@ -53,7 +53,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
                 <?php the_date(); ?>
 
-                <?php echo get_the_excerpt( $postid ); ?>
+                <?php echo the_excerpt(); ?>
 
                 <span></span>
 
