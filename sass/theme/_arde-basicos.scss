@@ -7,6 +7,16 @@
   padding:0;
 }
 
+.ta-center {
+  text-align: center;
+}
+
+.ta-md-left {
+  @media all and (max-width: 768px) {
+      text-align: left;
+  }
+}
+
 .gt-america {
   font-family: "GT America", "Helvetica Neue", Helvetica, Arial, Verdana, Sans-serif !important;
 }
@@ -19,6 +29,7 @@
   opacity: 0.8;
   background-color: $naranjo-arde;
 }
+
 .hero-container {
   height: 100vh;
   background-size: cover;
