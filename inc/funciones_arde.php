@@ -72,14 +72,4 @@ function wpb_custom_new_menu() {
 }
 add_action( 'init', 'wpb_custom_new_menu' );
 
-function excerpt_read_more_link($output) {
-  global $post;
-  if ($post->post_type != 'custom_post_type')
-  {
-    $output .= '<p><a href="'. get_permalink($post->ID) . '">read more</a></p>';  
-  }
-  return $output;
-}
-add_filter('the_excerpt', 'excerpt_read_more_link');
-
 ?>
