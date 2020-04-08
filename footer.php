@@ -88,7 +88,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		            </li>
 		        </ul>-->
 				<!-- Menú RRSS -->
-                <nav class="ta-center ta-md-left d-md-block">
+                <nav class="ta-center ta-md-left d-md-block pt-20 pt-md-0">
                 <?php wp_nav_menu( array( 'theme_location' => 'my-custom-menu',
                                           'sort_column'  => 'menu_order',
                                           'depth'        => 1,
