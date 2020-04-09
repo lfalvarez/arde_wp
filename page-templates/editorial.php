@@ -53,7 +53,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
                 <div>
 
-                <div class="float-md-right gt-america small">
+                <div class="float-md-right gt-america small mitad">
 
                 <?php echo the_excerpt(); ?>
 
