@@ -72,10 +72,4 @@ function wpb_custom_new_menu() {
 }
 add_action( 'init', 'wpb_custom_new_menu' );
 
-function all_excerpts_get_more_link( $post_excerpt ) {
-
-    return $post_excerpt . '<div></div>';
-  }
-add_filter( 'wp_trim_excerpt', 'all_excerpts_get_more_link' );
-
 ?>
