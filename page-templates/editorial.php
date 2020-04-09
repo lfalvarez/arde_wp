@@ -51,9 +51,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 
                 <?php the_title( '<h1 class="text-left">', '</h1>' ); ?>
 
-                <?php the_date(); ?>
+                <div class="d-flex justify-content-md-end gt-america">
 
                 <?php echo the_excerpt(); ?>
+
+                <?php the_date(); ?>
+
+                </div>
 
                 <span></span>
 
