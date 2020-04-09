@@ -49,7 +49,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
                 <span class="linea"></span>
 
-                <?php the_title( '<h1 class="text-left">', '</h1>' ); ?>
+                <?php the_title( '<h1 class="text-left bp-5">', '</h1>' ); ?>
 
                 <div>
 
