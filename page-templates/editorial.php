@@ -53,7 +53,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
                 <?php the_date(); ?>
 
-                <?php the_excerpt(); ?>
+                <?php echo the_excerpt(); ?>
 
                 <span></span>
 
