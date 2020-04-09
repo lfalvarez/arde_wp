@@ -51,7 +51,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
                 <?php the_title( '<h1 class="text-left">', '</h1>' ); ?>
 
-                <div class="d-flex justify-content-md-end gt-america">
+                <div class="d-flex justify-content-md-end gt-america small">
 
                 <?php echo the_excerpt(); ?>
 
