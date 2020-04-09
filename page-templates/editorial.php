@@ -55,7 +55,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
                 <?php echo the_excerpt(); ?>
 
-                <?php the_date(); ?>
+                <p class="pt-5"><?php the_date(); ?></p>
 
                 </div>
 
