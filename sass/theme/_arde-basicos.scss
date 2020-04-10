@@ -43,6 +43,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-color: #f44d11;
 }
 
 .bg-arde {
@@ -113,7 +115,6 @@ a {
 }
 
 .landing-arde-overlay {
-    @include home-transparency
     width: 100%;
     position: absolute;
     @include tamano-landing;
