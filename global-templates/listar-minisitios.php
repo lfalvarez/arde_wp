@@ -33,20 +33,26 @@ if ( ! defined( 'ABSPATH' ) ) {
             ?>
              <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
-                <div class="card col-md-4 border-0">
-                  <a href="<?php echo get_permalink(); ?>">
-                    <div class="document-image" style='background-image:url("<?php if(has_post_thumbnail()){
-                      the_post_thumbnail_url();
-                    }
-                    else {
-                      echo bloginfo('template_url').'/img/arde-logo.png';
-                    }
-                    ?>")'></div>
-                  </a>
-                  <div class="card-body">
-                    <a href="<?php echo get_permalink(); ?>"><p class="card-text text-center minisitio-card-title"><?php the_title(); ?></p></a>
-                  </div>
-                </div>
+            <div class="card col-md-4 border-0">
+
+            <a href="<?php echo get_permalink(); ?>">
+
+            <div
+
+            <?php if (has_post_thumbnail($post)): ?>
+                class="document-image"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');
+                       background-repeat: no-repeat;
+                       background-size: cover;"
+            >
+
+            </div>
+
+            <?php the_title( '<div class="card-body text-center">', '</div>' ); ?> <!-- titulo -->
+
+            </a>
+
+            </div>
 
                <?php endwhile;
                  wp_reset_postdata();
