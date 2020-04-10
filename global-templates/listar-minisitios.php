@@ -46,11 +46,9 @@ if ( ! defined( 'ABSPATH' ) ) {
                     ?>")'></div>
                   
                   <?php the_title( '<div class="card-body text-center">', '</div>' ); ?> <!-- titulo -->
-                  
+
                   </a>
                 </div>
-
-
 
                <?php endwhile;
                  wp_reset_postdata();
