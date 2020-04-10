@@ -79,7 +79,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 </div>
 
-<div class="container-fluid cuerpo-central-editorial">
+<div class="container cuerpo-central-editorial">
 
 <div class="row titulo-colecciones-home">
 
