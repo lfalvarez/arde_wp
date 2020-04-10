@@ -11,6 +11,13 @@
 
 }
 
+.container-fluid {
+  @media all and (min-width: 768px) {
+      padding-right: 50px;
+      padding-left: 50px;
+  }  
+}
+
 .p-0 {
   padding:0;
 }
@@ -31,7 +38,7 @@
 
 .gt-america-mono {
   font-family: "GT America Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
+} 
 
 @mixin home-transparency {
   opacity: 0.8;
