@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-<div class="container">
+<div class="container-fluid">
       <div class="row lista colecciones gt-america">
 
             <?php
