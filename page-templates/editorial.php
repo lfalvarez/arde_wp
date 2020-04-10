@@ -43,7 +43,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             </div>
 
-            <a href="<?php echo get_permalink(); ?>">
+            <a class="container" href="<?php echo get_permalink(); ?>">
 
             <header>
 
