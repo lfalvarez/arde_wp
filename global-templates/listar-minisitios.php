@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <div class="container">
         <div class='row titulo-colecciones-home'>
             <div class="col-12">
-                <div class="text-center text-uppercase titulo">Colecciones</div>
+                <div class="text-center text-uppercase titulo">Galerías</div>
             </div>
         </div>
       <div class="row lista-colecciones gt-america">
