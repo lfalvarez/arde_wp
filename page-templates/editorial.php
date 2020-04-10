@@ -47,7 +47,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <header>
 
-                <span class="linea"></span>
+                <div style="width: 30px;"><hr style="border: 1.5px solid; margin: 0;"></div>
 
                 <?php the_title( '<h1 class="text-left pb-5">', '</h1>' ); ?>
 
@@ -57,7 +57,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
                 <?php echo the_excerpt(); ?>
 
-                <p class="pt-3 small"><?php the_date(); ?> — <?php the_author(); ?></p>
+                <p class="pt-3 small"><?php the_date(); ?> — escrito por <?php the_author(); ?></p>
 
                 </div>
 
