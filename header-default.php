@@ -36,7 +36,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			>
 
 		<?php if ( 'container' == $container ) : ?>
-			<div class="container">
+			<div class="container-fluid">
 		<?php endif; ?>
 
 				<a class="navbar-brand" href="<?php echo site_url(); ?>">

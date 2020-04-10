@@ -37,7 +37,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<nav class="navbar navbar-expand-md navbar-dark">
 
 		<?php if ( 'container' == $container ) : ?>
-			<div class="container">
+			<div class="container-fluid">
 		<?php endif; ?>
 
 				<?php if (!( is_front_page() && is_home() )) : ?>

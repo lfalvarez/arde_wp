@@ -26,7 +26,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<nav class="navbar navbar-expand-md navbar-dark bg-documento">
 
-			<div class="container">
+			<div class="container-fluid">
 
 				<a class="navbar-brand" href="<?php echo site_url(); ?>">
 					    <img src="<?php bloginfo('template_url'); ?>/img/arde-logo-sin-frase.png" height="30" alt="arde">
