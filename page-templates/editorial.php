@@ -15,7 +15,7 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<div class="posteo">
+<div class="container posteo">
 
 <?php if (have_posts()) : ?>
     
@@ -79,7 +79,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 </div>
 
-<div class="container cuerpo-central-editorial">
+<div class="cuerpo-central-editorial">
 
 <div class="row titulo-colecciones-home">
 
