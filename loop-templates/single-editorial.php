@@ -12,7 +12,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-
 <div style="padding: 0 15%;" class="post-editorial row gt-america">
 	<div class='col-md-1'>
 		<!-- Facebook -->

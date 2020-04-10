@@ -6,11 +6,13 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-    exit; // Exit if accessed directly.
+  exit; // Exit if accessed directly.
 }
+
+$container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<div class="container">
+<div class="<?php echo esc_attr( $container ); ?>">
       <div class="row lista colecciones gt-america">
 
             <?php
