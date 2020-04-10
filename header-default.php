@@ -13,6 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
+
 <?php include(TEMPLATEPATH.'/inc/head.php'); ?>
 
 <body <?php body_class(); ?>>
