@@ -281,6 +281,12 @@ body {
   display:block !important;
 }
 
+.wp-block-image figcaption {
+    padding: 1em;
+    text-align: center;
+    font-size: 11px;
+}
+
 .post-editorial .entry-content a,
 .post-editorial .entry-content a:active,
 .post-editorial .entry-content a:visited {
