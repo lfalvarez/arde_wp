@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<h1 class="fs-24 text-uppercase mb-3"><?= get_the_title() ;?></h1>
 		</div>
 		<div class="w-100"></div>
-		<div class='col d-none d-md-block'>
+		<div class='col d-none d-md-block small'>
 			<nav aria-label="breadcrumb">
 			  <ol class="breadcrumb">
 			    <li class="breadcrumb-item"><a href="<?php echo home_url(); ?>">Inicio</a></li>
