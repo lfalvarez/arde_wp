@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-<div style="padding: 0 15%;" class="post-editorial row gt-america">
+<div class="post-editorial row gt-america">
 	<div class='col-md-1'>
 		<!-- Facebook -->
 		<a href="https://www.facebook.com/sharer/sharer.php?u=SHAREMESSAGE" title="Share on Facebook" target="_blank" class="btn btn-facebook documento"><i class="fab fa-facebook-f"></i></a>
