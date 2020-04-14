@@ -29,7 +29,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<div class="<?php echo esc_attr( $container ); ?>">
 
-
 				<?php if (!( is_front_page() && is_home() )) : ?>
 					<a class="navbar-brand" href="<?php echo site_url(); ?>">
 					    <img class='logo-minisitio' src="<?php bloginfo('template_url'); ?>/img/arde-logo-sin-frase.png" alt="arde">
