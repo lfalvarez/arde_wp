@@ -27,7 +27,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<nav class="navbar navbar-expand-md navbar-dark">
 
-
 			<div class="<?php echo esc_attr( $container ); ?>">
 
 
