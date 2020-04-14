@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
       <div class="row landing-arde">
 
           <div class="col-8 hero_img text-center">
-            <img class="d-none d-md-block" src="<?php bloginfo('template_url'); ?>/img/arde-logo.png" alt="">
+            <img class="d-none d-md-inline-block center" src="<?php bloginfo('template_url'); ?>/img/arde-logo.png" alt="">
             <div class="text text-landing">
               Somos una comunidad digital que apoya el desarrollo de archivos de procesos creativos en un marco abierto, libre y de dominio público. 
             </div>
