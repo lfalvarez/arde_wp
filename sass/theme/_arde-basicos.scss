@@ -237,7 +237,9 @@ body {
 }
 
 .posteo header {
-  padding:30px;
+  padding: 30px;
+  background-color: #fff!important;
+  display: inline-block;
 }
 
 .posteo a,
@@ -245,10 +247,10 @@ body {
 .posteo a:visited {
   position: absolute !important;
   top: 0 !important;
-  width: 87% !important;
-  background-color: white !important;
-  margin: 125px 6.5% 55px 6.5% !important;
-  height: 380px !important;
+  width: 100% !important;
+  padding: 125px 6.5% 55px 6.5%!important;
+  height: 100% !important;
+  display: block;
 }
 
 .posteo a:hover,

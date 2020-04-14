@@ -41,8 +41,6 @@ $container = get_theme_mod( 'understrap_container_type' );
                        background-size: cover;"
             >
 
-            </div>
-
             <a class="container-fluid" href="<?php echo get_permalink(); ?>">
 
             <header>
@@ -68,6 +66,8 @@ $container = get_theme_mod( 'understrap_container_type' );
             </header> <!-- .entry-header -->
 
             </a>
+
+            </div>
 
             </article>
 
