@@ -12,8 +12,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <div class="container-fluid bg-arde">
       <div class="row landing-arde">
-        <div class="col-8 offset-2 text-center" >
-          <div class="hero_img">
+
+          <div class="col-8 hero_img text-center">
             <img src="<?php bloginfo('template_url'); ?>/img/arde-logo.png" alt="">
             <div class="text text-landing">
               Somos una comunidad digital que apoya el desarrollo de archivos de procesos creativos en un marco abierto, libre y de dominio público. 
@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
               <a href="http://archivo.proyectoarde.org/" target="_blank">- Ir a archivo completo > </a>
             </div>
           </div>
-        </div>
+
       </div>
 </div>
 

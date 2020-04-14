@@ -89,7 +89,10 @@ a {
     @include tamano-landing;
 }
 .hero_img {
-    margin-top: 6em;
+    margin-top: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
       @media all and (max-width: 480px) {
             margin-top: 2.5em;
       }
@@ -107,6 +110,7 @@ a {
       }
     }
 }
+
 .titulo {
     text-decoration: underline;
     margin: 30px;
