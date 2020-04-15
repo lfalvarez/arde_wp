@@ -23,6 +23,8 @@ function crear_categoria_por_minisitio($post_id) {
 }
 add_action( 'publish_page', 'crear_categoria_por_minisitio', 10);
 
+// Categoría para Editorial
+
 function crear_categoria_para_editorial($post_id) {
     $template = get_post_meta($post_id, '_wp_page_template', true);
     $is_editorial = $template == 'page-templates/editorial.php';
@@ -44,6 +46,8 @@ function crear_categoria_para_editorial($post_id) {
 
 }
 add_action( 'publish_page', 'crear_categoria_para_editorial', 11);
+
+// Categoría para sección materiales
 
 function crear_categoria_para_sobre_archivos($post_id) {
     $template = get_post_meta($post_id, '_wp_page_template', true);
@@ -67,9 +71,14 @@ function crear_categoria_para_sobre_archivos($post_id) {
 }
 add_action( 'publish_page', 'crear_categoria_para_sobre_archivos', 11);
 
+// Menú customizado
+
 function wpb_custom_new_menu() {
   register_nav_menu('my-custom-menu',__( 'My Custom Menu' ));
 }
 add_action( 'init', 'wpb_custom_new_menu' );
+
+// Extractos para páginas
+add_post_type_support( 'page', 'excerpt' );
 
 ?>
