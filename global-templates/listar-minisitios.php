@@ -17,6 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class='row titulo-colecciones-home'>
             <div class="col-12">
                 <div class="text-center text-uppercase titulo">Galerías</div>
+                <p class="gt-america text-center" style="font-size: 50%;">Breve descripción de la sección galerías</p>
             </div>
         </div>
       <div class="row lista-colecciones gt-america">
@@ -49,6 +50,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     ?>")'></div>
                   
                   <?php the_title( '<div class="card-body text-center">', '</div>' ); ?> <!-- titulo -->
+                  <div style="color: #b1b1b0;" class="text-left small"><?php echo the_excerpt() ?></div>
 
                   </a>
                 </div>
@@ -58,6 +60,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                  else : ?>
                  <p>Aún sin minisitios, puedes crear una página y decirle que el template es MiniSitio</p>
                  <?php endif; ?>
+
+                 <div class="card col-md-12 border-0 text-right small"><a href="">Ir a todas las galerías &gt;</a></div>
                  
   </div>
 </div>
