@@ -49,7 +49,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     }
                     ?>")'></div>
                   
-                  <?php the_title( '<div class="card-body text-center">', '</div>' ); ?> <!-- titulo -->
+                  <?php the_title( '<div class="card-body text-left">', '</div>' ); ?> <!-- titulo -->
                   <div style="color: #b1b1b0;" class="text-left small"><?php echo the_excerpt() ?></div>
 
                   </a>
