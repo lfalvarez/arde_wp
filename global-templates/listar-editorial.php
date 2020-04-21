@@ -26,7 +26,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 $args = array(
                     'post_type' => 'post',//it is a Page right?
                     'post_status' => 'publish',
-                    'posts_per_page' => 6,
+                    'posts_per_page' => 3,
                     'meta_query' => array(
                         array(
                             'key' => '_wp_page_template',
@@ -34,33 +34,36 @@ $container = get_theme_mod( 'understrap_container_type' );
                         )
                     )
                 );
-            $query = new WP_Query($args);
-            ?>
-             <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+            query_posts($args) ?>
 
-                <div class="card col-md-4 border-0">
+    <?php while (have_posts()) : the_post(); ?>
 
-                  <a href="<?php echo get_permalink(); ?>">
+            <div class="card col-md-4 border-0">
 
-                    <div class="document-image" style='background-image:url("<?php if(has_post_thumbnail()){
-                      the_post_thumbnail_url();
-                    }
-                    else {
-                      echo bloginfo('template_url').'/img/arde-logo.png';
-                    }
-                    ?>")'></div>
-                  
-                  <?php the_title( '<div class="text-left">', '</div>' ); ?> <!-- titulo -->
-                  <div style="color: #b1b1b0;" class="mt-2 text-left small-70"><?php echo the_excerpt() ?></div>
+            <a href="<?php echo get_permalink(); ?>">
 
-                  </a>
-                </div>
+            <div
 
-               <?php endwhile;
-                 wp_reset_postdata();
-                 else : ?>
-                 <p>Aún sin minisitios, puedes crear una página y decirle que el template es MiniSitio</p>
-                 <?php endif; ?>
+            <?php if (has_post_thumbnail($post)): ?>
+                class="document-image"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');
+                       background-repeat: no-repeat;
+                       background-size: cover;"
+            >
+
+            </div>
+
+            <?php the_title( '<div class="card-body text-center">', '</div>' ); ?> <!-- titulo -->
+
+            </a>
+
+            </div>
+
+            <?php endif; ?>
+
+            <?php endwhile; ?>
+
+    <?php endif; ?>
 
                  <div class="card col-md-12 border-0 text-right small"><a href="https://proyectoarde.org/galerias/">Ir a todos los contenidos del blog &gt;</a></div>
                  
