@@ -26,6 +26,7 @@ $container = get_theme_mod( 'understrap_container_type' );
       $query = new WP_Query
       (array(
                  'posts_per_page'   => 3,
+                 'cat' => 5,
              )
        );
 
