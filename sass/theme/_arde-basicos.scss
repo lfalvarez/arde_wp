@@ -160,11 +160,13 @@ body {
 .social-link {
   color: $negro;
 }
+
 .titulo-colecciones-home {
   padding: 40px 0;
   font-size: 1.625em;
   letter-spacing: 0.05em;
 }
+
 .lista-colecciones {
   margin: 40px 0;
 }
@@ -179,7 +181,7 @@ body {
 
 .card {
   padding-bottom: 50px;
-  background-color: none;
+  background-color: transparent !important;
 }
 
 #mc_embed_signup form {
