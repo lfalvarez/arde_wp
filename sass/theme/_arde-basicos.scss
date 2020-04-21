@@ -127,8 +127,11 @@ a {
 }
 
 .titulo-encabezado-imagenes {
-    text-decoration: underline;
     margin: 70px 0;
+}
+
+.titulo-encabezado-imagenes h1 {
+    text-decoration: underline;
     text-underline-position: under;
     text-underline-offset: 10px;  
 }
