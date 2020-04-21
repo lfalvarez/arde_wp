@@ -30,6 +30,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     'meta_query' => array(
                         array(
                             'key' => '_wp_page_template',
+                            'value' => 'page-templates/minisitiopage.php', // template name as stored in the dB
                         )
                     )
                 );
@@ -61,7 +62,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                  <p>Aún sin minisitios, puedes crear una página y decirle que el template es MiniSitio</p>
                  <?php endif; ?>
 
-                 <div class="card col-md-12 border-0 text-right small"><a href="https://proyectoarde.org/blog/">Ir a todos los contenidos del blog &gt;</a></div>
+                 <div class="card col-md-12 border-0 text-right small"><a href="https://proyectoarde.org/galerias/">Ir a todos los contenidos del blog &gt;</a></div>
                  
   </div>
 </div>
