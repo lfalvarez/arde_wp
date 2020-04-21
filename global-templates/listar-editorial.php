@@ -35,7 +35,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 );
             $query = new WP_Query($args);
             ?>
-             <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+             <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
                 <div class="card col-md-4 border-0">
 
