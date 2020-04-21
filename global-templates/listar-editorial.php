@@ -26,7 +26,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 $args = array(
                     'post_type' => 'post',//it is a Page right?
                     'post_status' => 'publish',
-                    'posts_per_page' => 6,
+                    'posts_per_page' => 3,
                     'meta_query' => array(
                         array(
                             'key' => '_wp_page_template',
@@ -56,7 +56,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 </div>
 
                <?php endwhile;
-                 wp_reset_postdata();
+                 
                  else : ?>
                  <p>Aún sin minisitios, puedes crear una página y decirle que el template es MiniSitio</p>
                  <?php endif; ?>
