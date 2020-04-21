@@ -1,6 +1,6 @@
 <?php
 /**
- * Aquí se listan los ministios.
+ * Aquí se listan las galerías.
  *
  * @package arde-tema
  */
@@ -17,7 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class='row titulo-colecciones-home'>
             <div class="col-12">
                 <div class="text-center text-uppercase titulo">Galerías</div>
-                <p class="gt-america text-center" style="font-size: 50%;">Muestras del archivo, o minisitios, que almacenan una exposición digital de un artista, grupo o tema.</p>
+                <p class="bajada-titulos-inicio gt-america text-center" style="font-size: 50%;">Muestras del archivo, o minisitios, que almacenan una exposición digital de un artista, grupo o tema.</p>
             </div>
         </div>
       <div class="row lista-colecciones gt-america">

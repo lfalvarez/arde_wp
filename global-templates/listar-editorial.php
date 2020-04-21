@@ -1,6 +1,6 @@
 <?php
 /**
- * Aquí se listan los ministios.
+ * Aquí se listan la editorial.
  *
  * @package arde-tema
  */
@@ -16,8 +16,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="<?php echo esc_attr( $container ); ?>">
         <div class='row titulo-colecciones-home'>
             <div class="col-12">
-                <div class="text-center text-uppercase titulo">Galerías</div>
-                <p class="gt-america text-center" style="font-size: 50%;">Muestras del archivo, o minisitios, que almacenan una exposición digital de un artista, grupo o tema.</p>
+                <div class="text-center text-uppercase titulo">Blog</div>
+                <p class="bajada-titulos-inicio gt-america text-center" style="font-size: 50%;">Acá podrás encontrar noticias, columnas, entrevistas, artículos y reportajes sobre archivos, artistas y sus documentos, arte y comunidad.</p>
             </div>
         </div>
       <div class="row lista-colecciones gt-america">
@@ -62,7 +62,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                  <p>Aún sin minisitios, puedes crear una página y decirle que el template es MiniSitio</p>
                  <?php endif; ?>
 
-                 <div class="card col-md-12 border-0 text-right small"><a href="https://proyectoarde.org/galerias/">Ir a todas las galerías &gt;</a></div>
+                 <div class="card col-md-12 border-0 text-right small"><a href="https://proyectoarde.org/galerias/">Ir a todos los contenidos del blog &gt;</a></div>
                  
   </div>
 </div>

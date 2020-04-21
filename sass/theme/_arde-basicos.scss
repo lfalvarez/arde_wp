@@ -136,7 +136,8 @@ a {
     text-underline-offset: 10px;  
 }
 
-.bajada-titulo-encabezado-imagenes {
+.bajada-titulo-encabezado-imagenes,
+.bajada-titulos-inicio {
     @media all and (min-width: 768px) {
         width:400px;
     } 
