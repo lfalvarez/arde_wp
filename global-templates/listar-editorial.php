@@ -55,7 +55,6 @@ $container = get_theme_mod( 'understrap_container_type' );
                   </a>
                 </div>
 
-               
                  <?php endif; ?>
 
                  <div class="card col-md-12 border-0 text-right small"><a href="https://proyectoarde.org/blog/">Ir a todos los contenidos del blog &gt;</a></div>
