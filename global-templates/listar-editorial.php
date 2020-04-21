@@ -55,11 +55,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                   </a>
                 </div>
 
-               <?php endwhile;
-                 wp_reset_postdata();
-                 else : ?>
-                 <p>Aún sin minisitios, puedes crear una página y decirle que el template es MiniSitio</p>
-                 <?php endif; ?>
+               <?php endwhile;?>
 
                  <div class="card col-md-12 border-0 text-right small"><a href="https://proyectoarde.org/blog/">Ir a todos los contenidos del blog &gt;</a></div>
                  
