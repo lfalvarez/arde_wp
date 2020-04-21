@@ -24,13 +24,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <?php
                 $args = array(
-                    'post_type' => 'page',//it is a Page right?
+                    'post_type' => 'post',//it is a Page right?
                     'post_status' => 'publish',
                     'posts_per_page' => 3,
                     'meta_query' => array(
                         array(
                             'key' => '_wp_page_template',
-                            'value' => 'page-templates/editorial.php', // template name as stored in the dB
+                            'value' => 'page-templates/minisitiopage.php', // template name as stored in the dB
                         )
                     )
                 );
