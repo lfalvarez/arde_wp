@@ -25,6 +25,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
   <div class="col-12">
       <h1 class="text-center text-uppercase titulo-encabezado-imagenes text-light">Galerías</h1>
+      <div class="mt-2 text-center text-light"><?php echo the_excerpt() ?></div>
   </div>
 
 </div>
