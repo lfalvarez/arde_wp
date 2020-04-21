@@ -35,7 +35,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <script type="text/javascript">
     
-    jQuery(function(){
+    $( document ).ready(function() {
     
     let fondos = ["fondo-1.jpg","fondo-2.jpg","fondo-3.jpg","fondo-4.jpg", "fondo-5.jpg"];
 
