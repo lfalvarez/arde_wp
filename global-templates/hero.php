@@ -34,8 +34,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 <script type="text/javascript">
+    
     jQuery(function(){
-            let fondos = ["fondo-1.jpg","fondo-2.jpg","fondo-3.jpg","fondo-4.jpg", "fondo-5.jpg"];
+    
+    let fondos = ["fondo-1.jpg","fondo-2.jpg","fondo-3.jpg","fondo-4.jpg", "fondo-5.jpg"];
 
     function getRandomInt(max) {
       return Math.floor(Math.random() * Math.floor(max));
@@ -46,4 +48,5 @@ if ( ! defined( 'ABSPATH' ) ) {
     $('.hero-container').css(`url("https://proyectoarde.org/wp-content/themes/arde_wp/img/${elFondo}")`);
 
     });
+    
 </script>
