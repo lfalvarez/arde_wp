@@ -26,11 +26,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 $args = array(
                     'post_type' => 'post',//it is a Page right?
                     'post_status' => 'publish',
-                    'posts_per_page' => 3,
-                    'meta_query' => array(
-                        array(
-                            'key' => '_wp_page_template',
-                        )
+                    'posts_per_page' => 3
                     )
                 );
             $query = new WP_Query($args);
