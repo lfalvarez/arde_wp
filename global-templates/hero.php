@@ -30,6 +30,9 @@ if ( ! defined( 'ABSPATH' ) ) {
    </div>
 <?php endif; ?>
 
+
+
+
 <script type="text/javascript">
     jQuery(function($){
             let fondos = ["fondo1.jpg","fondo2.jpg","fondo3.jpg","fondo4.jpg", "fondo5.jpg"];
