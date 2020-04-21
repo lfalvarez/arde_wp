@@ -22,41 +22,21 @@ $container = get_theme_mod( 'understrap_container_type' );
         </div>
       <div class="row lista-colecciones gt-america">
 
-            <?php
-                $args = array(
-                    'post_type' => 'post',//it is a Page right?
-                    'post_status' => 'publish',
-                    'posts_per_page' => 3
-                    )
-                );
-            query_posts($args) ?>
 
-    <?php while (have_posts()) : the_post(); ?>
 
-            <div class="card col-md-4 border-0">
+<?php
+      $query = new WP_Query
+      (array(
+                 'posts_per_page'   => 5,
+             )
+       );
 
-            <a href="<?php echo get_permalink(); ?>">
-
-            <div
-
-            <?php if (has_post_thumbnail($post)): ?>
-                class="document-image"
-                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');
-                       background-repeat: no-repeat;
-                       background-size: cover;"
-            >
-
-            </div>
-
-            <?php the_title( '<div class="card-body text-center">', '</div>' ); ?> <!-- titulo -->
-
-            </a>
-
-            </div>
-
-            <?php endif; ?>
-
-            <?php endwhile; ?>
+       while ($query->have_posts()): $query->the_post(); ?>
+      <li>
+          <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+          <p><?php the_excerpt(); ?></p>
+     </li>
+<?php endwhile;?>
 
                  <div class="card col-md-12 border-0 text-right small"><a href="https://proyectoarde.org/galerias/">Ir a todos los contenidos del blog &gt;</a></div>
                  
