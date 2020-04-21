@@ -22,8 +22,6 @@ $container = get_theme_mod( 'understrap_container_type' );
         </div>
       <div class="row lista-colecciones gt-america">
 
-
-
 <?php
       $query = new WP_Query
       (array(
