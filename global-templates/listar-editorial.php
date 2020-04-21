@@ -17,7 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class='row titulo-colecciones-home'>
             <div class="col-12">
                 <div class="text-center text-uppercase titulo">Blog</div>
-                <p class="bajada-titulos-inicio gt-america text-center" style="font-size: 50%;">Acá podrás encontrar noticias, columnas, entrevistas, artículos y reportajes sobre archivos, artistas y sus documentos, arte y comunidad.</p>
+                <p class="bajada-titulos-inicio mx-auto gt-america text-center" style="font-size: 50%;">Acá podrás encontrar noticias, columnas, entrevistas, artículos y reportajes sobre archivos, artistas y sus documentos, arte y comunidad.</p>
             </div>
         </div>
       <div class="row lista-colecciones gt-america">
