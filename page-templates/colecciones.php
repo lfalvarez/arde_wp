@@ -24,8 +24,11 @@ $container = get_theme_mod( 'understrap_container_type' );
   ?>>
 
   <div class="col-12">
-      <h1 class="text-center text-uppercase titulo-encabezado-imagenes text-light">Galerías</h1>
-      <div class="mt-2 text-center text-light"><?php echo the_excerpt() ?></div>
+		<div style="margin: 70px 0;" class="titulo-encabezado-imagenes">
+		    <h1 class="text-center text-uppercase titulo-encabezado-imagenes mb-3 text-light"><?php the_title() ?></h1>
+		    <div class="bajada-titulo-encabezado-imagenes text-center text-light mx-auto gt-america"><div><?php echo the_excerpt() ?></div></div>
+	  	</div>
+
   </div>
 
 </div>
