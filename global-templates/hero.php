@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
    </div>
 <?php endif; ?>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     
     (function(){
 
@@ -47,4 +47,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 
     });
 
-</script>
+</script> -->
