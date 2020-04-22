@@ -47,7 +47,6 @@ if ( ! defined( 'ABSPATH' ) ) {
     var elFondo = fondos[cambioFondo];
     jQuery('.hero-container').css("background:", `url("https://proyectoarde.org/wp-content/themes/arde_wp/img/${elFondo}")`);
 
-
     });
 
 </script>
