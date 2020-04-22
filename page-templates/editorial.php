@@ -95,6 +95,7 @@ $container = get_theme_mod( 'understrap_container_type' );
       $query = new WP_Query
       (array(
                  'posts_per_page'   => 20,
+                 'offset' => 1,
                  'cat' => 5,
              )
        );
