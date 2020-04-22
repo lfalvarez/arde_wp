@@ -37,7 +37,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     
     (function(){
     
-    let fondos = ["fondo-1.jpg","fondo-2.jpg","fondo-3.jpg","fondo-4.jpg", "fondo-5.jpg"];
+    let fondos = ["fondo1.jpg","fondo2.jpg","fondo3.jpg","fondo4.jpg", "fondo5.jpg"];
 
     function getRandomInt(max) {
       return Math.floor(Math.random() * Math.floor(max));
