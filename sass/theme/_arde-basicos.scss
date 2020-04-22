@@ -308,6 +308,10 @@ body {
   text-decoration: none;
 }
 
+.card a:hover .fecha-post {
+  color: #f44d11 !important;
+}
+
 .posteo h1 {
   padding-top: 20px !important;
 }
