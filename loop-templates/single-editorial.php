@@ -10,11 +10,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-get_header();
-$container = get_theme_mod( 'understrap_container_type' );
-?>
-
-
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 <div class="post-editorial row gt-america">
