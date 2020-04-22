@@ -89,49 +89,33 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 </div>
 
-    <article class="row">
+<?php
+      $query = new WP_Query
+      (array(
+                 'posts_per_page'   => 20,
+                 'cat' => 5,
+             )
+       );
 
-  <?php if (have_posts()) : ?>
-    
-    <?php 
+       while ($query->have_posts()): $query->the_post(); ?>
+                <div class="card col-md-4 border-0">
 
-    $args = array (
-      'cat' => 5,
-      'offset' => 1
-    );
+                  <a href="<?php echo get_permalink(); ?>">
 
-    query_posts($args) ?>
+                    <div class="document-image" style='background-image:url("<?php if(has_post_thumbnail()){
+                      the_post_thumbnail_url();
+                    }
+                    else {
+                      echo bloginfo('template_url').'/img/arde-logo.png';
+                    }
+                    ?>")'></div>
+                  
+                  <?php the_title( '<div class="text-left">', '</div>' ); ?> <!-- titulo -->
+                  <div style="color: #b1b1b0;" class="mt-2 text-left small-70"><?php echo the_excerpt() ?></div>
 
-    <?php while (have_posts()) : the_post(); ?>
-
-            <div class="card col-md-4 border-0">
-
-            <a href="<?php echo get_permalink(); ?>">
-
-            <div
-
-            <?php if (has_post_thumbnail($post)): ?>
-                class="document-image"
-                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');
-                       background-repeat: no-repeat;
-                       background-size: cover;"
-            >
-
-            </div>
-
-            <?php the_title( '<div class="card-body text-center">', '</div>' ); ?> <!-- titulo -->
-
-            </a>
-
-            </div>
-
-            <?php endif; ?>
-
-            <?php endwhile; ?>
-
-    <?php endif; ?>
-
-    </article>
+                  </a>
+                </div>
+<?php endwhile;?>
 
 </div>
 
