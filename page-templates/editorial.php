@@ -55,7 +55,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
                 <?php echo the_excerpt(); ?>
 
-                <p class="pt-3 small"><?php the_date(); ?> — escrito por <?php the_author(); ?></p>
+                <p class="pt-3 small"><?php echo apply_filters( 'the_date', get_the_date(), get_option( 'date_format' ), '', '' ); ?> — escrito por <?php the_author(); ?></p>
 
                 </div>
 
@@ -117,7 +117,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
                   <?php echo the_excerpt() ?>
 
-                  <p class="pt-3"><?php echo the_date(); ?> — escrito por <?php the_author(); ?></p>
+                  <p style="color: #b1b1b0;" class="pt-3"><?php echo get_the_date(); ?> — escrito por <?php the_author(); ?></p>
 
                   </div>
 
