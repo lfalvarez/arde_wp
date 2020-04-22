@@ -113,11 +113,12 @@ $container = get_theme_mod( 'understrap_container_type' );
                     ?>")'></div>
                   
                   <?php the_title( '<div class="text-left">', '</div>' ); ?> <!-- titulo -->
+
                   <div class="mt-2 text-left small-70">
 
                   <?php echo the_excerpt() ?>
 
-                  <p style="color: #b1b1b0;" class="pt-3"><?php echo get_the_date(); ?> — escrito por <?php the_author(); ?></p>
+                  <p class="fecha-post pt-3"><?php echo apply_filters( 'the_date', get_the_date(), get_option( 'date_format' ), '', '' ); ?> — escrito por <?php the_author(); ?></p>
 
                   </div>
 
