@@ -43,7 +43,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
     var cambioFondo = getRandomInt(fondos.length);
     var elFondo = fondos[cambioFondo];
-    ('.hero-container').css("background-image", `url("https://proyectoarde.org/wp-content/themes/arde_wp/img/${elFondo}")`);
+    (".hero-container").css("background-image", `url("https://proyectoarde.org/wp-content/themes/arde_wp/img/${elFondo}")`);
 
     });
 
