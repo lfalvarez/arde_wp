@@ -30,9 +30,6 @@ if ( ! defined( 'ABSPATH' ) ) {
    </div>
 <?php endif; ?>
 
-
-
-
 <script type="text/javascript">
     
     (function(){
