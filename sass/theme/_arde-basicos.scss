@@ -3,6 +3,10 @@
   position: relative;
 }
 
+.wrapper {
+  margin: 50px 0 100px 0 !important;
+}
+
 .mitad {
   width: 100%;
   @media all and (min-width: 768px) {
