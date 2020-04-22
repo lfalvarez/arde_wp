@@ -10,16 +10,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
+get_header();
+$container = get_theme_mod( 'understrap_container_type' );
+?>
+
+
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 <div class="post-editorial row gt-america">
-	<div class='col-md-1'>
-		<!-- Facebook -->
-		<a href="https://www.facebook.com/sharer/sharer.php?u=SHAREMESSAGE" title="Share on Facebook" target="_blank" class="btn btn-facebook documento"><i class="fab fa-facebook-f"></i></a>
-		<!-- Google+ -->
-		<a href="https://plus.google.com/share?url=SHAREMESSAGE" title="Share on Google+" target="_blank" class="btn btn-googleplus documento"><i class="fab fa-google-plus-g"></i></a>
-	</div>
-    <div class="col-md-11 entry-content">
+
+    <div class="col-md-10 entry-content offset-1">
 		<?php the_content(); ?>
 
 		<?php
@@ -34,3 +34,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 </div>
 
 </article><!-- #post-## -->
+
+
+
+
