@@ -32,7 +32,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             ?>
              <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
-                <div class="card col-md-4 border-0">
+                <div class="card col-md-6 border-0">
 
                   <a href="<?php echo get_permalink(); ?>">
 
