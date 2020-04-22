@@ -32,7 +32,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <script type="text/javascript">
     
-    (function(){
+    jQuery(document).ready(function($){
+
     
     var fondos = ["fondo1.jpg","fondo2.jpg","fondo3.jpg","fondo4.jpg", "fondo5.jpg"];
 
@@ -42,7 +43,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
     var cambioFondo = getRandomInt(fondos.length);
     var elFondo = fondos[cambioFondo];
-    jQuery('.hero-container').css("background:", `url("https://proyectoarde.org/wp-content/themes/arde_wp/img/${elFondo}")`);
+    ('.hero-container').css("background:", `url("https://proyectoarde.org/wp-content/themes/arde_wp/img/${elFondo}")`);
 
     });
 
