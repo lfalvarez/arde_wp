@@ -115,6 +115,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                   <?php the_title( '<div class="text-left">', '</div>' ); ?> <!-- titulo -->
                   <div style="color: #b1b1b0;" class="mt-2 text-left small-70"><?php echo the_excerpt() ?></div>
 
+                  <p class="pt-3 small"><?php the_date(); ?> — escrito por <?php the_author(); ?></p>
+
                   </a>
                 </div>
 <?php endwhile;?>
