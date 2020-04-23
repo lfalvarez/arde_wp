@@ -2,6 +2,9 @@
 
     <ul class="menu-mobile navbar-nav mr-auto collapse navbar-collapse"  id='menu-navbar'>
       <li class="nav-item">
+        <a class="nav-link navbar-arde" href="https://proyectoarde.org" target="_blank">Inicio</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link navbar-arde" href="http://archivo.proyectoarde.org" target="_blank">Archivo</a>
       </li>
       <?php $link_slug = 'colecciones'; include('link-in-navbar.php'); ?>
