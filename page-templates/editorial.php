@@ -38,7 +38,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                 style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');
                        background-repeat: no-repeat;
                        background-size: cover;
-                       background-position: center;"
+                       background-position: center;
+                       display:block;"
             >
 
             <header>
