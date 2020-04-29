@@ -89,8 +89,44 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php
       $query = new WP_Query
       (array(
+                 'posts_per_page'   => 1,
+                 'cat' => 5,
+                 'offset' => 1
+             )
+       );
+
+       while ($query->have_posts()): $query->the_post(); ?>
+                <div class="card col-md-8 border-0">
+
+                  <a href="<?php echo get_permalink(); ?>">
+
+                    <div class="document-image" style='background-image:url("<?php if(has_post_thumbnail()){
+                      the_post_thumbnail_url();
+                    }
+                    else {
+                      echo bloginfo('template_url').'/img/arde-logo.png';
+                    }
+                    ?>")'></div>
+                  
+                  <?php the_title( '<div class="text-left">', '</div>' ); ?> <!-- titulo -->
+
+                  <div class="mt-2 text-left small-70">
+
+                  <?php echo the_excerpt() ?>
+
+                  <p class="fecha-post pt-3"><?php echo apply_filters( 'the_date', get_the_date(), get_option( 'date_format' ), '', '' ); ?> — escrito por <?php the_author(); ?></p>
+
+                  </div>
+
+                  </a>
+                </div>
+<?php endwhile;?>
+
+<?php
+      $query = new WP_Query
+      (array(
                  'posts_per_page'   => 20,
-                 'offset' => 1,
+                 'offset' => 2,
                  'cat' => 5,
              )
        );
