@@ -16,10 +16,10 @@ if ( ! defined( 'ABSPATH' ) ) {
           <div class="col-8 hero_img text-center">
             <img class="d-none d-md-inline-block center" src="<?php bloginfo('template_url'); ?>/img/arde-logo.png" alt="">
             <div class="text text-landing">
-              Somos una comunidad digital que apoya el desarrollo de archivos de procesos creativos en un marco abierto, libre y de dominio público. 
+              Archivo digital de prácticas artísticas y culturales, de acceso libre y gratuito. 
             </div>
             <div class="text text-landing ir-archivo-alpha gt-america">
-              <a href="http://archivo.proyectoarde.org/" target="_blank">- Ir a archivo completo > </a>
+              <a href="http://archivo.proyectoarde.org/" target="_blank">- Descubre nuestras colecciones acá -</a>
             </div>
           </div>
 
