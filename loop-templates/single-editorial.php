@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-<div class="post-editorial row gt-america">
+<div class="post-editorial row gt-america cuerpo-central">
 
     <div class="col-md-10 entry-content offset-1">
 		<?php the_content(); ?>

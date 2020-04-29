@@ -18,7 +18,7 @@ get_header(); // use default header.php
 $container   = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<div class="wrapper documento cuerpo-central" id="single-wrapper">
+<div class="wrapper documento" id="single-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
