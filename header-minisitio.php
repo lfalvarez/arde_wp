@@ -25,7 +25,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 					 background-size: cover;"
 	<?php else: ?>
 		class="landing-image bg-minisitio"
-
 	<?php endif; ?>
 	>
 
@@ -79,7 +78,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<header class="entry-header">
 
-		<?php the_title( '<h1 class="minisitio-title text-center">', '</h1>' ); ?>
+		<?php the_title( '<h1 class="minisitio-title text-center mx-auto my-5 px-5">', '</h1>' ); ?>
 
 	</header><!-- .entry-header -->
 	
