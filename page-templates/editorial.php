@@ -30,18 +30,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 
         <?php while (have_posts()) : the_post(); ?>
 
-            <article>
-
-            <div
+            <a
 
             <?php if (has_post_thumbnail($post)): ?>
-                class="landing-image-editorial"
+                class="container-fluid"
+                href="<?php echo get_permalink(); ?>"
                 style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');
                        background-repeat: no-repeat;
-                       background-size: cover;"
+                       background-size: cover;
+                       background-position: center;"
             >
-
-            <a class="container-fluid" href="<?php echo get_permalink(); ?>">
 
             <header>
 
@@ -66,10 +64,6 @@ $container = get_theme_mod( 'understrap_container_type' );
             </header> <!-- .entry-header -->
 
             </a>
-
-            </div>
-
-            </article>
 
             <?php endif; ?>
 
