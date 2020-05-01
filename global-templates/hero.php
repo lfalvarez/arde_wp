@@ -15,9 +15,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
           <div class="col-8 hero_img text-center">
             <img class="d-none d-md-inline-block center" src="<?php bloginfo('template_url'); ?>/img/icono-comilla-arde-130.png" alt="">
-            <div class="text text-landing">
+            <h1 class="text text-landing">
               Archivo digital de prácticas artísticas y culturales, de acceso libre y gratuito. 
-            </div>
+            </h1>
             <div class="text text-landing ir-archivo-alpha gt-america">
               <a href="http://archivo.proyectoarde.org/" target="_blank">- Descubre nuestras colecciones acá -</a>
             </div>
