@@ -21,7 +21,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<?php if (( is_front_page() && is_home() )) : ?>
 		<div class="hero-container" style="
 
-		background-image: url('<?php $a = array('https://proyectoarde.org/wp-content/themes/arde_wp/img/fondo2.jpg','https://proyectoarde.org/wp-content/themes/arde_wp/img/fondo1.jpg'); echo $a[array_rand($a)];?>')
+		background-image: url('<?php $a = array(
+
+		'https://proyectoarde.org/wp-content/themes/arde_wp/img/fondo2.jpg',
+		'https://proyectoarde.org/wp-content/themes/arde_wp/img/fondo1.jpg',
+		'https://proyectoarde.org/wp-content/themes/arde_wp/img/fondo3.jpg',
+		'https://proyectoarde.org/wp-content/themes/arde_wp/img/fondo4.jpg',
+		'https://proyectoarde.org/wp-content/themes/arde_wp/img/fondo5.jpg'
+
+		); echo $a[array_rand($a)];?>')
 
 		">
 	<?php endif; ?>
