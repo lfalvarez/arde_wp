@@ -19,7 +19,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="site" id="page">
 	<?php if (( is_front_page() && is_home() )) : ?>
-		<div class="hero-container">
+		<div class="hero-container" style="
+
+		background-image: url('<?php $a = array('https://proyectoarde.org/wp-content/themes/arde_wp/img/fondo2.jpg','https://proyectoarde.org/wp-content/themes/arde_wp/img/fondo1.jpg'); echo $a[array_rand($a)];?>')
+
+		">
 	<?php endif; ?>
 	<!-- ******************* The Navbar Area ******************* -->
 	<div class="landing-arde-overlay"></div>
