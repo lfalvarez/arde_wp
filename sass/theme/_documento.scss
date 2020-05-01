@@ -59,18 +59,17 @@
   color: $gris-arde;
 }
 
-.breadcrumb-item a {
+.breadcrumb-item a,
+.ir-a-seccion a {
   border: 1px solid #808080;
   border-radius: 20px;
   padding: 7px 15px;
   color: #808080;
-  font-family: "GT America", "Helvetica Neue", Helvetica, Arial, Verdana, Sans-serif !important;
   text-transform: capitalize;
 }
 
 .breadcrumb-item .active {
   border: 0 !important;
-  font-family: "GT America", "Helvetica Neue", Helvetica, Arial, Verdana, Sans-serif !important;
 }
 
 /* ===============
