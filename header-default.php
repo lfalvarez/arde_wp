@@ -19,6 +19,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="site" id="page">
 	<?php if (( is_front_page() && is_home() )) : ?>
+
 		<div class="hero-container" style="
 
 		background-image: url('<?php $a = array(
@@ -32,6 +33,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		); echo $a[array_rand($a)];?>');
 
 		">
+		
 	<?php endif; ?>
 	<!-- ******************* The Navbar Area ******************* -->
 	<div class="landing-arde-overlay"></div>
