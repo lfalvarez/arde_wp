@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
       <div class="row landing-arde">
 
           <div class="col-8 hero_img text-center">
-            <img class="d-none d-md-inline-block center" src="<?php bloginfo('template_url'); ?>/img/iconos-inicio-arde.png" alt="">
+            <img class="d-none d-md-inline-block center" src="<?php bloginfo('template_url'); ?>/img/Iconos-Inicio-Arde.png" alt="">
             <div class="text text-landing">
               Archivo digital de prácticas artísticas y culturales, de acceso libre y gratuito. 
             </div>
