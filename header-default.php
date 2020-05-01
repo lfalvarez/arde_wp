@@ -29,7 +29,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		'https://proyectoarde.org/wp-content/themes/arde_wp/img/fondo4.jpg',
 		'https://proyectoarde.org/wp-content/themes/arde_wp/img/fondo5.jpg'
 
-		); echo $a[array_rand($a)];?>')
+		); echo $a[array_rand($a)];?>');
 
 		">
 	<?php endif; ?>
