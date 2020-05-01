@@ -13,7 +13,7 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<div class="listado-galerias <?php echo esc_attr( $container ); ?>">
+<div class="listado-galerias <?php echo esc_attr( $container ); ?> pb-5">
         <div class='row titulo-colecciones-home'>
             <div class="col-12">
                 <div class="text-center text-uppercase titulo">Galerías</div>
