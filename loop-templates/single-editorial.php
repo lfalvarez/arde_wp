@@ -21,6 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	</div>
 
+
     <div class="col-md-9 entry-content offset-1">
 		<?php the_content(); ?>
 
