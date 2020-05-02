@@ -105,9 +105,24 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 </div><!-- #page we need this extra closing tag here -->
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165372214-1"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-165372214-1');
+</script>
+
 <?php wp_footer(); ?>
+
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/retina.min.js"></script>
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
 </body>
 
 </html>
