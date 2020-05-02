@@ -15,10 +15,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <div class="post-editorial row gt-america cuerpo-central">
 
-	<div class="col-md-2 small">
+	<div class="col-md-2 small offset-md-1">
 
-		<p><?php echo apply_filters( 'the_date', get_the_date(), get_option( 'date_format' ), '', '' ); ?></p>
 		<p>Escrito por <?php the_author(); ?></p>
+		<p><?php echo apply_filters( 'the_date', get_the_date(), get_option( 'date_format' ), '', '' ); ?></p>
 
         <div class="post-share">
           Comparte
@@ -32,7 +32,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</div>
 
 
-    <div class="col-md-8 entry-content">
+    <div class="col-md-9 entry-content">
 		<?php the_content(); ?>
 
 		<?php
