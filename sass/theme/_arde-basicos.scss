@@ -390,10 +390,6 @@ body {
 /* Estructurar Post Share */
 
 
-.post-share {
-  margin: 30px 0 0;
-}
-
 .post-share .share-links {
   margin: 15px 0 0;
   padding: 0;
@@ -414,19 +410,15 @@ body {
 }
 
 .post-share .share-links a.facebook {
-  background-image: url("./img/facebook.svg");
+  background-image: url("https://proyectoarde.org/wp-content/themes/arde_wp/img/facebook.svg");
 }
 
 .post-share .share-links a.twitter {
-  background-image: url("./img/twitter.svg");
-}
-
-.post-share .share-links a.linkedin {
-  background-image: url("./img/linkedin.svg");
+  background-image: url("https://proyectoarde.org/wp-content/themes/arde_wp/img/twitter.svg");
 }
 
 .post-share .share-links a.google-plus {
-  background-image: url("./img/google-plus.svg");
+  background-image: url("https://proyectoarde.org/wp-content/themes/arde_wp/img/google-plus.svg");
 }
 
 .post-share .share-links a + a {
