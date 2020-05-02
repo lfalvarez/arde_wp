@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <div class="post-editorial row gt-america cuerpo-central">
 
-	<div class="col-md-3 small">
+	<div class="col-md-2 small">
 
 		<p><?php echo apply_filters( 'the_date', get_the_date(), get_option( 'date_format' ), '', '' ); ?></p>
 		<p>Escrito por <?php the_author(); ?></p>
@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</div>
 
 
-    <div class="col-md-9 entry-content offset-1">
+    <div class="col-md-8 entry-content">
 		<?php the_content(); ?>
 
 		<?php
