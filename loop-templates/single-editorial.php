@@ -32,7 +32,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</div>
 
 
-    <div class="col-md-9 entry-content">
+    <div class="col-md-8 entry-content">
 		<?php the_content(); ?>
 
 		<?php
