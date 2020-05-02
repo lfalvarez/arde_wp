@@ -77,7 +77,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	</div><!-- #wrapper-navbar end -->
 
-	<header class="entry-header">
+	<header class="entry-header px-md-5">
 
 		<?php the_title( '<h1 class="minisitio-title text-center mx-auto my-5 px-5">', '</h1>' ); ?>
 
