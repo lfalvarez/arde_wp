@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Sobre Archivos
+ * Template Name: Materiales
  *
  * Template para mostrar la Editorial.
  *
