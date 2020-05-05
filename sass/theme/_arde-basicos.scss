@@ -370,12 +370,16 @@ body {
 
 .page-template-sobre-nosotros a,
 .page-template-sobre-nosotros a:active,
-.page-template-sobre-nosotros a:visited {
+.page-template-sobre-nosotros a:visited,
+.page-template-materiales a,
+.page-template-materiales a:active,
+.page-template-materiales a:visited, {
     color: #f44d11;
     text-decoration: none;
 }
 
-.page-template-sobre-nosotros a:hover {
+.page-template-sobre-nosotros a:hover,
+.page-template-materiales a:hover {
     text-decoration: underline;
 }
 
