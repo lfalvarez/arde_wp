@@ -9,7 +9,7 @@
       </li>
       <?php $link_slug = 'colecciones'; include('link-in-navbar.php'); ?>
       <?php $link_slug = 'editorial'; include('link-in-navbar.php'); ?>
-      <?php $link_slug = 'materiales'; include('link-in-navbar.php'); ?>
+      <?php $link_slug = 'materiales-2'; include('link-in-navbar.php'); ?>
       <?php $link_slug = 'sobre-nosotros'; include('link-in-navbar.php'); ?>
       <li class="nav-item d-md-block d-none">
         <a class="nav-link navbar-arde" href="#"><i class="fas fa-search"></i></a>
