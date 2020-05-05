@@ -16,7 +16,7 @@ elseif ($is_home){
 	get_header('default');
 }
 elseif ($is_materiales){
-	get_header('pagina-informacion');
+	get_header('minisitio');
 }
 elseif ($is_sobre_nosotros){
 	get_header('documento');
