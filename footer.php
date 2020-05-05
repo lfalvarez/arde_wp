@@ -47,7 +47,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		             We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 		        </style>
 		        <div style="text-align: left;" id="mc_embed_signup">
-		        <form action="https://estudioruiz.us18.list-manage.com/subscribe/post?u=3ed0024a25f32863e0dacbf27&amp;id=b6d928c419" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+		        <form action="https://proyectoarde.us8.list-manage.com/subscribe/post?u=c0b79383e974802da4ae0ca34&amp;id=dfd24c9de3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 		            <div id="mc_embed_signup_scroll">
 		            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Tu e-mail acá" required>
 		            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
