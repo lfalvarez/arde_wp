@@ -7,7 +7,7 @@ if ( in_category( 'editorial' ) ) {
   include( TEMPLATEPATH.'/loop-templates/single-editorial.php' );
 }
 elseif (in_category( 'sobre-archivos' )){
-	include( TEMPLATEPATH.'/loop-templates/sobre-archivo.php' );
+	include( TEMPLATEPATH.'/loop-templates/materiales.php' );
 }
 else {
   include( TEMPLATEPATH.'/loop-templates/single.php' );

@@ -51,13 +51,13 @@ add_action( 'publish_page', 'crear_categoria_para_editorial', 11);
 
 function crear_categoria_para_sobre_archivos($post_id) {
     $template = get_post_meta($post_id, '_wp_page_template', true);
-    $is_editorial = $template == 'page-templates/sobre-archivos.php';
+    $is_editorial = $template == 'page-templates/materiales.php';
     if (!$is_editorial){
         return;
     }
 
-    $title = 'Sobre archivos';
-    $slug = 'sobre-archivos';
+    $title = 'Materiales';
+    $slug = 'materiales';
     $existe_categoria_para_sobre_editorial = get_category_by_slug($slug);
     if($existe_categoria_para_sobre_editorial){
         return;

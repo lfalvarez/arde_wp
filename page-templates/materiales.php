@@ -35,7 +35,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class="col-2">
 
             <?php
-            $query = new WP_Query( array( 'category_name' => 'sobre-archivos' ) );
+            $query = new WP_Query( array( 'category_name' => 'materiales' ) );
             ?>
              <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
@@ -52,10 +52,6 @@ $container = get_theme_mod( 'understrap_container_type' );
                  wp_reset_postdata();
                   ?>
                  <?php endif; ?>
-
-
-
-
 
         </div>
 
