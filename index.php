@@ -24,7 +24,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 	<?php get_template_part( 'global-templates/hero' ); ?>
 <?php endif; ?>	
 
-<?php get_template_part( 'global-templates/listar-minisitios' ); ?>
+<?php get_template_part( 'global-templates/listar-minisitios-carousel' ); ?>
 
 <?php get_template_part( 'global-templates/citas' ); ?>
 
