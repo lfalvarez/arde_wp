@@ -33,7 +33,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             <a
 
             <?php if (has_post_thumbnail($post)): ?>
-                class="<?php echo esc_attr( $container ); ?>"
+                class="container-fluid"
                 href="<?php echo get_permalink(); ?>"
                 style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');
                        background-repeat: no-repeat;
