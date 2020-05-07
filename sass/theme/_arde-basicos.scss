@@ -323,8 +323,6 @@ body {
   display: inline-block;
   width: 100%;
   border: white solid 3px;
-  color: white;
-  text-align: center;
 }
 
 .posteo a,
@@ -333,6 +331,7 @@ body {
   padding-top: 130px;
   padding-bottom: 80px;
   display:block;
+  color:white;
 }
 
 .posteo a:hover {
@@ -342,7 +341,6 @@ body {
 .posteo a:hover,
 .card a:hover {
   text-decoration: none;
-  color: #f44d11 !important;
 }
 
 .card a:hover .fecha-post,
