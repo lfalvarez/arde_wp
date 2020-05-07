@@ -15,7 +15,7 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<div class="posteo">
+<div class="posteo text-center">
 
 <?php if (have_posts()) : ?>
     
@@ -63,7 +63,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <span></span>
 
             </header> <!-- .entry-header -->
-            
+
 
             </a>
 
