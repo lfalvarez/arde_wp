@@ -335,9 +335,14 @@ body {
   display:block;
 }
 
+.posteo a:hover {
+  color: #f44d11 !important;
+}
+
 .posteo a:hover,
 .card a:hover {
   text-decoration: none;
+  color: #f44d11 !important;
 }
 
 .card a:hover .fecha-post,
