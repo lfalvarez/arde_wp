@@ -319,9 +319,11 @@ body {
 
 .posteo header {
   padding: 45px;
-  background-color: #fff!important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
   display: inline-block;
   width: 100%;
+  border: white solid 3px;
+  color: white;
 }
 
 
