@@ -13,12 +13,6 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<!-- CSS -->
-<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-
-<!-- JavaScript -->
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
 <div class="listado-galerias <?php echo esc_attr( $container ); ?> pb-5">
         <div class='row titulo-colecciones-home'>
             <div class="col-12">
@@ -27,14 +21,14 @@ $container = get_theme_mod( 'understrap_container_type' );
             </div>
         </div>
 
-        <div class="arrow-btn flickity-enabled is-draggable" data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false, "lazyLoad": 4 }' tabindex="0">
+        <div class="arrow-btn flickity-enabled is-draggable" data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": true, "lazyLoad": 4 }' tabindex="0">
 
 
                   <?php
                       $args = array(
                           'post_type' => 'page',//it is a Page right?
                           'post_status' => 'publish',
-                          'posts_per_page' => 6,
+                          'posts_per_page' => 20,
                           'meta_query' => array(
                               array(
                                   'key' => '_wp_page_template',
@@ -59,7 +53,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                           ?>")'></div>
                         
                         <?php the_title( '<div class="text-left">', '</div>' ); ?> <!-- titulo -->
-                        <div class="bajada-post mt-2 text-left small-70"><?php echo the_excerpt() ?></div>
+                        <div class="gt-america bajada-post mt-2 text-left small-70"><?php echo the_excerpt() ?></div>
 
                         </a>
                       </div>

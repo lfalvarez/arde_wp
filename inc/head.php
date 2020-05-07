@@ -36,11 +36,16 @@
 		}
   	</style>
 
+	<!-- JavaScript -->
+	
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
     <!-- Estilos -->
 
   	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/js/slick/slick.css" />
   	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/js/slick/slick-theme.css" />
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.css" />
+  	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" media="screen">
 
     <!-- Favicon -->
 
