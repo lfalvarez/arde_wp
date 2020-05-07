@@ -70,13 +70,6 @@ $container = get_theme_mod( 'understrap_container_type' );
                        <p>Aún sin minisitios, puedes crear una página y decirle que el template es MiniSitio</p>
                        <?php endif; ?>                  
 
-
-            <button class="flickity-button flickity-prev-next-button previous" type="button" disabled="" aria-label="Previous">
-                <svg class="flickity-button-icon" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path></svg>
-            </button>
-            <button class="flickity-button flickity-prev-next-button next" type="button" aria-label="Next">
-                <svg class="flickity-button-icon" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180) "></path></svg>
-            </button>
         </div>
 
         <div class="ir-a-seccion col-md-12 border-0 text-right small"><a href="https://proyectoarde.org/galerias/">Ir a todas las galerías &gt;</a></div>
