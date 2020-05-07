@@ -28,8 +28,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         </div>
 
         <div class="arrow-btn flickity-enabled is-draggable" data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false, "lazyLoad": 4 }' tabindex="0">
-            <div class="flickity-viewport">
-                <div class="flickity-slider">
+
 
                   <?php
                       $args = array(
@@ -71,8 +70,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                        <p>Aún sin minisitios, puedes crear una página y decirle que el template es MiniSitio</p>
                        <?php endif; ?>                  
 
-                </div>
-            </div>
+
             <button class="flickity-button flickity-prev-next-button previous" type="button" disabled="" aria-label="Previous">
                 <svg class="flickity-button-icon" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path></svg>
             </button>
