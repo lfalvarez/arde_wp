@@ -66,6 +66,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 
         </div>
 
-        <div class="ir-a-seccion col-md-12 border-0 text-right small"><a href="https://proyectoarde.org/galerias/">Ir a todas las galerías &gt;</a></div>
+        <div class="ir-a-seccion col-md-12 border-0 text-right small gt-america"><a href="https://proyectoarde.org/galerias/">Ir a todas las galerías &gt;</a></div>
 
 </div>
