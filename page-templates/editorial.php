@@ -42,7 +42,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                        display:block;"
             >
 
-            <header>
+            <header class="<?php echo esc_attr( $container ); ?>">
 
                 <div style="width: 30px;"><hr style="border: 1.5px solid; margin: 0;"></div>
 
