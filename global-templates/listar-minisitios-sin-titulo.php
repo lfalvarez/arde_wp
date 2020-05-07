@@ -44,7 +44,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     }
                     ?>")'></div>
                   
-                  <?php the_title( '<div class="text-left">', '</div>' ); ?> <!-- titulo -->
+                  <?php the_title( '<div class="text-left gt-america-mono">', '</div>' ); ?> <!-- titulo -->
                   <div class="bajada-post mt-2 text-left small-70"><?php echo the_excerpt() ?></div>
 
                   </a>
