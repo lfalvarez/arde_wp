@@ -33,7 +33,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             <a
 
             <?php if (has_post_thumbnail($post)): ?>
-                class="container-fluid"
+                class="<?php echo esc_attr( $container ); ?>"
                 href="<?php echo get_permalink(); ?>"
                 style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');
                        background-repeat: no-repeat;
@@ -74,7 +74,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 </div>
 
-<div class="container-fluid cuerpo-central-editorial">
+<div class="<?php echo esc_attr( $container ); ?> cuerpo-central-editorial">
 
 <div class="row titulo-colecciones-home">
 

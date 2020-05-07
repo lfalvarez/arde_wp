@@ -26,7 +26,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<nav class="navbar navbar-expand-md navbar-dark">
 
-		<div class="<?php echo esc_attr( $container ); ?>">
+		<?php if ( 'container' == $container ) : ?>
+			<div class="container">
+		<?php endif; ?>
 
 				<?php if (!( is_front_page() && is_home() )) : ?>
 					<a class="navbar-brand" href="<?php echo site_url(); ?>">
