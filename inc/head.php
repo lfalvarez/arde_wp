@@ -75,7 +75,7 @@
 
     <meta property="og:title" content="Proyecto Arde - Archivo de Procesos Artísticos" />
     <meta property="og:type" content="artist" />
-    <meta property="og:url" content="https://proyectoarde.org">
+    <meta property="og:url" content="<?php echo the_permalink(); ?>">
     <meta property="og:image" content="http://proyectoarde.org/wp-content/themes/arde_wp/img/proyecto-arde-redes-sociales.png" />
     <meta property="og:description" content="Archivo de Procesos Artísticos">
     <meta property="og:site_name" content="Proyecto Arde" />
@@ -85,7 +85,7 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Proyecto Arde - Archivo de Procesos Artísticos" />
     <meta name="twitter:description" content="Archivo de Procesos Artísticos" />
-    <meta name="twitter:url" content="https://proyectoarde.org" />
+    <meta name="twitter:url" content="<?php echo the_permalink(); ?>" />
 
     <!-- Twitter Summary card images must be at least 200x200px -->
 
