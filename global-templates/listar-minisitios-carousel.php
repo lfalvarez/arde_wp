@@ -26,7 +26,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
                   <?php
                       $args = array(
-                          'name' => 'colectivo-zoologico, catalina-devia, teatro-nino-proletario',
+                          'name' => 'colectivo-zoologico',
                           'posts_per_page' => 10,
                           'meta_query' => array(
                               array(
