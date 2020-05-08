@@ -273,7 +273,7 @@ body {
 }
 
 .menu-mobile {
-    @media all and (max-width: 768px) {
+    @media all and (max-width: 481px) {
             position: absolute;
             height: 100vh;
             top: 0;
