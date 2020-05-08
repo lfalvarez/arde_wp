@@ -21,7 +21,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             </div>
         </div>
 
-        <div class="arrow-btn flickity-enabled is-draggable" data-flickity='{ "cellAlign": "left", "pageDots": false, "lazyLoad": 4, "autoPlay": true, "groupCells": 2 }' tabindex="0">
+        <div class="arrow-btn flickity-enabled is-draggable" data-flickity='{ "cellAlign": "left", "pageDots": false, "lazyLoad": 4, "autoPlay": true }' tabindex="0">
 
 
                   <?php
