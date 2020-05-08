@@ -85,7 +85,7 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="<?php echo the_title(); ?>" />
     <meta name="twitter:description" content="<?php bloginfo( 'description' ); ?> - <?php bloginfo( 'name' ); ?>" />
-    <meta name="twitter:url" content="<?php bloginfo( 'description' ); ?> - <?php bloginfo( 'name' ); ?>" />
+    <meta name="twitter:url" content="<?php echo the_permalink(); ?>" />
 
     <!-- Twitter Summary card images must be at least 200x200px -->
 
