@@ -76,7 +76,6 @@
     <meta property="og:title" content="<?php the_title(); ?>" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="<?php the_permalink(); ?>">
-    <meta property="og:image" content="http://proyectoarde.org/wp-content/themes/arde_wp/img/proyecto-arde-redes-sociales.png" />
     <meta property="og:image" content="<?php the_post_thumbnail(); ?>" />
     <meta property="og:description" content="<?php bloginfo( 'description' ); ?> - <?php bloginfo( 'name' ); ?>">
     <meta property="og:site_name" content="Proyecto Arde" />
@@ -91,7 +90,7 @@
 
     <!-- Twitter Summary card images must be at least 200x200px -->
 
-    <meta name="twitter:image" content="http://proyectoarde.org/wp-content/themes/arde_wp/img/proyecto-arde-redes-sociales.png">
+    <meta name="twitter:image" content="<?php the_post_thumbnail(); ?>">
 
 	<?php wp_head(); ?>
 	
