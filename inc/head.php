@@ -73,8 +73,8 @@
 
     <!-- Open Graph data -->
 
-    <meta property="og:title" content="Proyecto Arde - Archivo de Procesos Artísticos" />
-    <meta property="og:type" content="artist" />
+    <meta property="og:title" content="<?php echo the_title(); ?>" />
+    <meta property="og:type" content="website" />
     <meta property="og:url" content="<?php echo the_permalink(); ?>">
     <meta property="og:image" content="http://proyectoarde.org/wp-content/themes/arde_wp/img/proyecto-arde-redes-sociales.png" />
     <meta property="og:description" content="Archivo de Procesos Artísticos">
@@ -83,7 +83,7 @@
     <!-- Twitter Card -->
 
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Proyecto Arde - Archivo de Procesos Artísticos" />
+    <meta name="twitter:title" content="<?php echo the_title(); ?>" />
     <meta name="twitter:description" content="Archivo de Procesos Artísticos" />
     <meta name="twitter:url" content="<?php echo the_permalink(); ?>" />
 
