@@ -28,13 +28,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                       $args = array(
                           'post_type' => 'page',//it is a Page right?
                           'post_status' => 'publish',
-                          'posts_per_page' => 5,
-                          'meta_query' => array(
-                              array(
-                                  'key' => '_wp_page_template',
-                                  'value' => 'page-templates/minisitiopage.php', // template name as stored in the dB
-                              )
-                          )
+                          'posts_per_page' => 5
                       );
                   $query = new WP_Query($args);
                   ?>
