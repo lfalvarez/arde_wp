@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Minisitio (Colecciones)
+ * Template Name: Galería
  *
  * Template para desplegar un minisitio.
  *
