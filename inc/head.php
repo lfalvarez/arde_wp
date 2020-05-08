@@ -73,9 +73,9 @@
 
     <!-- Open Graph data -->
 
-    <meta property="og:title" content="<?php the_title(); ?>" />
+    <meta property="og:title" content="<?php echo the_title(); ?>" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="<?php the_permalink(); ?>">
+    <meta property="og:url" content="<?php echo the_permalink(); ?>">
     <meta property="og:image" content="http://proyectoarde.org/wp-content/themes/arde_wp/img/proyecto-arde-redes-sociales.png" />
     <meta property="og:description" content="<?php bloginfo( 'description' ); ?>">
     <meta property="og:site_name" content="Proyecto Arde" />
@@ -83,9 +83,9 @@
     <!-- Twitter Card -->
 
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="<?php the_title(); ?>" />
+    <meta name="twitter:title" content="<?php echo the_title(); ?>" />
     <meta name="twitter:description" content="<?php bloginfo( 'description' ); ?>" />
-    <meta name="twitter:url" content="<?php the_permalink(); ?>" />
+    <meta name="twitter:url" content="<?php echo the_permalink(); ?>" />
 
     <!-- Twitter Summary card images must be at least 200x200px -->
 
