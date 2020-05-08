@@ -26,7 +26,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 
                   <?php
                       $args = array(
-                          'post_type' => 'page',//it is a Page right?
                           'post_status' => 'publish',
                           'posts_per_page' => 10,
                           'meta_query' => array(
