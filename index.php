@@ -26,8 +26,10 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 <?php get_template_part( 'global-templates/listar-minisitios-carousel' ); ?>
 
-<?php get_template_part( 'global-templates/citas' ); ?>
+<?php get_template_part( 'global-templates/cita-1' ); ?>
 
 <?php get_template_part( 'global-templates/listar-editorial' ); ?>
+
+<?php get_template_part( 'global-templates/cita-2' ); ?>
 
 <?php get_footer(); ?>

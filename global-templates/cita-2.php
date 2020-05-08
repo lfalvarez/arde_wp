@@ -16,7 +16,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="container-fluid naranjo-claro-arde-bg naranjo-arde">
         <div class='row'>
             <div class="col-8 mx-auto my-5">
-                <p>“Las artes y sus modos de producción, encierran todavía una bitácora enorme de historias no contadas. Dichos procesos merecen la presencia de investigadores y archiveros, que permitan registrar y preservar sus memorias. Eso es el archivo, la necesidad de detenerse a nombrar, a contar historias, es ese movimiento inversamente proporcional al silencio y al olvido.”</p>
+                <p>"La imagen arde en la destrucción, en el fuego que casi la carboniza, del cual sin embargo emergió y al cual ahora puede hacer imaginable. Arde en el fulgor, es decir, en la posibilidad visual que se abrió a partir de su misma extinción. Finalmente, la imagen arde de memoria, es decir, flamea aún incluso cuando ya es ceniza".</p>
                 <p class="gt-america mb-0">(A. Comedi)</p>
             </div>
         </div>
