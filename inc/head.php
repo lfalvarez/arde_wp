@@ -76,7 +76,7 @@
     <meta property="og:title" content="Proyecto Arde - Archivo de Procesos Artísticos" />
     <meta property="og:type" content="artist" />
     <meta property="og:url" content="https://proyectoarde.org">
-    <meta property="og:image" content="<?php bloginfo('template_url'); ?>/images/XXX-fb-redes-sociales.png" />
+    <meta property="og:image" content="<?php bloginfo('template_url'); ?>/images/proyecto-arde-redes-sociales.png" />
     <meta property="og:description" content="Archivo de Procesos Artísticos">
     <meta property="og:site_name" content="Proyecto Arde" />
 
@@ -89,7 +89,7 @@
 
     <!-- Twitter Summary card images must be at least 200x200px -->
 
-    <meta name="twitter:image" content="<?php bloginfo('template_url'); ?>/img/XXX-fb-redes-sociales.png">
+    <meta name="twitter:image" content="<?php bloginfo('template_url'); ?>/img/proyecto-arde-redes-sociales.png">
 
 	<?php wp_head(); ?>
 	
