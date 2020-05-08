@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<p class="mb-md-0 font-weight-bold">Escrito por <?php the_author(); ?></p>
 		<p class="small"><?php echo apply_filters( 'the_date', get_the_date(), get_option( 'date_format' ), '', '' ); ?></p>
 
-        <div class="post-share mt-md-4">
+        <div class="post-share mt-md-4 pb-5 mb-5 mb-md-5 pb-md-0">
           Comparte
           <div class="share-links">
             <a class="popup facebook" target="_blank" href="https://www.facebook.com/sharer?u=<?php the_permalink();?>&t=<?php the_title(); ?>">facebook</a>
