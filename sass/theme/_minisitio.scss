@@ -1,7 +1,6 @@
 .minisitio-card-title {
   color: $negro;
 }
-
 .minisitio-title{
     color: $blanco;
     text-decoration: underline;
@@ -14,22 +13,17 @@
     padding: 18% 0 13% 0;
     display: inline-block;
 }
-
 .logo-minisitio {
   max-height: 35px;
-}
-
-.bg-minisitio-con-imagen
+}.bg-minisitio-con-imagen
 .documentos-minisitio {
   margin-top: 60px;
 }
-
 .document-image {
   padding-top:60%;
   margin-top: 10px;
   margin-bottom: 10px;
   background-size: cover;
-  background-origin: content-box;
   background-color: $naranjo-arde;
   .card{
   }
