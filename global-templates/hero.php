@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <h1 class="text text-landing">
               Archivo digital de prácticas artísticas y culturales, de acceso libre y gratuito. 
             </h1>
-            <div class="text text-landing ir-archivo-alpha gt-america">
+            <div class="text text-landing ir-archivo-alpha gt-america mt-3 mt-md-5">
               <a href="http://archivo.proyectoarde.org/" target="_blank">- Descubre nuestras colecciones acá -</a>
             </div>
           </div>
