@@ -59,7 +59,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                       </div>
 
                      <?php endwhile;?>
-                    <?php endif; ?>                  
+                       <?php endif; ?>                  
 
         </div>
 
