@@ -29,6 +29,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                           'post_type' => 'page',//it is a Page right?
                           'post_status' => 'publish',
                           'posts_per_page' => 10,
+                          'post_parent' => 38,
                           'meta_query' => array(
                               array(
                                   'key' => '_wp_page_template',
