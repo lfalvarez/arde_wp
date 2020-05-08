@@ -443,9 +443,17 @@ body {
 /* Estructura botones Flickity */
 
 .flickity-prev-next-button.previous {
+    display:none;
+    @media all and (min-width: 768px) {
+        display:block;
+    }
     left: -40px;
 }
 
 .flickity-prev-next-button.next {
-    right: -40px;
+    display:none;
+    @media all and (min-width: 768px) {
+        display:block;
+    }
+    left: -40px;
 }
