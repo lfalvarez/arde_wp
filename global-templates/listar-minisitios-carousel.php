@@ -36,45 +36,30 @@ $container = get_theme_mod( 'understrap_container_type' );
                               )
                           )
                       );
+                  $query = new WP_Query($args);
                   ?>
+                   <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
-                  <?php 
-                  // the query
-                  $the_query = new WP_Query( $args ); ?>
-                   
-                  <?php if ( $the_query->have_posts() ) : ?>
-                   
-                      <!-- pagination here -->
-                   
-                      <!-- the loop -->
-                      <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                                        <div class="card col-md-4 border-0">
+                      <div class="card col-md-4 border-0">
 
-                                          <a href="<?php echo get_permalink(); ?>">
+                        <a href="<?php echo get_permalink(); ?>">
 
-                                            <div class="document-image" style='background-image:url("<?php if(has_post_thumbnail()){
-                                              the_post_thumbnail_url();
-                                            }
-                                            else {
-                                              echo bloginfo('template_url').'/img/arde-logo.png';
-                                            }
-                                            ?>")'></div>
-                                          
-                                          <?php the_title( '<div class="text-left">', '</div>' ); ?> <!-- titulo -->
-                                          <div class="gt-america bajada-post mt-2 text-left small-70"><?php echo the_excerpt() ?></div>
+                          <div class="document-image" style='background-image:url("<?php if(has_post_thumbnail()){
+                            the_post_thumbnail_url();
+                          }
+                          else {
+                            echo bloginfo('template_url').'/img/arde-logo.png';
+                          }
+                          ?>")'></div>
+                        
+                        <?php the_title( '<div class="text-left">', '</div>' ); ?> <!-- titulo -->
+                        <div class="gt-america bajada-post mt-2 text-left small-70"><?php echo the_excerpt() ?></div>
 
-                                          </a>
-                                        </div>
-                      <?php endwhile; ?>
-                      <!-- end of the loop -->
-                   
-                      <!-- pagination here -->
-                   
-                      <?php wp_reset_postdata(); ?>
-                   
-                  <?php else : ?>
-                      <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-                  <?php endif; ?>
+                        </a>
+                      </div>
+
+                     <?php endwhile;?>
+                    <?php endif; ?>                  
 
         </div>
 
