@@ -21,18 +21,24 @@ $container = get_theme_mod( 'understrap_container_type' );
             </div>
         </div>
 
-        <div class="arrow-btn flickity-enabled is-draggable" data-flickity='{"contain": true, "pageDots": false, "lazyLoad": 4, "autoPlay": true }' tabindex="0">
+        <div class="arrow-btn flickity-enabled is-draggable" data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false, "lazyLoad": 4, "autoPlay": true }' tabindex="0">
 
 
                   <?php
                       $args = array(
                           'post_type' => 'page',//it is a Page right?
                           'post_status' => 'publish',
-                          'posts_per_page' => 10
+                          'posts_per_page' => 5,
+                          'meta_query' => array(
+                              array(
+                                  'key' => '_wp_page_template',
+                                  'value' => 'page-templates/minisitiopage.php', // template name as stored in the dB
+                              )
+                          )
                       );
                   $query = new WP_Query($args);
                   ?>
-                  <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+                   <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
                       <div class="card col-md-4 border-0">
 
