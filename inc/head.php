@@ -87,7 +87,7 @@
     <meta name="twitter:title" content="<?php echo the_title(); ?>" />
     <meta name="twitter:description" content="<?php bloginfo( 'description' ); ?> - <?php bloginfo( 'name' ); ?>" />
     <meta name="twitter:url" content="<?php bloginfo( 'description' ); ?> - <?php bloginfo( 'name' ); ?>" />
-    <meta property="og:image" content="<?php echo the_post_thumbnail(); ?>" />
+    
 
     <!-- Twitter Summary card images must be at least 200x200px -->
 
