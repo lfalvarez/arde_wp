@@ -26,7 +26,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 
                   <?php
                       $args = array(
-                          'post_type' => 'page',//it is a Page right?
                           'pagename' => 'colectivo-zoologico, catalina-devia, teatro-nino-proletario, teatro-del-pueblo, sergio-zapata',
                           'posts_per_page' => 10,
                           'meta_query' => array(
