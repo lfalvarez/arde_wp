@@ -17,7 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class='row titulo-colecciones-home'>
             <div class="col-12">
                 <div class="text-center text-uppercase titulo">Galerías</div>
-                <p class="mx-auto bajada-titulos-inicio gt-america text-center"><?php echo the_excerpt() ?></p>
+                <p class="mx-auto bajada-titulos-inicio gt-america text-center">Exposición digital de las colecciones.</p>
             </div>
         </div>
 
