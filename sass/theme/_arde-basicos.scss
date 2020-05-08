@@ -447,6 +447,7 @@ body {
     @media all and (min-width: 768px) {
         display:block;
     }
+    top: 110px;
     left: -40px;
 }
 
@@ -455,5 +456,6 @@ body {
     @media all and (min-width: 768px) {
         display:block;
     }
-    left: -40px;
+    top: 110px;
+    right: -40px;
 }
