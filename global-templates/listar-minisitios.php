@@ -17,7 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class='row titulo-colecciones-home'>
             <div class="col-12">
                 <div class="text-center text-uppercase titulo">Galerías</div>
-                <p class="mx-auto bajada-titulos-inicio gt-america text-center">Muestras del archivo, o minisitios, que almacenan una exposición digital de un artista, grupo o tema.</p>
+                <p class="mx-auto bajada-titulos-inicio gt-america text-center"><?php echo the_excerpt() ?></p>
             </div>
         </div>
       <div class="row lista-colecciones gt-america">
