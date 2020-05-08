@@ -28,11 +28,11 @@ $container = get_theme_mod( 'understrap_container_type' );
                       $args = array(
                           'post_type' => 'page',//it is a Page right?
                           'post_status' => 'publish',
-                          'posts_per_page' => 5
+                          'posts_per_page' => 10
                       );
                   $query = new WP_Query($args);
                   ?>
-                   <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+                  <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
                       <div class="card col-md-4 border-0">
 
