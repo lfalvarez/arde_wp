@@ -20,12 +20,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<p class="mb-md-0 font-weight-bold">Escrito por <?php the_author(); ?></p>
 		<p class="small"><?php echo apply_filters( 'the_date', get_the_date(), get_option( 'date_format' ), '', '' ); ?></p>
 
-        <div class="post-share mt-md-4 pb-5 mb-5 mb-md-5 pb-md-0">
+        <div class="post-share mt-md-4">
           Comparte
           <div class="share-links">
             <a class="popup facebook" target="_blank" href="https://www.facebook.com/sharer?u=<?php the_permalink();?>&t=<?php the_title(); ?>">facebook</a>
             <a class="popup twitter"  target="_blank" href="http://twitter.com/intent/tweet?text=Currently reading <?php the_title(); ?>&amp;url=<?php the_permalink(); ?>" title="Click to share this post on Twitter">twitter</a>
-            <a class="popup google-plus"  target="_blank" href="https://plus.google.com/share?url=<?php the_permalink();?>">Google+</a>
           </div>
         </div>
 

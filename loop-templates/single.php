@@ -77,11 +77,12 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 </section>
 
 <div class="row description-doc gt-america">
-	<div class='col-md-1'>
-		<!-- Facebook -->
-		<a href="https://www.facebook.com/sharer/sharer.php?u=SHAREMESSAGE" title="Share on Facebook" target="_blank" class="btn btn-facebook"><i class="fab fa-facebook-f"></i></a>
-		<!-- Google+ -->
-		<a href="https://plus.google.com/share?url=SHAREMESSAGE" title="Share on Google+" target="_blank" class="btn btn-googleplus"><i class="fab fa-google-plus-g"></i></a>
+	<div class='col-md-2'>
+          Comparte
+          <div class="share-links">
+            <a class="popup facebook" target="_blank" href="https://www.facebook.com/sharer?u=<?php the_permalink();?>&t=<?php the_title(); ?>">facebook</a>
+            <a class="popup twitter"  target="_blank" href="http://twitter.com/intent/tweet?text=Currently reading <?php the_title(); ?>&amp;url=<?php the_permalink(); ?>" title="Click to share this post on Twitter">twitter</a>
+          </div>
 	</div>
 	<div class='col-md-3'>
 		<?php $title = 'Autor'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
@@ -107,7 +108,7 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 	    <?php } // Se cierra el condicional ?>
 
 	</div>
-	<div class='col-md-8'>
+	<div class='col-md-7'>
 		<?php $title = 'Descripción'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
 
 	    <!-- Custom field: Archivo Alpha -->
