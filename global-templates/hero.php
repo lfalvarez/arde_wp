@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <div class="container-fluid bg-arde">
       <div class="row landing-arde">
 
-          <div class="col-8 hero_img text-center">
+          <div class="col-md-8 hero_img text-center">
             <img class="d-none d-md-inline-block center" src="<?php bloginfo('template_url'); ?>/img/icono-comilla-arde-130.png" alt="">
             <h1 class="text text-landing">
               Archivo digital de prácticas artísticas y culturales, de acceso libre y gratuito. 
