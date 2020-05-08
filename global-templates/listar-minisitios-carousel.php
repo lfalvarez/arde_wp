@@ -29,12 +29,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                           'post_type' => 'page',//it is a Page right?
                           'post_status' => 'publish',
                           'posts_per_page' => 10,
-                          'post_parent' => 38,
-                          'meta_query' => array(
-                              array(
-                                  'key' => '_wp_page_template',
-                                  'value' => 'page-templates/minisitiopage.php', // template name as stored in the dB
-                              )
+                          'post_parent' => 38
                           )
                       );
                   $query = new WP_Query($args);
