@@ -21,19 +21,6 @@ $container = get_theme_mod( 'understrap_container_type' );
             </div>
         </div>
 
-        <script>
-
-flkty.on( 'cellSelect', function() {
-  var target = flkty.selectedCell.target;
-  if ( target == flkty.cells[0].target ) {
-    console.log('is at contained start')
-  } else if ( target == flkty.getLastCell().target ) {
-    console.log('is at contained end')
-  }
-});
-
-        </script>
-
         <div class="arrow-btn flickity-enabled is-draggable" data-flickity='{ "groupCells": 3, "cellAlign": "left", "pageDots": false, "lazyLoad": 4, "autoPlay": true }' tabindex="0">
 
 
