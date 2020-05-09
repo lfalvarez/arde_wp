@@ -11,24 +11,49 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <div class="row gt-america pb-5">
-	<div class="col-md-3 small pb-5 pb-md-0">
-		<?php $social_network = 'link'; include(TEMPLATEPATH.'/global-templates/web-link.php'); ?>
-    <?php $social_network = 'facebook'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
-		<?php $social_network = 'twitter'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
-    <?php $social_network = 'instagram'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
-    </div>
-    <div class="col-9">
-      <?php the_content(); ?>
 
-      <!-- Custom field: Contacto Autor -->
-      <?php $embed= get_post_meta($post->ID, "Contacto", true); //Llamo el CF de Contacto Autor ?>
-      <?php if($embed !== '') { // Si tiene "Contacto Autor" mostrará algo ?>
-          <a class="small" target="_blank" href="mailto:<?php $key="Contacto"; echo get_post_meta($post->ID, $key, true); ?>" target="_blank">Contactar a autores de los documentos ></a>
-      <?php } else { // Si no tiene "Contacto Autor" mostrará nada ?>
+      <!-- Custom field: RRSS -->
+      <?php $embed= get_post_meta($post->ID, "RRSS", true); //Llamo RRSS ?>
+      <?php if($embed !== '') { // Si tiene "RRSS" mostrará algo ?>
+
+          <div class="col-md-3 small pb-5 pb-md-0">
+              <?php $social_network = 'link'; include(TEMPLATEPATH.'/global-templates/web-link.php'); ?>
+              <?php $social_network = 'facebook'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
+              <?php $social_network = 'twitter'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
+              <?php $social_network = 'instagram'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
+          </div>
+
+          <div class="col-9">
+
+              <?php the_content(); ?>
+
+              <!-- Custom field: Contacto Autor -->
+              <?php $embed= get_post_meta($post->ID, "Contacto", true); //Llamo el CF de Contacto Autor ?>
+              <?php if($embed !== '') { // Si tiene "Contacto Autor" mostrará algo ?>
+                  <a class="small" target="_blank" href="mailto:<?php $key="Contacto"; echo get_post_meta($post->ID, $key, true); ?>" target="_blank">Contactar a autores de los documentos ></a>
+              <?php } else { // Si no tiene "Contacto Autor" mostrará nada ?>
+
+              <?php } // Se cierra el condicional ?>
+            
+          </div>
+          
+      <?php } else { // Si no tiene "RRSS" mostrará sólo content ?>
+
+          <div class="col-12">
+
+              <?php the_content(); ?>
+
+              <!-- Custom field: Contacto Autor -->
+              <?php $embed= get_post_meta($post->ID, "Contacto", true); //Llamo el CF de Contacto Autor ?>
+              <?php if($embed !== '') { // Si tiene "Contacto Autor" mostrará algo ?>
+                  <a class="small" target="_blank" href="mailto:<?php $key="Contacto"; echo get_post_meta($post->ID, $key, true); ?>" target="_blank">Contactar a autores de los documentos ></a>
+              <?php } else { // Si no tiene "Contacto Autor" mostrará nada ?>
+
+              <?php } // Se cierra el condicional ?>
+            
+          </div>
 
       <?php } // Se cierra el condicional ?>
-      
-    </div>
 
 </div>
 
