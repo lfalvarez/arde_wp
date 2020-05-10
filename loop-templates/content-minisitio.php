@@ -8,16 +8,37 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
+
+function tieneAlMenosUnaRRSS() {
+    $social_networks = ["facebook", "twitter", "instagram", "link"];
+    $tieneAlMenosUno = false;
+                  
+    foreach( $social_networks as $social_network ){
+        $valor_para_rrss = get_post_custom_values( $social_network , $post->ID);
+        if((bool) $valor_para_rrss) {
+            $tieneAlMenosUno = true;
+        }
+    }
+    return $tieneAlMenosUno;
+}
+
+$tieneAlMenosUno = tieneAlMenosUnaRRSS();
 ?>
 
 <div class="row gt-america pb-5">
-	<div class="col-md-3 small pb-5 pb-md-0">
-		<?php $social_network = 'link'; include(TEMPLATEPATH.'/global-templates/web-link.php'); ?>
-    <?php $social_network = 'facebook'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
-		<?php $social_network = 'twitter'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
-    <?php $social_network = 'instagram'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
-    </div>
-    <div class="col-9">
+	<?php
+	if($tieneAlMenosUno) {
+	?>
+		<div class="col-md-3 small pb-5 pb-md-0">
+			<?php $social_network = 'link'; include(TEMPLATEPATH.'/global-templates/web-link.php'); ?>
+	   		<?php $social_network = 'facebook'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
+			<?php $social_network = 'twitter'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
+	    		<?php $social_network = 'instagram'; include(TEMPLATEPATH.'/global-templates/social-link.php'); ?>
+	    	</div>
+	<?php 
+	}
+	?>
+    <div class="col-<?php echo ($tieneAlMenosUno)?'9':'12';?>">
       <?php the_content(); ?>
 
       <!-- Custom field: Contacto Autor -->
