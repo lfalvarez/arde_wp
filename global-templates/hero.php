@@ -16,11 +16,9 @@ if ( ! defined( 'ABSPATH' ) ) {
           <div class="col-md-8 hero_img text-center">
             <img class="d-none d-md-inline-block center" src="<?php bloginfo('template_url'); ?>/img/icono-comilla-arde-130.png" alt="">
             <h1 class="text text-landing pt-md-5">
-		   ARCHIVOS DE ARTE
+		   <p>ARCHIVOS DE ARTE</p>
+		    <p>Memoria de prácticas artísticas y culturales</p>
             </h1>
-	    <h2 class="text text-landing pt-md-5">
-		    Memoria de prácticas artísticas y culturales
-		  </h2>
             <div class="text text-landing ir-archivo-alpha gt-america mt-3 mt-md-5">
               <a href="http://archivo.proyectoarde.org/" target="_blank">- Descubre nuestras colecciones acá -</a>
             </div>
