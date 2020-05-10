@@ -387,8 +387,8 @@ body {
     text-decoration: none;
 }
 
-.page-template-sobre-nosotros a:hover,
-.page-template-materiales a:hover {
+.page-template-sobre-nosotros .colecciones a:hover,
+.page-template-materiales .colecciones a:hover {
     text-decoration: underline;
 }
 
@@ -411,7 +411,6 @@ body {
 /* Estructurar Post Share */
 
 .post-share .share-links {
-  margin: 15px 0 0;
   padding: 0;
   list-style: none;
 }
