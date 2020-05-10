@@ -17,7 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class='row'>
             <div class="col-8 mx-auto my-5">
                 <p>"La imagen arde en la destrucción, en el fuego que casi la carboniza, del cual sin embargo emergió y al cual ahora puede hacer imaginable. Arde en el fulgor, es decir, en la posibilidad visual que se abrió a partir de su misma extinción. Finalmente, la imagen arde de memoria, es decir, flamea aún incluso cuando ya es ceniza".</p>
-                <footer class="blockquote-footer">Georges Didi-Huberman</footer>
+                <p class="gt-america mb-0">(Georges Didi-Huberman)</p>
             </div>
         </div>
 </div>
