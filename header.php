@@ -19,7 +19,7 @@ elseif ($is_materiales){
 	get_header('minisitio');
 }
 elseif ($is_sobre_nosotros){
-	get_header('minisitio');
+	get_header('documento');
 }
 else {
 	get_header('documento');
