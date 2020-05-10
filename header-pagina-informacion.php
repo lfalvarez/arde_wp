@@ -44,20 +44,6 @@ $container = get_theme_mod( 'understrap_container_type' );
                                           'items_wrap' => '<ul class="%2$s navbar-nav ml-auto"><li class="nav-item">%3$s</li></ul>'
                  ) ); ?>
                 </nav>
-
-				<!-- The WordPress Menu goes here -->
-				<?php wp_nav_menu(
-					array(
-						'theme_location'  => 'primary',
-						'container_class' => 'collapse navbar-collapse',
-						'container_id'    => 'navbarNavDropdown',
-						'menu_class'      => 'navbar-nav ml-auto',
-						'fallback_cb'     => '',
-						'menu_id'         => 'main-menu',
-						'depth'           => 2,
-						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-					)
-				); ?>
 				
 			<?php if ( 'container' == $container ) : ?>
 			</div><!-- .container -->
