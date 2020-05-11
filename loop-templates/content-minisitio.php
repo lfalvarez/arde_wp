@@ -79,7 +79,7 @@ $tieneAlMenosUno = tieneAlMenosUnaRRSS();
 
             <a href="<?= get_permalink(); ?>">
               <div class="document-image" style='background-image:url("<?php if(has_post_thumbnail()){
-                the_post_thumbnail_url();
+                the_post_thumbnail_url('large');
               }
               else {
                 echo bloginfo('template_url').'/img/arde-logo.png';
