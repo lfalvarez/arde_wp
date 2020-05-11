@@ -78,7 +78,7 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 
 <div class="row description-doc gt-america">
 	<div class='small gt-america-mono post-share col-md-2'>
-          Comparte
+          <p>Comparte</p>
           <div class="share-links">
             <a class="popup facebook" target="_blank" href="https://www.facebook.com/sharer?u=<?php the_permalink();?>&t=<?php the_title(); ?>">facebook</a>
             <a class="popup twitter"  target="_blank" href="http://twitter.com/intent/tweet?text=Currently reading <?php the_title(); ?>&amp;url=<?php the_permalink(); ?>" title="Click to share this post on Twitter">twitter</a>
