@@ -21,19 +21,6 @@ $container = get_theme_mod( 'understrap_container_type' );
             </div>
         </div>
 
-        <script>
-
-flkty.on( 'cellSelect', function() {
-  var target = flkty.selectedCell.target;
-  if ( target == flkty.cells[0].target ) {
-    console.log('is at contained start')
-  } else if ( target == flkty.getLastCell().target ) {
-    console.log('is at contained end')
-  }
-});
-
-        </script>
-
         <div class="arrow-btn flickity-enabled is-draggable" data-flickity='{ "groupCells": 3, "cellAlign": "left", "pageDots": false, "lazyLoad": 4, "autoPlay": true }' tabindex="0">
 
 
@@ -59,7 +46,7 @@ flkty.on( 'cellSelect', function() {
                         <a href="<?php echo get_permalink(); ?>">
 
                           <div class="document-image" style='background-image:url("<?php if(has_post_thumbnail()){
-                            the_post_thumbnail_url();
+                            the_post_thumbnail_url('thumbnail');
                           }
                           else {
                             echo bloginfo('template_url').'/img/arde-logo.png';
