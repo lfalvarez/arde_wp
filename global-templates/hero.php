@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <div class="container-fluid bg-arde">
       <div class="row landing-arde">
 
-          <div class="col-md-8 hero_img text-center">
+          <div class="col-md-12 hero_img pt-4 pb-5 text-center text-white">
             <img class="d-none d-md-inline-block center" src="<?php bloginfo('template_url'); ?>/img/icono-comilla-arde-130.png" alt="">
             <h1 class="text text-landing pt-md-5">
         		   <p style="letter-spacing: .05em; font-weighr:700;">ARCHIVOS DE ARTE</p>
