@@ -48,7 +48,7 @@ $tieneAlMenosUno = tieneAlMenosUnaRRSS();
       <?php } else { // Si no tiene "Contacto Autor" mostrará nada ?>
 
       <?php } // Se cierra el condicional ?>
-
+    <br>
       <!-- Custom field: Link Archivo Omeka -->
       <?php $embed= get_post_meta($post->ID, "Omeka", true); //Llamo el CF de Link a Omeka ?>
       <?php if($embed !== '') { // Si tiene "Omeka" mostrará algo ?>
