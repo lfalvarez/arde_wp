@@ -44,8 +44,16 @@ $tieneAlMenosUno = tieneAlMenosUnaRRSS();
       <!-- Custom field: Contacto Autor -->
       <?php $embed= get_post_meta($post->ID, "Contacto", true); //Llamo el CF de Contacto Autor ?>
       <?php if($embed !== '') { // Si tiene "Contacto Autor" mostrará algo ?>
-          <a class="small" target="_blank" href="mailto:<?php $key="Contacto"; echo get_post_meta($post->ID, $key, true); ?>" target="_blank">Contactar a autores de los documentos ></a>
+          <a class="small" target="_blank" href="mailto:<?php $key="Contacto"; echo get_post_meta($post->ID, $key, true); ?>">Contactar a autores de los documentos ></a>
       <?php } else { // Si no tiene "Contacto Autor" mostrará nada ?>
+
+      <?php } // Se cierra el condicional ?>
+
+      <!-- Custom field: Link Archivo Omeka -->
+      <?php $embed= get_post_meta($post->ID, "Omeka", true); //Llamo el CF de Link a Omeka ?>
+      <?php if($embed !== '') { // Si tiene "Omeka" mostrará algo ?>
+          <a class="small" target="_blank" href="<?php $key="Omeka"; echo get_post_meta($post->ID, $key, true); ?>">Ir a Archivo Alpha ></a>
+      <?php } else { // Si no tiene "Omeka" mostrará nada ?>
 
       <?php } // Se cierra el condicional ?>
       
