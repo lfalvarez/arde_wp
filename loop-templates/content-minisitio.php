@@ -47,18 +47,23 @@ $tieneAlMenosUno = tieneAlMenosUnaRRSS();
           <a class="small" target="_blank" href="mailto:<?php $key="Contacto"; echo get_post_meta($post->ID, $key, true); ?>">Contactar a autores de los documentos ></a>
       <?php } else { // Si no tiene "Contacto Autor" mostrará nada ?>
 
-      <?php } // Se cierra el condicional ?>
-    <br>
-      <!-- Custom field: Link Archivo Omeka -->
-      <?php $embed= get_post_meta($post->ID, "Omeka", true); //Llamo el CF de Link a Omeka ?>
-      <?php if($embed !== '') { // Si tiene "Omeka" mostrará algo ?>
-          <a class="small" target="_blank" href="<?php $key="Omeka"; echo get_post_meta($post->ID, $key, true); ?>">Ir a Archivo Alpha ></a>
-      <?php } else { // Si no tiene "Omeka" mostrará nada ?>
-
-      <?php } // Se cierra el condicional ?>
-      
+      <?php } // Se cierra el condicional ?>      
     </div>
 
+</div>
+
+<div class="container-fluid naranjo-claro-arde-bg naranjo-arde"> <!-- Sección Archivo Alpha -->
+        <div class='row'>
+            <div class="col-8 mx-auto my-5">
+                  <!-- Custom field: Link Archivo Omeka -->
+                  <?php $embed= get_post_meta($post->ID, "Omeka", true); //Llamo el CF de Link a Omeka ?>
+                  <?php if($embed !== '') { // Si tiene "Omeka" mostrará algo ?>
+                      <a class="small" target="_blank" href="<?php $key="Omeka"; echo get_post_meta($post->ID, $key, true); ?>">Ir a Archivo Alpha ></a>
+                  <?php } else { // Si no tiene "Omeka" mostrará nada ?>
+
+                  <?php } // Se cierra el condicional ?>
+            </div>
+        </div>
 </div>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
