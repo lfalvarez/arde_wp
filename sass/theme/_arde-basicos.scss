@@ -37,6 +37,25 @@
 
 /* Tipografías */
 
+/* Bordes */
+
+.border {
+  border: 1px solid $gris-oscuro-arde;
+}
+
+.border-ytb {
+  border-top: 1px solid $gris-oscuro-arde;
+  border-bottom: 1px solid $gris-oscuro-arde;
+}
+
+.border-naranjo {
+  border: 1px solid $naranjo-arde;
+}
+
+.border-naranjo-ytb {
+  border-top: 1px solid $naranjo-arde;
+  border-bottom: 1px solid $naranjo-arde;
+}
 
 /* Otros */
 

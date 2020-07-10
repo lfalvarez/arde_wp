@@ -52,7 +52,7 @@ $tieneAlMenosUno = tieneAlMenosUnaRRSS();
 
 </div>
 
-<div class="container-fluid naranjo-claro-arde-bg naranjo-arde"> <!-- Sección Archivo Alpha -->
+<div class="container-fluid"> <!-- Sección Archivo Alpha -->
         <div class='row'>
             <div class="text-center col-12 mx-auto my-5">
                   <!-- Custom field: Link Archivo Omeka -->
