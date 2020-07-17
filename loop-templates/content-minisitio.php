@@ -103,7 +103,7 @@ $tieneAlMenosUno = tieneAlMenosUnaRRSS();
                   <!-- Custom field: Link Archivo Omeka -->
                   <?php $embed= get_post_meta($post->ID, "Omeka", true); //Llamo el CF de Link a Omeka ?>
                   <?php if($embed !== '') { // Si tiene "Omeka" mostrará algo ?>
-                      <h5>Ir al archivo completo de esta colección</h5>
+                      <h6>Ir al archivo completo de esta colección</h6>
                       <div class="ir-a-seccion col-md-12 border-0 text-center small gt-america">
                         <a target="_blank" href="<?php $key="Omeka"; echo get_post_meta($post->ID, $key, true); ?>">Archivo Omeka ></a>
                       </div>
