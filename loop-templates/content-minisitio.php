@@ -52,21 +52,6 @@ $tieneAlMenosUno = tieneAlMenosUnaRRSS();
 
 </div>
 
-<div class="container-fluid border-ytb pr-0 pl-0 mb-5"> <!-- Sección Archivo Alpha -->
-        <div class='row'>
-            <div class="text-center col-12 mx-auto my-4">
-                  <!-- Custom field: Link Archivo Omeka -->
-                  <?php $embed= get_post_meta($post->ID, "Omeka", true); //Llamo el CF de Link a Omeka ?>
-                  <?php if($embed !== '') { // Si tiene "Omeka" mostrará algo ?>
-                      <h5>Ir al archivo completo de esta colección</h5>
-                      <a class="small" target="_blank" href="<?php $key="Omeka"; echo get_post_meta($post->ID, $key, true); ?>">Archivo Omeka ></a>
-                  <?php } else { // Si no tiene "Omeka" mostrará nada ?>
-
-                  <?php } // Se cierra el condicional ?>
-            </div>
-        </div>
-</div>
-
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 	<div class="entry-content">
@@ -111,6 +96,21 @@ $tieneAlMenosUno = tieneAlMenosUnaRRSS();
   <?php endif; ?>
 
 	</div><!-- .entry-content -->
+
+  <div class="container-fluid border-ytb pr-0 pl-0 mb-5"> <!-- Sección Archivo Alpha -->
+        <div class='row'>
+            <div class="text-center col-12 mx-auto my-4">
+                  <!-- Custom field: Link Archivo Omeka -->
+                  <?php $embed= get_post_meta($post->ID, "Omeka", true); //Llamo el CF de Link a Omeka ?>
+                  <?php if($embed !== '') { // Si tiene "Omeka" mostrará algo ?>
+                      <h5>Ir al archivo completo de esta colección</h5>
+                      <a class="small" target="_blank" href="<?php $key="Omeka"; echo get_post_meta($post->ID, $key, true); ?>">Archivo Omeka ></a>
+                  <?php } else { // Si no tiene "Omeka" mostrará nada ?>
+
+                  <?php } // Se cierra el condicional ?>
+            </div>
+        </div>
+  </div>
 
 	<footer class="entry-footer">
 
