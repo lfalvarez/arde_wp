@@ -97,7 +97,7 @@ $tieneAlMenosUno = tieneAlMenosUnaRRSS();
 
 	</div><!-- .entry-content -->
 
-  <div class="container-fluid border-ytb pr-0 pl-0 mb-5"> <!-- Sección Archivo Alpha -->
+  <div class="container-fluid border-ytb pr-0 pl-0 mb-5 mt-5"> <!-- Sección Archivo Alpha -->
         <div class='row'>
             <div class="text-center col-12 mx-auto my-4">
                   <!-- Custom field: Link Archivo Omeka -->
