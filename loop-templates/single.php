@@ -86,6 +86,9 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 	</div>
 	<div class='col-md-3'>
 		<?php $title = 'Autor'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
+		<?php $title = 'Autores'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
+		<?php $title = 'Autora'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
+		<?php $title = 'Autoras'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
 		<?php $title = 'Tipo de documento'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
 		<?php $title = 'Fecha'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
 	    
