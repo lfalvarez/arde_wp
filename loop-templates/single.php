@@ -85,12 +85,40 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
           </div>
 	</div>
 	<div class='col-md-3'>
-		<?php $title = 'Autor'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
-		<?php $title = 'Autores'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
-		<?php $title = 'Autora'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
-		<?php $title = 'Autoras'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
 		<?php $title = 'Tipo de documento'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
 		<?php $title = 'Fecha'; include(TEMPLATEPATH.'/global-templates/documento-meta-data.php'); ?>
+
+	    <!-- Custom field: Autor -->
+	    <?php $embed= get_post_meta($post->ID, "Autor", true); //Llamo el CF de Autor ?>
+	    <?php if($embed !== '') { // Si tiene "Autor" mostrará algo ?>
+	        <?php $key="Autor"; echo get_post_meta($post->ID, $key, true); ?>" target="_blank">
+	    <?php } else { // Si no tiene "Autor" mostrará nada ?>
+
+	    <?php } // Se cierra el condicional ?>
+
+	    <!-- Custom field: Autora -->
+	    <?php $embed= get_post_meta($post->ID, "Autora", true); //Llamo el CF de Autora ?>
+	    <?php if($embed !== '') { // Si tiene "Autora" mostrará algo ?>
+	        <?php $key="Autora"; echo get_post_meta($post->ID, $key, true); ?>" target="_blank">
+	    <?php } else { // Si no tiene "Autora" mostrará nada ?>
+
+	    <?php } // Se cierra el condicional ?>
+
+	    <!-- Custom field: Autores -->
+	    <?php $embed= get_post_meta($post->ID, "Autores", true); //Llamo el CF de Autores ?>
+	    <?php if($embed !== '') { // Si tiene "Autores" mostrará algo ?>
+	        <?php $key="Autores"; echo get_post_meta($post->ID, $key, true); ?>" target="_blank">
+	    <?php } else { // Si no tiene "Autores" mostrará nada ?>
+
+	    <?php } // Se cierra el condicional ?>
+
+	    <!-- Custom field: Autoras -->
+	    <?php $embed= get_post_meta($post->ID, "Autoras", true); //Llamo el CF de Autoras ?>
+	    <?php if($embed !== '') { // Si tiene "Autoras" mostrará algo ?>
+	        <?php $key="Autoras"; echo get_post_meta($post->ID, $key, true); ?>" target="_blank">
+	    <?php } else { // Si no tiene "Autoras" mostrará nada ?>
+
+	    <?php } // Se cierra el condicional ?>
 	    
 	    <!-- Custom field: Lugar -->
 	    <?php $embed= get_post_meta($post->ID, "Lugar", true); //Llamo el CF de Lugar ?>
