@@ -104,7 +104,10 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 	    <!-- Custom field: Autora -->
 	    <?php $embed= get_post_meta($post->ID, 'Autora', true); //Llamo el CF de Autora ?>
 	    <?php if($embed !== '') { // Si tiene "Autora" mostrará algo ?>
-	        <?php $key='Autora'; echo get_post_meta($post->ID, $key, true); ?>
+			<div class="meta-div">
+			  <p class="meta-titulo">Autora</p>
+			  <p><?php $key='Autora'; echo get_post_meta($post->ID, $key, true); ?></p>
+			</div>
 	    <?php } else { // Si no tiene "Autora" mostrará nada ?>
 
 	    <?php } // Se cierra el condicional ?>
@@ -112,7 +115,10 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 	    <!-- Custom field: Autores -->
 	    <?php $embed= get_post_meta($post->ID, 'Autores', true); //Llamo el CF de Autores ?>
 	    <?php if($embed !== '') { // Si tiene "Autores" mostrará algo ?>
-	        <?php $key='Autores'; echo get_post_meta($post->ID, $key, true); ?>
+			<div class="meta-div">
+			  <p class="meta-titulo">Autores</p>
+			  <p><?php $key='Autores'; echo get_post_meta($post->ID, $key, true); ?></p>
+			</div>
 	    <?php } else { // Si no tiene "Autores" mostrará nada ?>
 
 	    <?php } // Se cierra el condicional ?>
@@ -120,7 +126,10 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 	    <!-- Custom field: Autoras -->
 	    <?php $embed= get_post_meta($post->ID, 'Autoras', true); //Llamo el CF de Autoras ?>
 	    <?php if($embed !== '') { // Si tiene "Autoras" mostrará algo ?>
-	        <?php $key='Autoras'; echo get_post_meta($post->ID, $key, true); ?>
+			<div class="meta-div">
+			  <p class="meta-titulo">Autoras</p>
+			  <p><?php $key='Autoras'; echo get_post_meta($post->ID, $key, true); ?></p>
+			</div>
 	    <?php } else { // Si no tiene "Autoras" mostrará nada ?>
 
 	    <?php } // Se cierra el condicional ?>
