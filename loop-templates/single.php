@@ -91,6 +91,7 @@ Thumbnail en Single<div class="jumbotron jumbotron-fluid image-jumbotron">
 	    <!-- Custom field: Autor -->
 	    <?php $embed= get_post_meta($post->ID, 'Autor', true); //Llamo el CF de Autor ?>
 	    <?php if($embed !== '') { // Si tiene "Autor" mostrará algo ?>
+  			<p class="meta-titulo"><?= $title; ?></p>
 	        <?php $key='Autor'; echo get_post_meta($post->ID, $key, true); ?>
 	    <?php } else { // Si no tiene "Autor" mostrará nada ?>
 
