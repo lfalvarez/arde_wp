@@ -26,8 +26,6 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 <?php get_template_part( 'global-templates/listar-editorial' ); ?>
 
-<?php get_template_part( 'global-templates/listar-minisitios-huellas' ); ?>
-
 <?php get_template_part( 'global-templates/cita-1' ); ?>
 
 <?php get_template_part( 'global-templates/listar-minisitios-carousel' ); ?>
